@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Club</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid custom-container py-2">
+        <!-- Club Name on the Left -->
+        <a class="navbar-brand" href="#">Computer Club</a>
+        <!-- Toggler for Mobile View -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Centered Links & Right Aligned Buttons -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <!-- Centered Links -->
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+            </ul>
+            <!-- Login & Register on the Right -->
+            <div class="d-flex">
+                <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                <button type="button" class="btn btn-outline-primary">Register</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="container my-4 justify-content-center">
+    <div class="hero-section">
+        <!-- Image Content -->
+        <div class="col-md-4 text-center">
+            <img src="images/boy.png" alt="Kid with a Laptop" class="hero-img">
+        </div>
+        <!-- Text Content -->
+        <div class="hero-text col-md-6">
+            <h2>Master the skills of today, to lead the innovations of tomorrow.</h2>
+            <p>Master the latest tech skills with hands-on learning. Build real projects, stay ahead of trends, and turn curiosity into expertise for a future in technology.</p>
+            <button class="hero-btn mt-3">Explore New</button>
+        </div>
+    </div>
+</section>
+
+
+<!-- About Us Section -->
+<section class="container my-5">
+    <div class="text-center mb-5">
+        <h2>About Us</h2>
+        <p>Learn more about our vision, mission, and values that guide us to build a better future through education and technology.</p>
+    </div>
+
+    <div class="row text-center">
+        <!-- Our Vision -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="icon mb-3">
+                        <i class="bi bi-eye" style="font-size: 3rem; color: #6f42c1;"></i>
+                    </div>
+                    <h5 class="card-title">Our Vision</h5>
+                    <p class="card-text">To empower individuals with the knowledge and skills needed to lead innovation and make a positive impact in society.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our Mission -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="icon mb-3">
+                        <i class="bi bi-bullseye" style="font-size: 3rem; color: #ffc107;"></i>
+                    </div>
+                    <h5 class="card-title">Our Mission</h5>
+                    <p class="card-text">To provide quality education, develop future leaders, and foster a passion for technology and innovation among our community.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our Values -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="icon mb-3">
+                        <i class="bi bi-heart" style="font-size: 3rem; color: #28a745;"></i>
+                    </div>
+                    <h5 class="card-title">Our Values</h5>
+                    <p class="card-text">Integrity, excellence, and dedication to lifelong learning are the core values that drive our mission and vision.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Courses Section -->
+<div class="container">
+    <div class="row text-center">
+        <h2>Our Program</h2>
+        <p  class="pb-3">Empower your future by mastering cutting-edge technology skills today.</p>
+        <!-- Course 1: Competitive Programming -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+                <img src="images/cp.jpg" class="card-img-top" alt="Competitive Programming">
+                <div class="card-body">
+                    <h5 class="card-title">Competitive Programming</h5>
+                    <p class="card-text">Enhance problem-solving skills with advanced algorithm challenges.</p>
+                    <a href="Competitive Programming/index.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Course 2: Web and Mobile Development -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+                <img src="images/web.jpg" class="card-img-top" alt="Web and Mobile Development">
+                <div class="card-body">
+                    <h5 class="card-title">Web and Mobile Development</h5>
+                    <p class="card-text">Build modern web and mobile applications using the latest technologies.</p>
+                    <a href="Web and Mobile Development/index.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Course 3: DevOps -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+                <img src="images/devup.jpg" class="card-img-top" alt="DevOps">
+                <div class="card-body">
+                    <h5 class="card-title">DevOps</h5>
+                    <p class="card-text">Master continuous integration and deployment for efficient software delivery.</p>
+                    <a href="DevOps/index.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Course 4: Linux Based Network -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+                <img src="images/network.jpg" class="card-img-top" alt="Linux Based Network">
+                <div class="card-body">
+                    <h5 class="card-title">Linux Based Network</h5>
+                    <p class="card-text">Learn to manage and secure Linux systems for networking solutions.</p>
+                    <a href="Linux Based Network/index.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Course 5: Game Development -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+                <img src="images/game.jpg" class="card-img-top" alt="Game Development">
+                <div class="card-body">
+                    <h5 class="card-title">Game Development</h5>
+                    <p class="card-text">Create immersive gaming experiences using Unity and Unreal Engine.</p>
+                    <a href="Game Development/index.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Course 6: Deep Learning Research -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+                <img src="images/deep.jpg" class="card-img-top" alt="Deep Learning Research">
+                <div class="card-body">
+                    <h5 class="card-title">Deep Learning Research</h5>
+                    <p class="card-text">Explore AI models and neural networks to drive research advancements.</p>
+                    <a href="Deep Learning/index.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Testimonials Section -->
+<section class="testimonials-section py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">What Our Students Say</h2>
+        <div class="row">
+            <!-- Testimonial 1 -->
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                <div class="card testimonial-card w-100">
+                    <div class="card-body text-center">
+                        <div class="testimonial-icon mb-3">
+                            <i class="fas fa-user-circle fa-3x"></i>
+                        </div>
+                        <p class="testimonial-quote">"This course helped me master new technologies quickly and effectively. Highly recommended!"</p>
+                        <h6 class="testimonial-name">- John Doe</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                <div class="card testimonial-card w-100">
+                    <div class="card-body text-center">
+                        <div class="testimonial-icon mb-3">
+                            <i class="fas fa-user-circle fa-3x"></i>
+                        </div>
+                        <p class="testimonial-quote">"The community support and guidance were invaluable in my learning journey."</p>
+                        <h6 class="testimonial-name">- Jane Smith</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                <div class="card testimonial-card w-100">
+                    <div class="card-body text-center">
+                        <div class="testimonial-icon mb-3">
+                            <i class="fas fa-user-circle fa-3x"></i>
+                        </div>
+                        <p class="testimonial-quote">"Excellent curriculum and hands-on projects made learning fun and effective."</p>
+                        <h6 class="testimonial-name">- Emily Johnson</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Location Section -->
+<section class="location-section">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Location</h2>
+        <div class="row justify-content-center">
+            <!-- Location Address Information -->
+            <div class="col-md-6 mb-4">
+                <div class="location-card text-center p-4 shadow-sm">
+                    <i class="fas fa-map-marker-alt fa-3x mb-3 location-icon"></i>
+                    <h5 class="location-title">Building no 5, Academic</h5>
+                    <p class="location-address">44, Hazari Ln, Chattogram 4000</p>
+                </div>
+            </div>
+            <!-- Embedded Google Map -->
+            <div class="col-md-6">
+                <div style="overflow:hidden;max-width:100%;height:400px;">
+                    <iframe style="height:100%;width:100%;border:0;" frameborder="0" 
+                        src="https://www.google.com/maps/embed/v1/place?q=Building+no+5,+Academic,+44,+Hazari+Ln,+Chattogram+4000&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Us Section -->
+<section id="contact" class="container my-5">
+    <h2>Contact Us</h2>
+    <form>
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email">
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2024 Computer Club. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
