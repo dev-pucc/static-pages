@@ -14,29 +14,77 @@
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Web and Mobile Development</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#Service">Service</a>
-                    <a class="nav-link" href="#about">About</a>
-                    <a class="nav-link" href="#Portfolio">Projects</a>
-                </div>
+
+    
+
+
+    
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    
+    <div class="container-fluid custom-container py-2">
+
+        <!-- Club Name on the Left -->
+        <a class="navbar-brand" href="#">Premier University Computer Club</a>
+
+        <!-- Toggler for Mobile View -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Centered Links & Right Aligned Buttons -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+
+            <!-- Centered Links -->
+            <ul class="navbar-nav mx-auto">
+    
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+    
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Divisions
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Competitive Programming</a></li>
+                      <li><a class="dropdown-item" href="#">Web and Mobile Development</a></li>
+                      <li><a class="dropdown-item" href="#">DevOps</a></li>
+                      <li><a class="dropdown-item" href="#">Linux Based Networking</a></li>
+                      <li><a class="dropdown-item" href="#">Game Development</a></li>
+                      <li><a class="dropdown-item" href="#">Deep Learning Research</a></li>
+                    </ul>
+                  </li>
+    
+                <li class="nav-item"><a class="nav-link active" href="#about">Learn More</a></li>
+    
+                <li class="nav-item"><a class="nav-link active" href="#contact">Contact</a></li>
+    
+            </ul>
+
+            <!-- Login & Register on the Right -->
+            <div class="d-flex">
+                <button type="button" class="btn me-2 btn-light"">Become a Member</button>
+                <button type="button" class="btn btn-light">Login</button>
             </div>
+
         </div>
-    </nav>
+
+    </div>
+
+</nav>
+
+
+
+
+
+
+
+
 
     <!-- header -->
-    <header class="bg-success d-flex align-item-center text-white pt-3 mt-5">
+    <header class="bg-dark d-flex align-item-center text-white pt-3">
         <div class="container-fluid">
-            <div class="row align-item-center m-3">
+            <div class="row align-item-center m-5">
                 <div class="col-md-5">
                     <h1 class="header-title">Dicover <br>What We Can <br> achive Thogether</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat nulla cumque quia nisi
@@ -44,8 +92,8 @@
                         ipsa aliquam magnam sequi iusto. Adipisci harum expedita labore! Cumque dignissimos porro maxime
                         asperiores beatae?</p>
                     <div class="d-flex gap-3 mb-5">
-                        <button type="button" class="btn btn-warning">Discover More</button>
-                        <button type="button" class="btn btn-danger">Get Started</button>
+                        <button type="button" class="btn btn-light">Discover More</button>
+                        <button type="button" class="btn btn-light">Get Started</button>
                     </div>
                 </div>
                 <div class="col-md-7">
@@ -55,13 +103,22 @@
         </div>
     </header>
 
+
+
+
+
+
+
     <!-- service -->
     <section id="Service" class="bg-light mt-4 pt-2">
         <div class="container">
-            <h2 class="text-center mb-4 fw-bold">We Offers</h2>
+ 
+            <h2 class="text-center mb-4 fw-bold">What we do</h2>
+
+
             <div class="row text-center">
-                <div class="col-lg-3 col-sm-6 py-2">
-                    <div class="card card-service bg-success text-white py-4">
+                <div class="col-lg-4 col-sm-6 py-2">
+                    <div class="card card-service bg-dark text-white py-4">
                         <div class="card-body">
                             <div class="bi bi-laptop display-5"></div>
                             <h5 class="card-title fw-bold mt-3">Web Development</h5>
@@ -71,8 +128,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 py-2">
-                    <div class="card card-service bg-success text-white py-4">
+                <div class="col-lg-4 col-sm-6 py-2">
+                    <div class="card card-service bg-dark text-white py-4">
                         <div class="card-body">
                             <div class="bi bi-phone display-5"></div>
                             <h5 class="card-title fw-bold mt-3">App Development</h5>
@@ -82,23 +139,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 py-2">
-                    <div class="card card-service bg-success text-white py-4">
+                <div class="col-lg-4 col-sm-6 py-2">
+                    <div class="card card-service bg-dark text-white py-4">
                         <div class="card-body">
-                            <div class="bi bi-gear display-5"></div>
-                            <h5 class="card-title fw-bold mt-3">Tech Support</h5>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
-                                doloremque ad vero temporibus sapiente possimus molestiae quas eius, assumenda libero.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 py-2">
-                    <div class="card card-service bg-success text-white py-4">
-                        <div class="card-body">
-                            <div class="bi bi-graph-up display-5"></div>
-                            <h5 class="card-title fw-bold mt-3">SEO</h5>
+                            <div class="bi bi-database display-5"></div>
+                            <h5 class="card-title fw-bold mt-3">Deployment</h5>
                             <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
                                 doloremque ad vero temporibus sapiente possimus molestiae quas eius, assumenda libero.
                             </p>
@@ -109,6 +154,345 @@
             </div>
         </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Tech stack -->
+
+    <div class="container my-5">
+        <h2 class="text-center mb-5" style="margin-top: 100px;">
+            Tech Stack We Use
+        </h2>
+        <div class="row g-4">
+            <!-- Laravel Card -->
+            <div class="col-md-3">
+                <div class="card platform-card">
+                    <img src="image/logo-laravel.png" height="250px" class="card-img-top platform-img" alt="Laravel">
+                    <div class="card-body">
+                        <h5 class="platform-title">Laravel (PHP)</h5>
+                        <p class="platform-description">Laravel is a powerful PHP framework that simplifies the backend development of robust web applications with elegant syntax.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- MERN Stack Card -->
+            <div class="col-md-3">
+                <div class="card platform-card">
+                    <img src="image/logo-mern.png" height="245px" class="" alt="MERN Stack" style="object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="platform-title">MERN Stack</h5>
+                        <p class="platform-description">The MERN stack is a JavaScript-based stack used to build modern web applications with MongoDB, Express.js, React.js, and Node.js.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Flask/Django Card -->
+            <div class="col-md-3">
+                <div class="card platform-card h-100">
+                    <img src="image/logo-Flask-Django.png" class="card-img-top platform-img" alt="Flask and Django" style="height: 240px; object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="platform-title">Flask & Django (Python)</h5>
+                        <p class="platform-description">Flask and Django are Python frameworks that enable rapid development of APIs and full-stack web applications.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Flutter Card -->
+            <div class="col-md-3">
+                <div class="card platform-card h-100">
+                    <img src="image/logo-flutter.png" class="card-img-top platform-img" alt="Flutter" height="240px" style="object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="platform-title">Flutter (Dart)</h5>
+                        <p class="platform-description">Flutter is a modern framework for building beautiful, fast, and cross-platform mobile applications using a single codebase.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- protfolo -->
+
+        <section id="Portfolio" class=" py-5">
+            <div class="container">
+                
+                <h2 class="title text-center">Latest Project</h2>
+
+                <div class="row text-center p-3">
+                    <div class="col-lg-4 col-sm-6 my-2">
+                        <div class="card portfolio-card">
+                            <img class="img-fluid portfolio-img" src="image/project1.jpeg" alt="">
+                            <div class="portfolo_decription ">
+                                <h5>Premier University Computer Club 
+                                    <br>
+                                    Management System</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam repellat aliquid minima
+                                    excepturi optio iste?</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-sm-6 my-2">
+                        <div class="card portfolio-card">
+                            <img class="img-fluid portfolio-img" src="image/project2.jpeg" alt="">
+                            <div class="portfolo_decription ">
+                                <h5>Competitive Programming Division
+                                    <br>
+                                    Management System</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam repellat aliquid minima
+                                    excepturi optio iste?</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-sm-6 my-2">
+                        <div class="card portfolio-card">
+                            <img class="img-fluid portfolio-img" src="image/project5.jpeg" alt="">
+                            <div class="portfolo_decription ">
+                                <h5>Premier University Debating Society
+                                    <br>
+                                    Management System</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam repellat aliquid minima
+                                    excepturi optio iste?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container">
+            <div class="row text-center p-3">
+
+                <div class="col-lg-4 col-sm-6 my-2">
+                    <div class="card portfolio-card">
+                        <img class="img-fluid portfolio-img" src="image/project5.jpeg" alt="">
+                        <div class="portfolo_decription ">
+                            <h5>Premier University Blood Donation Group
+                                <br>
+                                Management System</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam repellat aliquid minima
+                                excepturi optio iste?</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-sm-6 my-2">
+                    <div class="card portfolio-card">
+                        <img class="img-fluid portfolio-img" src="image/project5.jpeg" alt="">
+                        <div class="portfolo_decription ">
+                            <h5>IEEE Students Brach 
+                                <br>
+                                Management System</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam repellat aliquid minima
+                                excepturi optio iste?</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-sm-6 my-2">
+                    <div class="card portfolio-card">
+                        <img class="img-fluid portfolio-img" src="image/project5.jpeg" alt="">
+                        <div class="portfolo_decription ">
+                            <h5>Premier University Cultural Club 
+                                <br>
+                                Management System</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam repellat aliquid minima
+                                excepturi optio iste?</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+     <!-- Testimonials Section -->
+     <section class="testimonials-section pt-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Meet the Team</h2>
+            <div class="row">
+
+                <!-- Testimonial 1 -->
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                    <div class="card testimonial-card w-100">
+                        <div class="card-body text-center">
+                            <div class="testimonial-icon mb-3">
+                                <img src="image/header.png" class="rounded-circle" height="250px"> 
+                            </div>
+                            <h4 class="testimonial-name"> John Doe</h4>
+                            <h6 class="testimonial-name"> Laravel Group Lead</h6>
+                            <p class="testimonial-quote">
+                                contract@mail.com <br>
+                                Department of CSE <br>
+                                Premier University Chittagong
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Testimonial 1 -->
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                    <div class="card testimonial-card w-100 bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="testimonial-icon mb-3">
+                                <img src="image/header.png" class="rounded-circle" height="250px"> 
+                            </div>
+                            <h2 class="testimonial-name"> John Doe</h2>
+                            <h5 class="testimonial-name"> Division Lead</h5>
+                            <p class="testimonial-quote">
+                                contract@mail.com <br>
+                                Department of CSE <br>
+                                Premier University Chittagong
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                 <!-- Testimonial 1 -->
+                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                    <div class="card testimonial-card w-100">
+                        <div class="card-body text-center">
+                            <div class="testimonial-icon mb-3">
+                                <img src="image/header.png" class="rounded-circle" height="250px"> 
+                            </div>
+                            <h4 class="testimonial-name"> John Doe</h4>
+                            <h6 class="testimonial-name"> MERN Gorup Lead</h6>
+                            <p class="testimonial-quote">
+                                contract@mail.com <br>
+                                Department of CSE <br>
+                                Premier University Chittagong
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+         <!-- Testimonials Section -->
+         <section class="testimonials-section py-5 bg-light">
+            <div class="container">
+                <div class="row">
+    
+                    <!-- Testimonial 1 -->
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                        <div class="card testimonial-card w-100">
+                            <div class="card-body text-center">
+                                <div class="testimonial-icon mb-3">
+                                    <img src="image/header.png" class="rounded-circle" height="250px"> 
+                                </div>
+                                <h4 class="testimonial-name"> John Doe</h4>
+                                <h6 class="testimonial-name"> Django Group Lead</h6>
+                                <p class="testimonial-quote">
+                                    contract@mail.com <br>
+                                    Department of CSE <br>
+                                    Premier University Chittagong
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                   
+                    <!-- Testimonial 1 -->
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                        <div class="card testimonial-card w-100">
+                            <div class="card-body text-center">
+                                <div class="testimonial-icon mb-3">
+                                    <img src="image/header.png" class="rounded-circle" height="250px"> 
+                                </div>
+                                <h4 class="testimonial-name"> John Doe</h4>
+                                <h6 class="testimonial-name">Flutter Group Lead</h6>
+                                <p class="testimonial-quote">
+                                    contract@mail.com <br>
+                                    Department of CSE <br>
+                                    Premier University Chittagong
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+
+    
+                    
+                     <!-- Testimonial 1 -->
+                     <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                        <div class="card testimonial-card w-100">
+                            <div class="card-body text-center">
+                                <div class="testimonial-icon mb-3">
+                                    <img src="image/header.png" class="rounded-circle" height="250px"> 
+                                </div>
+                                <h4 class="testimonial-name"> John Doe</h4>
+                                <h6 class="testimonial-name">Flask Group Lead</h6>
+                                <p class="testimonial-quote">
+                                    contract@mail.com <br>
+                                    Department of CSE <br>
+                                    Premier University Chittagong
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                </div>
+            </div>
+        </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- about -->
 
@@ -119,78 +503,72 @@
                     <img class="img-fluid" src="image/about.jpeg" alt="about-image">
                 </div>
                 <div class="col-md-6 about-text">
-                    <h2>Describe our journey</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis praesentium minima quos
-                        commodi, minus dicta consequatur nemo ex culpa molestias architecto, accusantium voluptates
-                        explicabo voluptatem. Nesciunt obcaecati neque dolore fugiat!</p>
+                    <h2>We are a team </h2>
+                    <p>
+                        of passionate developers dedicated to crafting innovative web and mobile solutions. With a love for technology and a commitment to excellence, we specialize in building user-friendly, scalable, and high-performance applications. Whether it's designing seamless websites, creating powerful backend systems, or developing cross-platform mobile apps, we aim to bring ideas to life with creativity and precision. Together, we strive to make a meaningful impact through our work in the ever-evolving world of technology.
+                    </p>
 
                     <div class="row text-center my-3">
                         <div class="col-sm-4 my-2">
-                            <div class="card bg-danger py-4 fw-bold text-white">
-                                <h1>150+</h1>
-                                <p>Students</p>
+                            <div class="card bg-dark py-4 fw-bold text-white">
+                                <h1>50+</h1>
+                                <p>Menbers</p>
                             </div>
                         </div>
                         <div class="col-sm-4 my-2">
-                            <div class="card bg-danger py-4 fw-bold text-white">
-                                <h1>10+</h1>
+                            <div class="card bg-dark py-4 fw-bold text-white">
+                                <h1>13+</h1>
                                 <p>Trainer</p>
                             </div>
                         </div>
                         <div class="col-sm-4 my-2">
-                            <div class="card bg-danger py-4 fw-bold text-white">
-                                <h1>2 Years</h1>
-                                <p>Experience</p>
+                            <div class="card bg-dark py-4 fw-bold text-white">
+                                <h1>100 +</h1>
+                                <p>Alumnlies</p>
                             </div>
                         </div>
                     </div>
-                    <button class="btn btn-dark brn-about">Learn more</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- protfolo -->
 
-    <section id="Portfolio" class=" py-5">
-        <div class="container">
-            <h2 class="title text-center">Latest Project</h2>
-            <div class="row text-center p-3">
-                <div class="col-lg-4 col-sm-6 my-2">
-                    <div class="card portfolio-card">
-                        <img class="img-fluid portfolio-img" src="image/project1.jpeg" alt="">
-                        <div class="portfolo_decription ">
-                            <h5>MERN Stack Project</h5>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam repellat aliquid minima
-                                excepturi optio iste?</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-sm-6 my-2">
-                    <div class="card portfolio-card">
-                        <img class="img-fluid portfolio-img" src="image/project2.jpeg" alt="">
-                        <div class="portfolo_decription ">
-                            <h5>Inovative Project</h5>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam repellat aliquid minima
-                                excepturi optio iste?</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-sm-6 my-2">
-                    <div class="card portfolio-card">
-                        <img class="img-fluid portfolio-img" src="image/project5.jpeg" alt="">
-                        <div class="portfolo_decription ">
-                            <h5>Ecommerce Project</h5>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam repellat aliquid minima
-                                excepturi optio iste?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+
+
+
+
+
+    <!-- Jumbotron -->
+<div class="p-5 rounded-3" style="
+background-color: black;
+background-image: url('image/jumbotron-img.jpg');
+height: 400px;
+background-size:cover;
+background-position: center center; 
+">
+<div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+<div class="d-flex p-5 h-100">
+  <div class="text-white">
+    <h1 class="mb-3">Ready to create impactful web and mobile applications?</h1>
+    <h5 class="mb-3">Join our community of developers and start building today!</h5>
+    <a data-mdb-ripple-init class="btn btn-light btn-lg" href="#!" role="button">Join Our Team</a>
+  </div>
+</div>
+</div>
+</div>
+<!-- Jumbotron -->
+
+
+
+
+
+
+
+
 
     <!-- footer -->
 

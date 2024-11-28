@@ -2,9 +2,7 @@ body{
     font-family: "Noto Sans", sans-serif;
 }
 
-h1,h2,h3, .navbar-brand {
-    font-family: "Lora", serif;
-}
+
 .header-title{
     font-size: 45px;
     font-weight: bold;
@@ -17,7 +15,7 @@ h1,h2,h3, .navbar-brand {
     transition: all 0.3s ease-in-out;
 }
 .card-service{
-    background: #198754 !important;
+    background:black;
     color:#fff;
     cursor:pointer
 }
