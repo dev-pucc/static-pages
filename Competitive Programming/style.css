@@ -5,10 +5,14 @@
         margin: 0 auto; /* Center the container */
     }
 }
-/* for slider */
-.carousel-item{
-    height: 350px;
-    object-position: center;
+
+
+
+/* Carousel */
+.carousel-image {
+    width: 100%; /* Makes the image span the full width of the carousel */
+    height: 700px; /* Sets a fixed height for uniformity */
+    object-fit: fill; /* Stretches the image to fill the specified dimensions */
 }
 
 
