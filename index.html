@@ -5,11 +5,12 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computer Club</title>
+
+    <title>Premier University Computer Club</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="landing_page/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -18,13 +19,13 @@
 <body>
 
 
-<!-- Navbar -->
+<!-- Navbar Sections -->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     
     <div class="container-fluid custom-container py-2">
 
         <!-- Club Name on the Left -->
-        <a class="navbar-brand" href="#">Premier University Computer Club</a>
+        <a class="navbar-brand" href="/">Premier University Computer Club</a>
 
         <!-- Toggler for Mobile View -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,31 +38,33 @@
             <!-- Centered Links -->
             <ul class="navbar-nav mx-auto">
     
-                <li class="nav-item"><a class="nav-link active fw-bold" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link active fw-bold" href="/">Home</a></li>
     
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Divisions
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Competitive Programming</a></li>
-                      <li><a class="dropdown-item" href="#">Web and Mobile Development</a></li>
-                      <li><a class="dropdown-item" href="#">DevOps</a></li>
-                      <li><a class="dropdown-item" href="#">Linux Based Networking</a></li>
-                      <li><a class="dropdown-item" href="#">Game Development</a></li>
-                      <li><a class="dropdown-item" href="#">Deep Learning Research</a></li>
+                      <li><a class="dropdown-item" href="competitive_programming/index.html">Competitive Programming</a></li>
+                      <li><a class="dropdown-item" href="web_and_mobile_developement/index.html">Web and Mobile Development</a></li>
+                      <li><a class="dropdown-item" href="devops/index.html">DevOps</a></li>
+                      <li><a class="dropdown-item" href="linux_based_network/index.html">Linux Based Networking</a></li>
+                      <li><a class="dropdown-item" href="game_development/index.html">Game Development</a></li>
+                      <li><a class="dropdown-item" href="deep_learning_research/index.html">Deep Learning Research</a></li>
                     </ul>
                   </li>
     
-                <li class="nav-item"><a class="nav-link active" href="#about">Learn More</a></li>
+                <li class="nav-item"><a class="nav-link active" href="Additional_pages/about_us.html">Learn More</a></li>
     
-                <li class="nav-item"><a class="nav-link active" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link active" href="Additional_pages/contact_us.html">Contact</a></li>
     
             </ul>
 
             <!-- Login & Register on the Right -->
             <div class="d-flex">
-                <button type="button" class="btn me-2 btn-light"">Become a Member</button>
+                <a href="Additional_pages/join_us.html">
+                    <button type="button" class="btn me-2 btn-light"">Become a Member</button>
+                </a>
                 <button type="button" class="btn btn-light">Login</button>
             </div>
 
@@ -70,33 +73,45 @@
     </div>
 
 </nav>
+<!-- Navbar Ends -->
 
 
 
 
 
 <!-- Hero Section -->
-<section class=" my-4 justify-content-center">
+<section class=" mb-4 justify-content-center">
+    
     <div class="hero-section bg-dark">
+    
         <!-- Image Content -->
         <div class="col-md-4 text-center">
-            <img src="images/boy.png" alt="Kid with a Laptop" class="hero-img">
+            <img src="landing_page/media/boy.png" alt="Kid with a Laptop" class="hero-img">
         </div>
+    
         <!-- Text Content -->
         <div class="hero-text col-md-6">
+    
             <h1>Welcome to 
                 <br>
                 Premier University 
                 <br>
                 Computer Club
             </h1>
+    
             <p>Join us to collaborate on tech projects, enhance your coding skills, 
                 and explore the latest in technology 
                 <br>
                 with like-minded peers!</p>
-            <button class="btn btn-light mt-3">Learn More</button>
+    
+                <a href="Additional_pages/join_us.html">
+                    <button class="btn btn-light mt-3">Learn More</button>
+                </a>
+    
+            </div>
+    
         </div>
-    </div>
+
 </section>
 
 
@@ -104,13 +119,12 @@
 
 
 <!-- About Us Section -->
-<section class="container my-5">
-   
-    <div class="text-center mb-5" style="margin-top: 100px;">
+<section class="container my-5 text-center" style="margin-top: 100px;">
+
         <h2>About Us</h2>
-    </div>
 
     <div class="row text-center">
+
         <!-- Who are we? -->
         <div class="col-md-4 mb-4">
             <div class="card h-100 shadow-sm">
@@ -145,22 +159,33 @@
     </div>
 
 </section>
+<!-- About Us Ends -->
 
 
 
 
 
+<!-- Message Sections -->
 <div class="container text-center mb-5">
+
     <h3>Ready to take your tech skills to the next level?</h3>
-    <p>Join us today and become part of our growing community. Let’s build something amazing together!</p>
-    <button class="btn btn-dark" >Get Involved</button>
+   
+    <p>
+        Join us today and become part of our growing community. Let’s build something amazing together!
+    </p>
+
+    <a href="Additional_pages/join_us.html">
+        <button class="btn btn-dark" >Get Involved</button>
+    </a>
+
 </div>
+<!-- Message Ends -->
 
 
 
 
 
-<!-- Divisions -->
+<!-- Divisions Sections -->
 <div class="container mt-5">
  
     <div class="row text-center" style="margin-top: 150px;">
@@ -170,47 +195,56 @@
         <!-- Course 1: Competitive Programming -->
         <div class="col-md-6 col-lg-4 mb-4">
             <div class="card h-100 mx-5 my-5" style="border: none;">
-                <img src="images/cp.jpg" class="rounded-circle" alt="Competitive Programming">
+                
+                <img src="landing_page/media/cp.jpg" class="rounded-circle" alt="Competitive Programming">
+                
                 <div class="card-body">
                     <h5 class="card-title">Competitive Programming</h5>
                     <p class="card-text">Enhance problem-solving skills with advanced algorithm challenges.</p>
-                    <a href="Competitive Programming/index.html" class="btn btn-dark">Learn More</a>
+                    <a href="competitive_programming/index.html" class="btn btn-dark">Learn More</a>
                 </div>
+            
             </div>
         </div>
  
         <!-- Course 2: Web and Mobile Development -->
         <div class="col-md-6 col-lg-4 mb-4">
             <div class="card h-100 mx-5 my-5" style="border: none;">
-                <img src="images/web.jpg" class="rounded-circle" alt="Web and Mobile Development">
+                
+                <img src="landing_page/media/web.jpg" class="rounded-circle" alt="Web and Mobile Development">
+                
                 <div class="card-body">
                     <h5 class="card-title">Web and Mobile Development</h5>
                     <p class="card-text">Build modern web and mobile applications using the latest technologies.</p>
-                    <a href="Web and Mobile Development/index.html" class="btn btn-dark">Learn More</a>
+                    <a href="web_and_mobile_developement/index.html" class="btn btn-dark">Learn More</a>
                 </div>
+            
             </div>
         </div>
  
         <!-- Course 3: DevOps -->
         <div class="col-md-6 col-lg-4 mb-4">
             <div class="card h-100 mx-5 my-5" style="border: none;">
-                <img src="images/devup.jpg" class="rounded-circle" alt="DevOps">
+                
+                <img src="landing_page/media/devup.jpg" class="rounded-circle" alt="DevOps">
+                
                 <div class="card-body">
                     <h5 class="card-title">DevOps</h5>
                     <p class="card-text">Master continuous integration and deployment for efficient software delivery.</p>
-                    <a href="DevOps/index.html" class="btn btn-dark">Learn More</a>
+                    <a href="devops/index.html" class="btn btn-dark">Learn More</a>
                 </div>
+            
             </div>
         </div>
  
         <!-- Course 4: Linux Based Network -->
         <div class="col-md-6 col-lg-4 mb-4">
             <div class="card h-100 mx-5 my-5" style="border: none;">
-                <img src="images/network.jpg" class="rounded-circle" alt="Linux Based Network">
+                <img src="landing_page/media/network.jpg" class="rounded-circle" alt="Linux Based Network">
                 <div class="card-body">
                     <h5 class="card-title">Linux Based Network</h5>
                     <p class="card-text">Learn to manage and secure Linux systems for networking solutions.</p>
-                    <a href="Linux Based Network/index.html" class="btn btn-dark">Learn More</a>
+                    <a href="linux_based_network/index.html" class="btn btn-dark">Learn More</a>
                 </div>
             </div>
         </div>
@@ -218,11 +252,11 @@
         <!-- Course 5: Game Development -->
         <div class="col-md-6 col-lg-4 mb-4">
             <div class="card h-100 mx-5 my-5" style="border: none;">
-                <img src="images/game.jpg" class="rounded-circle" alt="Game Development">
+                <img src="landing_page/media/game.jpg" class="rounded-circle" alt="Game Development">
                 <div class="card-body">
                     <h5 class="card-title">Game Development</h5>
                     <p class="card-text">Create immersive gaming experiences using Unity and Unreal Engine.</p>
-                    <a href="Game Development/index.html" class="btn btn-dark">Learn More</a>
+                    <a href="game_development/index.html" class="btn btn-dark">Learn More</a>
                 </div>
             </div>
         </div>
@@ -230,23 +264,23 @@
         <!-- Course 6: Deep Learning Research -->
         <div class="col-md-6 col-lg-4 mb-4">
             <div class="card h-100 mx-5 my-5" style="border: none;">
-                <img src="images/deep.jpg" class="rounded-circle" alt="Deep Learning Research">
+                <img src="landing_page/media/deep.jpg" class="rounded-circle" alt="Deep Learning Research">
                 <div class="card-body">
                     <h5 class="card-title">Deep Learning Research</h5>
                     <p class="card-text">Explore AI models and neural networks to drive research advancements.</p>
-                    <a href="Deep Learning/index.html" class="btn btn-dark">Learn More</a>
+                    <a href="deep_learning_research/index.html" class="btn btn-dark">Learn More</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!-- Divisions Ends -->
 
 
 
 
 
-
-<!-- Carousel -->
+<!-- Carousel Section -->
 
 <div class="container my-5 text-center">
    
@@ -260,15 +294,19 @@
         </div>
    
         <div class="carousel-inner">
+
             <div class="carousel-item active">
-                <img src="carousel/caro_1.jpg" class="d-block carousel-image" alt="DevUp Event">
+                <img src="landing_page/carousel_landing_page/caro_1.jpg" class="d-block carousel-image" alt="DevUp Event">
             </div>
+
             <div class="carousel-item">
-                <img src="carousel/caro_2.jpg" class="d-block carousel-image" alt="Web Workshop">
+                <img src="landing_page/carousel_landing_page/caro_2.jpg" class="d-block carousel-image" alt="Web Workshop">
             </div>
+            
             <div class="carousel-item">
-                <img src="carousel/caro_3.jpg" class="d-block carousel-image" alt="Networking Event">
+                <img src="landing_page/carousel_landing_page/caro_3.jpg" class="d-block carousel-image" alt="Networking Event">
             </div>
+
         </div>
    
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -284,12 +322,13 @@
     </div>
 
 </div>
+<!-- Carousel Ends -->
 
 
 
 
 
-<!-- Testimonials Section -->
+<!-- Member Number Section -->
 <section class="testimonials-section py-5 bg-light" style="margin-top: 100px;">
 
     <div class="container" >
@@ -298,20 +337,20 @@
 
         <div class="row">
 
-            <!-- Testimonial 1 -->
+            <!-- Members Number -->
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
                 <div class="card testimonial-card w-100">
                     <div class="card-body text-center">
                         <div class="testimonial-icon mb-3">
                             <i class="fas fa-user-circle fa-3x"></i>
                         </div>
-                        <h4 class="testimonial-name">100 + Members strong</h4>
+                        <h4 class="testimonial-name">120+ Members strong</h4>
                         <p class="testimonial-quote">"Our club is home to over 100 enthusiastic members, ranging from beginners to experts, all united by a passion for technology and innovation."</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Testimonial 2 -->
+            <!-- Trainer Number -->
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
                 <div class="card testimonial-card w-100">
                     <div class="card-body text-center">
@@ -324,7 +363,7 @@
                 </div>
             </div>
 
-            <!-- Testimonial 3 -->
+            <!-- Alumni Number -->
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
                 <div class="card testimonial-card w-100">
                     <div class="card-body text-center">
@@ -369,7 +408,7 @@
             <div class="col-md-6">
                 <div style="overflow:hidden;max-width:100%;height:400px;">
                     <iframe style="height:100%;width:100%;border:0;" frameborder="0" 
-                        <!-- src=" place api here "> -->
+                        src="https://www.google.com/maps/embed/v1/place?q=Building+no+5,+Academic,+44,+Hazari+Ln,+Chattogram+4000&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
                     </iframe>
                 </div>
             </div>
@@ -379,48 +418,48 @@
     </div>
 
 </section>
-
-
-
-
-
-<!-- Contact Us Section -->
-<section id="contact" class="container my-5">
-
-    <h2>Contact Us</h2>
-
-    <form>
-        <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name">
-        </div>
-
-        <div class="mb-3">
-            <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email">
-        </div>
-
-        <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message"></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-dark">Send Message</button>
-
-    </form>
-
-</section>
+<!-- Location Ends -->
 
 
 
 
 
 <!-- Footer Section -->
-<footer class="text-center py-4 bg-dark text-light">
+<footer class="footer p-3 bg-dark text-light text-center">
+    <div class="row">
+                
+        <!-- Social Media -->     
+            <div class="social-icons">
+            
+                <a href="https://www.facebook.com/profile.php?id=100064087983552"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/groups/premier.university.computer.club"><i class="fab fa-facebook-f">  Group</i></a>
+                <a href="https://x.com/pucc_official"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/puc-cse-club"><i class="fab fa-linkedin-in"></i></a>
+                
+                <span style="font-size: 25px;">/</span>
+                
+                <a href="https://chat.whatsapp.com/JzG0hxPdiVDBJabIldwj9y"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://t.me/+564bGSrAnQU2Y2Nl"><i class="fab fa-telegram-plane"></i></a>
+                <a href="https://discord.com/channels/1311981092026318858/1311981093272158269"><i class="fab fa-discord"></i></a>
+                
+                <span style="font-size: 25px;">/</span>
 
-    <p>&copy; 2024 Computer Club. All rights reserved.</p>
+                <a href="https://www.youtube.com/channel/UC3bqOx1p94VLE18LmjYzOwA"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/dev-pucc"><i class="fab fa-github"></i></a>
+                <a href="https://www.kaggle.com/puccofficial"><i class="fab fa-kaggle"></i></a>
+                <a href="https://codeforces.com/ratings/organization/10519"><i class="fas fa-code"></i></a>               
+                
+            </div>
 
+
+        <div class="row">
+            <p class="copyright">&copy; 2024 Premier University Computer Club. All Rights Reserved. (Developed by our members with &#9829)</p>
+        </div>
+        
+    </div>
 </footer>
+
+<!-- Footer Ends -->
 
 
 
