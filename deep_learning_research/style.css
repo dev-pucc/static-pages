@@ -1,5 +1,5 @@
 .hero-section {
-    background: linear-gradient(to bottom right, #1a237e, #3949ab);
+    background: black;
     color: white;
     padding: 100px 0;
     text-align: center;
@@ -16,10 +16,10 @@
     padding: 10px 20px;
     font-size: 1rem;
     font-weight: bold;
-    background-color: #ff5722;
+    background-color: white;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: black;
     text-transform: uppercase;
   }
 .hero-btn:hover {
