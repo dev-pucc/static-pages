@@ -2,24 +2,30 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computer Club</title>
+
+    <title>Competitive Programming Division</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="landing_page/style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 
 <body>
 
 
-<!-- Navbar -->
+<!-- Navbar Sections -->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     
     <div class="container-fluid custom-container py-2">
 
         <!-- Club Name on the Left -->
-        <a class="navbar-brand" href="#">Premier University Computer Club</a>
+        <a class="navbar-brand" href="/">Premier University Computer Club</a>
 
         <!-- Toggler for Mobile View -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,31 +38,33 @@
             <!-- Centered Links -->
             <ul class="navbar-nav mx-auto">
     
-                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
     
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-light fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link fw-bold dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Divisions
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Competitive Programming</a></li>
-                      <li><a class="dropdown-item" href="#">Web and Mobile Development</a></li>
-                      <li><a class="dropdown-item" href="#">DevOps</a></li>
-                      <li><a class="dropdown-item" href="#">Linux Based Networking</a></li>
-                      <li><a class="dropdown-item" href="#">Game Development</a></li>
-                      <li><a class="dropdown-item" href="#">Deep Learning Research</a></li>
+                      <li><a class="dropdown-item fw-bold" href="competitive_programming/index.html">Competitive Programming</a></li>
+                      <li><a class="dropdown-item" href="web_and_mobile_developement/index.html">Web and Mobile Development</a></li>
+                      <li><a class="dropdown-item" href="devops/index.html">DevOps</a></li>
+                      <li><a class="dropdown-item" href="linux_based_network/index.html">Linux Based Networking</a></li>
+                      <li><a class="dropdown-item" href="game_development/index.html">Game Development</a></li>
+                      <li><a class="dropdown-item" href="deep_learning_research/index.html">Deep Learning Research</a></li>
                     </ul>
                   </li>
     
-                <li class="nav-item"><a class="nav-link active" href="#about">Learn More</a></li>
+                <li class="nav-item"><a class="nav-link active" href="Additional_pages/about_us.html">Learn More</a></li>
     
-                <li class="nav-item"><a class="nav-link active" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link active" href="Additional_pages/contact_us.html">Contact</a></li>
     
             </ul>
 
             <!-- Login & Register on the Right -->
             <div class="d-flex">
-                <button type="button" class="btn me-2 btn-light"">Become a Member</button>
+                <a href="Additional_pages/join_us.html">
+                    <button type="button" class="btn me-2 btn-light"">Become a Member</button>
+                </a>
                 <button type="button" class="btn btn-light">Login</button>
             </div>
 
@@ -65,6 +73,7 @@
     </div>
 
 </nav>
+<!-- Navbar Ends -->
 
 
 
@@ -76,7 +85,7 @@
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7)
           ),
-    url(images/hero3.jpg); 
+    url('media/hero.jpg'); 
     background-size: cover; 
     background-position: center center; 
     height: 600px; 
@@ -89,7 +98,9 @@
 
         <div class="mt-5">
 
-            <button type="button" class="btn btn-light btn-lg px-4 gap-3">Join Our Team</button>
+            <a href="/Additional_pages/join_competitive_programming.html">
+                <button type="button" class="btn btn-light btn-lg px-4 gap-3">Join Our Team</button>
+            </a>
           
         </div>    
       
@@ -244,13 +255,13 @@
 
 
 
-     <!-- Testimonials Section -->
+     <!-- Division Lead -->
      <section class="testimonials-section py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-5">Meet the Lead</h2>
             <div class="row">
 
-                <!-- Testimonial 1 -->
+                <!-- Trainer 1 -->
                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
                     <div class="card testimonial-card w-100">
                         <div class="card-body text-center">
@@ -268,7 +279,7 @@
                     </div>
                 </div>
 
-                 <!-- Testimonial 1 -->
+                 <!-- Division Lead -->
                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
                     <div class="card testimonial-card w-100">
                         <div class="card-body text-center">
@@ -287,7 +298,7 @@
                 </div>
 
                 
-                 <!-- Testimonial 1 -->
+                 <!-- Trainer 2 -->
                  <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
                     <div class="card testimonial-card w-100">
                         <div class="card-body text-center">

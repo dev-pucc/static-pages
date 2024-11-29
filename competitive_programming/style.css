@@ -4,6 +4,13 @@
         max-width: 85%;
         margin: 0 auto; /* Center the container */
     }
+
+    .location-section {
+        max-width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+
 }
 
 
