@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevOps Division</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+</head>
+
+<body>
+
+
+<!-- Navbar Sections -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    
+    <div class="container-fluid custom-container py-2">
+
+        <!-- Club Name on the Left -->
+        <a class="navbar-brand" href="/">Premier University Computer Club</a>
+
+        <!-- Toggler for Mobile View -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Centered Links & Right Aligned Buttons -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+
+            <!-- Centered Links -->
+            <ul class="navbar-nav mx-auto">
+    
+                <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+    
+                <li class="nav-item dropdown">
+                    <a class="nav-link fw-bold dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Divisions
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item fw-bold" href="../competitive_programming/index.html">Competitive Programming</a></li>
+                      <li><a class="dropdown-item" href="../web_and_mobile_developement/index.html">Web and Mobile Development</a></li>
+                      <li><a class="dropdown-item" href="../devops/index.html">DevOps</a></li>
+                      <li><a class="dropdown-item" href="../linux_based_network/index.html">Linux Based Networking</a></li>
+                      <li><a class="dropdown-item" href="../game_development/index.html">Game Development</a></li>
+                      <li><a class="dropdown-item" href="../deep_learning_research/index.html">Deep Learning Research</a></li>
+                    </ul>
+                  </li>
+    
+                <li class="nav-item"><a class="nav-link active" href="Additional_pages/about_us.html">Learn More</a></li>
+    
+                <li class="nav-item"><a class="nav-link active" href="Additional_pages/contact_us.html">Contact</a></li>
+    
+            </ul>
+
+            <!-- Login & Register on the Right -->
+            <div class="d-flex">
+                <a href="Additional_pages/join_us.html">
+                    <button type="button" class="btn me-2 btn-light">Become a Member</button>
+                </a>
+                <button type="button" class="btn btn-light">Login</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+<!-- Navbar ENDS -->
+
+
+
+
+
+<!-- Header Section -->
+<header class="hero-section">
+  <div class="container">
+    <div class="row align-items-center py-4 g-5">
+        <div class="col-12 col-md-6">
+            
+            <div class="text-center text-md-start">
+            
+                <h1 class="display-md-2 display-4 fw-bold text-dark pb-2">
+                    Your definitive guide to excelling in devops
+                </h1>
+                
+                <p class="lead">
+                    DevOps is a culture and practice that unifies software development and IT operations to automate and streamline the software delivery process
+                </p>
+                
+                <a href="/Additional_pages/join_us_devops.html">
+                    <button class="btn btn-dark px-5 py-3 mt-3 fs-5 fw-medium" type="button">
+                        Start Learning
+                    </button>
+                </a>
+            
+            </div>
+        
+        </div>
+        
+        <div class="col-12 col-md-6">
+            <img src="media/DevOps.png" class="img-fluid" alt="a man using vr gadget" />
+        </div>
+    
+    </div>
+</header>
+<!-- Header ENDS -->
+
+
+
+
+
+<!-- About Section -->
+<div class="container">
+    <div class="row align-items-center gx-3 gy-5">
+
+        <div class="col-12 col-md-12 col-lg-5">
+            <img src="media/devops-hero.png" class="img-fluid mx-auto d-block"/>
+        </div>
+
+        <div class="col-12 col-md-12 text-center text-lg-start col-lg-7">
+
+            <h2 class="fw-bold fs-1 pb-3">
+                About DevOps
+            </h2>
+            <p class="about-text">
+            DevOps is a game-changer in the tech world, and this course is designed to make you a part of it! Imagine combining coding and IT operations to create seamless workflows, faster deployments, and automated processes. In this course, you'll learn how to use tools like Docker, Kubernetes, Jenkins, and AWS, all essential in the modern tech landscape. You'll get hands-on experience with Continuous Integration and Continuous Deployment (CI/CD), infrastructure as code, and monitoring. This is your chance to master skills that are in high demand,making you a valuable asset in any tech team. Ready to build the future of software?
+            </p>
+
+        </div>
+
+    </div>
+</div>
+<!-- About ENDS -->
+
+
+
+
+  
+<!-- Technologies Used Section -->
+<section id="technologies" class="py-5 mt-5">
+    <div class="container">
+    
+        <h2 class="text-center mb-5">Technologies We Will Learn</h2>
+        
+        <div class="row mt-5">
+        
+            <!-- Amazon Linux 2 Card -->
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    
+                    <div class="card-body">
+
+                        <img src="media/logo-Amazon_Linux.png" class="mb-3" alt="Amazon Linux 2 Logo" style="width: 250px; height: 150px;">
+                        
+                        <h5 class="card-title">Amazon Linux 2</h5>
+                        
+                        <p class="card-text">
+                            Amazon Linux 2 is a stable, secure, and high-performance Linux distribution from AWS, optimized for cloud environments.
+                        </p>
+                    
+                    </div>
+                
+                </div>
+            </div>
+      
+            <!-- Git Card -->
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    
+                    <div class="card-body">
+
+                        <img src="media/logo-git.png" class="mb-3" alt="Git Logo" style="width: 150px; height: 150px;">
+                        
+                        <h5 class="card-title">Git</h5>
+                        
+                        <p class="card-text">
+                            Git is a distributed version control system that helps track changes in source code during software development.
+                        </p>
+                    
+                    </div>
+                
+                </div>
+            </div>
+            
+            <!-- GitHub Card -->
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    
+                    <div class="card-body">
+
+                        <img src="media/logo-github.png" class="mb-3" alt="GitHub Logo" style="width: 150px; height: 150px;">
+                        
+                        <h5 class="card-title">GitHub</h5>
+                        
+                        <p class="card-text">
+                            GitHub is a cloud-based platform for version control and collaboration, enabling developers to work on projects together.
+                        </p>
+                    
+                    </div>
+                
+                </div>
+            </div>
+        
+        </div>
+
+        <!-- Row 2: Jenkins, Docker, Kubernetes -->
+        <div class="row mt-4">
+        
+            <!-- Jenkins Card -->
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    
+                    <div class="card-body">
+
+                        <img src="media/logo-genkins.png" class="mb-3" alt="Jenkins Logo" style="width: 250px; height: 150px;">
+                        
+                        <h5 class="card-title">Jenkins</h5>
+                        
+                        <p class="card-text">
+                            Jenkins is a popular automation server used for building CI/CD pipelines, allowing for continuous integration and delivery of software.
+                        </p>
+                    
+                    </div>
+                
+                </div>
+            </div>
+            
+            <!-- Docker Card -->
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    
+                    <div class="card-body">
+
+                        <img src="media/logo-docker.png" class="mb-3" alt="Docker Logo" style="width: 200px; height: 150px;">
+                        
+                        <h5 class="card-title">Docker</h5>
+                        
+                        <p class="card-text">
+                            Docker enables developers to create, deploy, and run applications in containers, making environments consistent and deployment faster.
+                        </p>
+                    
+                    </div>
+                
+                </div>
+            </div>
+            
+            <!-- Kubernetes Card -->
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    
+                    <div class="card-body">
+
+                        <img src="media/logo-kubernatics.png" class="mb-3" alt="Kubernetes Logo" style="width: 160px; height: 150px;">
+                        
+                        <h5 class="card-title">Kubernetes</h5>
+                        
+                        <p class="card-text">
+                            Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications.
+                        </p>
+                    
+                    </div>
+                
+                </div>
+            </div>
+        
+        </div>
+
+        <!-- Row 3: AWS, Grafana, Ansible -->
+        <div class="row mt-4">
+        
+            <!-- AWS Card -->
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    
+                    <div class="card-body">
+
+                        <img src="media/logo-aws.png" class="mb-5 mt-4" alt="AWS Logo" style="width: 150px; height: 100px;">
+                        
+                        <h5 class="card-title">AWS</h5>
+                        
+                        <p class="card-text">
+                            AWS (Amazon Web Services) provides cloud infrastructure and services, enabling scalable and reliable environments for DevOps automation.
+                        </p>
+                    
+                    </div>
+                
+                </div>
+            </div>
+            
+            <!-- Grafana Card -->
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    
+                    <div class="card-body">
+
+                        <img src="media/logo-Grafana.png" class="mb-4 mt-2" alt="Grafana Logo" style="width: 200px; height: 125px;">
+                        
+                        <h5 class="card-title">Grafana</h5>
+                        
+                        <p class="card-text">
+                            Grafana is an open-source platform for monitoring and observability, allowing users to visualize and analyze metrics from various data sources.
+                        </p>
+                    
+                    </div>
+                
+                </div>
+            </div>
+            
+            <!-- Ansible Card -->
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    
+                    <div class="card-body">
+
+                        <img src="media/logo-ansible.png" class="mb-3" alt="Ansible Logo" style="width: 150px; height: 150px;">
+                        
+                        <h5 class="card-title">Ansible</h5>
+                        
+                        <p class="card-text">
+                            Ansible is an open-source automation tool that helps with configuration management, application deployment, and task automation.
+                        </p>
+                    
+                    </div>
+                
+                </div>
+            </div>
+        
+        </div>
+    
+    </div>
+</section>
+
+
+
+
+
+<!-- Hands-on Projects Section -->
+<section id="hands-on-projects" class="py-5">
+    <div class="container">
+        
+        <h2 class="text-center mb-5">Hands-on Projects</h2>
+        
+        <!-- List Group -->
+        <div class="list-group mt-5">
+            
+            <!-- CI/CD Pipeline Project -->
+            <div class="list-group-item list-group-item-action d-flex flex-column">
+                
+                <h5 class="mb-1">Automating a CI/CD Pipeline</h5>
+                
+                <p class="mb-1">
+                    Build and automate the continuous integration and delivery pipeline for a web application using Jenkins, Git, and GitHub.
+                </p>
+
+            </div>
+
+            <!-- Containerized Applications Project -->
+            <div class="list-group-item list-group-item-action d-flex flex-column">
+                
+                <h5 class="mb-1">Deploying Containerized Applications</h5>
+                
+                <p class="mb-1">
+                    Use Docker and Kubernetes to deploy and manage containerized applications in a cloud environment.
+                </p>
+            
+            </div>
+            
+            <!-- Monitoring and Logging Project -->
+            <div class="list-group-item list-group-item-action d-flex flex-column">
+            
+                <h5 class="mb-1">Setting Up Monitoring & Logging</h5>
+            
+                <p class="mb-1">
+                    Set up Prometheus and Grafana to monitor application health and ensure the system is running smoothly.
+                </p>
+            
+            </div>
+        
+        </div>
+    
+    </div>
+</section>
+<!-- Hands-on Projects ENDS -->
+
+
+
+
+
+<!-- Division Lead -->
+<section class="testimonials-section py-5 bg-light">
+    <div class="container">
+        
+        <h2 class="text-center mt-5 mb-5">Meet the Lead</h2>
+        
+        <div class="row">
+
+            <!-- Trainer 1 -->
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                <div class="card testimonial-card w-100">
+                    <div class="card-body text-center">
+                        
+                        <div class="testimonial-icon mb-3">
+                            <img src="media/user.png" class="rounded-circle" height="250px"> 
+                        </div>
+                        
+                        <h4 class="testimonial-name"> John Doe</h4>
+                        
+                        <h6 class="testimonial-name"> Trainer Beginner</h6>
+                        
+                        <p class="testimonial-quote">
+                            contract@mail.com <br>
+                            Department of CSE <br>
+                            Premier University Chittagong
+                        </p>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <!-- Division Lead -->
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                <div class="card testimonial-card w-100 bg-dark text-light">
+                    <div class="card-body text-center">
+                        
+                        <div class="testimonial-icon mb-3">
+                            <img src="media/user.png" class="rounded-circle" height="250px"> 
+                        </div>
+
+                        <h2 class="testimonial-name"> John Doe</h2>
+                        <h5 class="testimonial-name"> Division Lead</h5>
+                            
+                        <p class="testimonial-quote">
+                            contract@mail.com <br>
+                            Department of CSE <br>
+                            Premier University Chittagong
+                        </p>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+
+                
+            <!-- Trainer 2 -->
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                <div class="card testimonial-card w-100">
+                    <div class="card-body text-center">
+
+                        <div class="testimonial-icon mb-3">
+                            <img src="media/user.png" class="rounded-circle" height="250px"> 
+                        </div>
+
+                        <h4 class="testimonial-name"> John Doe</h4>
+                        
+                        <h6 class="testimonial-name"> Trainer Intermediate</h6>
+                        
+                        <p class="testimonial-quote">
+                            contract@mail.com <br>
+                            Department of CSE <br>
+                            Premier University Chittagong
+                        </p>
+        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- Division ENDS -->
+
+
+
+
+
+<!-- Why Join DevOps Division Section -->
+<section id="join-devops" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Why Join the DevOps Division?</h2>
+        
+        <!-- Tile Section -->
+        <div class="row justify-content-center">
+            <!-- Tile 1 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="tile p-4 text-center border rounded bg-light shadow">
+                    <div class="tile-icon mb-3">
+                        <i class="fas fa-laptop-code fa-3x text-dark"></i>
+                    </div>
+                    <h5 class="font-weight-bold">Gain Industry-Relevant Skills</h5>
+                    <p>
+                        Acquire in-demand skills that will boost your career prospects in the tech industry.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tile 2 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="tile p-4 text-center border rounded bg-light shadow">
+                    <div class="tile-icon mb-3">
+                        <i class="fas fa-briefcase fa-3x text-dark"></i>
+                    </div>
+                    <h5 class="font-weight-bold">Work on Real-World Projects</h5>
+                    <p>
+                        Experience hands-on projects that replicate real-world DevOps workflows.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tile 3 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="tile p-4 text-center border rounded bg-light shadow">
+                    <div class="tile-icon mb-3">
+                        <i class="fas fa-users fa-3x text-dark"></i>
+                    </div>
+                    <h5 class="font-weight-bold">Collaborate with Developers</h5>
+                    <p>
+                        Collaborate in a team-driven environment to grow your skills.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tile 4 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="tile p-4 text-center border rounded bg-light shadow">
+                    <div class="tile-icon mb-3">
+                        <i class="fas fa-user fa-3x text-dark"></i>
+                    </div>
+                    <h5 class="font-weight-bold">Build a Portfolio</h5>
+                    <p>
+                        Build a professional portfolio showcasing your DevOps expertise.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Join DevOps Division ENDS -->
+
+
+
+
+
+
+<!-- Jumbotron -->
+<div 
+    class="p-5 rounded-3" 
+    style="
+        background-image: url('media/devops-hero.png');
+        height: 400px;
+        background-size: cover;
+        background-position: center center;
+    "
+>
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="d-flex p-5 h-100">
+            <div class="text-white">
+                <h1 class="mb-3">Ready to Take the Next Step?</h1>
+                <h5 class="mb-3">
+                    Join us in exploring cutting-edge technologies, collaborating on real-world projects, 
+                    and building a future-ready skillset. The journey to innovation starts here.
+                </h5>
+                <a 
+                    class="btn btn-light btn-lg" 
+                    href="#!" 
+                    role="button" 
+                    data-mdb-ripple-init
+                >
+                    Join Us Now
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Jumbotron ENDS -->
+
+    
+    
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer Section -->
+<footer class="footer p-3 bg-dark text-light text-center">
+  <div class="row">
+              
+      <!-- Social Media -->     
+          <div class="social-icons">
+          
+              <a href="https://www.facebook.com/profile.php?id=100064087983552"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.facebook.com/groups/premier.university.computer.club"><i class="fab fa-facebook-f">  Group</i></a>
+              <a href="https://x.com/pucc_official"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/company/puc-cse-club"><i class="fab fa-linkedin-in"></i></a>
+              
+              <span style="font-size: 25px;">/</span>
+              
+              <a href="https://chat.whatsapp.com/JG8K32l5fiPCfpXBxZaQQ5"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://t.me/+564bGSrAnQU2Y2Nl"><i class="fab fa-telegram-plane"></i></a>
+              <a href="https://discord.com/channels/1311981092026318858/1311981093272158269"><i class="fab fa-discord"></i></a>
+              
+              <span style="font-size: 25px;">/</span>
+
+              <a href="https://www.youtube.com/channel/UC3bqOx1p94VLE18LmjYzOwA"><i class="fab fa-youtube"></i></a>
+              <a href="https://github.com/dev-pucc"><i class="fab fa-github"></i></a>
+              <a href="https://www.kaggle.com/puccofficial"><i class="fab fa-kaggle"></i></a>
+              <a href="https://codeforces.com/ratings/organization/10519"><i class="fas fa-code"></i></a>               
+              
+          </div>
+
+
+      <div class="row">
+          <p class="copyright">&copy; 2024 Premier University Computer Club. All Rights Reserved. (Developed by our members with &#9829)</p>
+      </div>
+      
+  </div>
+</footer>
+<!-- Footer Ends -->
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
