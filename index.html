@@ -9,14 +9,16 @@
     <title>Premier University Computer Club</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
     <link rel="stylesheet" href="landing_page/style.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 
 <body>
+
+
+
 
 
 <!-- Navbar Sections -->
@@ -46,11 +48,12 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <li><a class="dropdown-item" href="competitive_programming/index.html">Competitive Programming</a></li>
-                      <li><a class="dropdown-item" href="web_and_mobile_developement/index.html">Web and Mobile Development</a></li>
+                      <li><a class="dropdown-item" href="web_and_mobile_developement/index.html">Web Devs</a></li>
                       <li><a class="dropdown-item" href="devops/index.html">DevOps</a></li>
                       <li><a class="dropdown-item" href="linux_based_network/index.html">Linux Based Networking</a></li>
-                      <li><a class="dropdown-item" href="game_development/index.html">Game Development</a></li>
-                      <li><a class="dropdown-item" href="deep_learning_research/index.html">Deep Learning Research</a></li>
+                      <li><a class="dropdown-item" href="game_and_mobile_development/index.html">Game and Mobile Development</a></li>
+                      <li><a class="dropdown-item" href="deep_neural_research/index.html">Deep Neural Research</a></li>
+                      <li><a class="dropdown-item" href="iot_and_embedded_system_innovators/">IoT and Embedded Systems Innovators</a></li>
                     </ul>
                   </li>
 
@@ -119,15 +122,13 @@
 
 
 <!-- About Us Section -->
-<section class="container text-center" style="margin-top: 100px; margin-bottom: 100px;">
-
-        <h2>About Us</h2>
+<section class="container text-center" style="margin-top: 110px; margin-bottom: 100px;">
 
     <div class="row text-center">
 
         <!-- Who are we? -->
         <div class="col-md-4 mb-4">
-            <div class="card h-100 shadow-sm">
+            <div class="card h-100 shadow-lg">
                 <div class="card-body">
                     <h5 class="card-title">Who are we?</h5>
                     <p class="card-text">We are a passionate community of tech enthusiasts, and innovathors. Our club brings together students, professionals, and hobbyists from all walks of tech. </p>
@@ -138,7 +139,7 @@
 
         <!-- Our Mission -->
         <div class="col-md-4 mb-4">
-            <div class="card h-100 shadow-sm">
+            <div class="card h-100 shadow-lg">
                 <div class="card-body">
                     <h5 class="card-title">Our Mission</h5>
                     <p class="card-text">Our mission is to foster collaboration, encourage hands-on learning, and inspire the next generation of leaders in technology..</p>
@@ -148,7 +149,7 @@
 
         <!-- Our Values -->
         <div class="col-md-4 mb-4">
-            <div class="card h-100 shadow-sm">
+            <div class="card h-100 shadow-lg">
                 <div class="card-body">
                     <h5 class="card-title">Our Values</h5>
                     <p class="card-text">Integrity, excellence, and dedication to lifelong learning are the core values that drive our mission and vision.</p>
@@ -187,59 +188,54 @@
 
 <!-- Divisions Sections -->
 <div class="container mt-5">
- 
     <div class="row text-center" style="margin-top: 150px;">
- 
         <h2>Our Divisions</h2>
- 
+    </div>
+
+    <!-- First Row: 3 Centered Cards -->
+    <div class="row justify-content-center text-center align-items-stretch">
         <!-- Course 1: Competitive Programming -->
-        <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 mx-5 my-5" style="border: none;">
-                
+        <div class="col-md-3 d-flex mb-4">
+            <div class="card flex-fill mx-3 my-3" style="border: none;">
                 <img src="landing_page/media/cp.jpg" class="rounded-circle" alt="Competitive Programming">
-                
                 <div class="card-body">
                     <h5 class="card-title">Competitive Programming</h5>
                     <p class="card-text">Enhance problem-solving skills with advanced algorithm challenges.</p>
                     <a href="competitive_programming/index.html" class="btn btn-dark">Learn More</a>
                 </div>
-            
             </div>
         </div>
- 
+
         <!-- Course 2: Web and Mobile Development -->
-        <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 mx-5 my-5" style="border: none;">
-                
+        <div class="col-md-3 d-flex mb-4">
+            <div class="card flex-fill mx-3 my-3" style="border: none;">
                 <img src="landing_page/media/web.jpg" class="rounded-circle" alt="Web and Mobile Development">
-                
                 <div class="card-body">
                     <h5 class="card-title">Web and Mobile Development</h5>
                     <p class="card-text">Build modern web and mobile applications using the latest technologies.</p>
                     <a href="web_and_mobile_developement/index.html" class="btn btn-dark">Learn More</a>
                 </div>
-            
             </div>
         </div>
- 
+
         <!-- Course 3: DevOps -->
-        <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 mx-5 my-5" style="border: none;">
-                
+        <div class="col-md-3 d-flex mb-4">
+            <div class="card flex-fill mx-3 my-3" style="border: none;">
                 <img src="landing_page/media/devup.jpg" class="rounded-circle" alt="DevOps">
-                
                 <div class="card-body">
                     <h5 class="card-title">DevOps</h5>
                     <p class="card-text">Master continuous integration and deployment for efficient software delivery.</p>
                     <a href="devops/index.html" class="btn btn-dark">Learn More</a>
                 </div>
-            
             </div>
         </div>
- 
+    </div>
+
+    <!-- Second Row: 4 Cards -->
+    <div class="row text-center align-items-stretch">
         <!-- Course 4: Linux Based Network -->
-        <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 mx-5 my-5" style="border: none;">
+        <div class="col-md-3 d-flex mb-4">
+            <div class="card flex-fill mx-3 my-3" style="border: none;">
                 <img src="landing_page/media/network.jpg" class="rounded-circle" alt="Linux Based Network">
                 <div class="card-body">
                     <h5 class="card-title">Linux Based Network</h5>
@@ -248,10 +244,10 @@
                 </div>
             </div>
         </div>
- 
+
         <!-- Course 5: Game Development -->
-        <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 mx-5 my-5" style="border: none;">
+        <div class="col-md-3 d-flex mb-4">
+            <div class="card flex-fill mx-3 my-3" style="border: none;">
                 <img src="landing_page/media/game.jpg" class="rounded-circle" alt="Game Development">
                 <div class="card-body">
                     <h5 class="card-title">Game Development</h5>
@@ -260,10 +256,10 @@
                 </div>
             </div>
         </div>
- 
+
         <!-- Course 6: Deep Learning Research -->
-        <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 mx-5 my-5" style="border: none;">
+        <div class="col-md-3 d-flex mb-4">
+            <div class="card flex-fill mx-3 my-3" style="border: none;">
                 <img src="landing_page/media/deep.jpg" class="rounded-circle" alt="Deep Learning Research">
                 <div class="card-body">
                     <h5 class="card-title">Deep Learning Research</h5>
@@ -272,9 +268,25 @@
                 </div>
             </div>
         </div>
+
+        <!-- Course 7: IoT and Embedded System Innovators -->
+        <div class="col-md-3 d-flex mb-4">
+            <div class="card flex-fill mx-3 my-3" style="border: none;">
+                <img src="landing_page/media/deep.jpg" class="rounded-circle" alt="IoT and Embedded System Innovators">
+                <div class="card-body">
+                    <h5 class="card-title">IoT and Embedded System Innovators</h5>
+                    <p class="card-text">Dive into the world of IoT devices and innovate in embedded systems.</p>
+                    <a href="iot_and_embedded_systems/index.html" class="btn btn-dark">Learn More</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!-- Divisions Ends -->
+
+
+
+
 
 
 
@@ -341,7 +353,7 @@
                             <i class="fas fa-user-circle fa-3x"></i>
                         </div>
                         <h4 class="testimonial-name">120+ Members strong</h4>
-                        <p class="testimonial-quote">"Our club is home to over 100 enthusiastic members, ranging from beginners to experts, all united by a passion for technology and innovation."</p>
+                        <p class="testimonial-quote">"Our club is home to over 120 enthusiastic members, ranging from beginners to experts, all united by a passion for technology and innovation."</p>
                     </div>
                 </div>
             </div>
