@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Devs</title>
+    
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+</head>
+
+<body>
+
+
+<!-- Navbar Sections -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    
+    <div class="container-fluid custom-container py-2">
+
+        <!-- Club Name on the Left -->
+        <a class="navbar-brand" href="/">Premier University Computer Club</a>
+
+        <!-- Toggler for Mobile View -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Centered Links & Right Aligned Buttons -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+
+            <!-- Centered Links -->
+            <ul class="navbar-nav mx-auto">
+    
+                <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+    
+                <li class="nav-item dropdown">
+                    <a class="nav-link fw-bold dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Divisions
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="../competitive_programming/index.html">Competitive Programming</a></li>
+                      <li><a class="dropdown-item fw-bold" href="../web_and_mobile_developement/index.html">Web and Mobile Development</a></li>
+                      <li><a class="dropdown-item" href="../devops/index.html">DevOps</a></li>
+                      <li><a class="dropdown-item" href="../linux_based_network/index.html">Linux Based Networking</a></li>
+                      <li><a class="dropdown-item" href="../game_development/index.html">Game Development</a></li>
+                      <li><a class="dropdown-item" href="../deep_learning_research/index.html">Deep Learning Research</a></li>
+                    </ul>
+                  </li>
+    
+                <li class="nav-item"><a class="nav-link active" href="Additional_pages/about_us.html">Learn More</a></li>
+    
+                <li class="nav-item"><a class="nav-link active" href="Additional_pages/contact_us.html">Contact</a></li>
+    
+            </ul>
+
+            <!-- Login & Register on the Right -->
+            <div class="d-flex">
+                <a href="Additional_pages/join_us.html">
+                    <button type="button" class="btn me-2 btn-light"">Become a Member</button>
+                </a>
+                <button type="button" class="btn btn-light">Login</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+<!-- Navbar ENDS -->
+
+
+
+
+
+<!-- header Section -->
+<header class="bg-dark d-flex align-item-center text-white pt-3">
+    <div class="container-fluid">
+        <div class="row align-item-center m-5">
+            
+            <div class="col-md-5">
+                
+                <h1 class="header-title">
+                    Dicover 
+                    <br>
+                    What We Can 
+                    <br> 
+                    achive Thogether
+                </h1>
+                
+                <p>
+                    by combining creativity, innovation, and teamwork. Whether it's solving challenges, building impactful projects, or exploring new possibilities, collaboration empowers us to reach greater heights and make a meaningful difference.
+                </p>
+            
+                <div class="d-flex gap-3 mb-5">
+                    <a href="/additional_info_page/join_web_devs.html">
+                        <button type="button" class="btn btn-light">Join Our Team</button>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col-md-7">
+                    <img src="media/header.png" class="img-fluid" alt="">
+            </div>
+            
+        </div>    
+    </div>
+</header>
+<!-- Header ENDS -->
+
+
+
+
+
+
+
+<!-- Service Section -->
+<section id="Service" class="bg-light mt-4 pt-2">
+    <div class="container">
+ 
+        <h2 class="text-center mb-4 ">What we do</h2>
+
+        <div class="row text-center">
+
+            <div class="col-lg-4 col-sm-6 py-2">
+                <div class="card card-service bg-dark text-white py-4">
+                    
+                    <div class="card-body">
+                       
+                        <div class="bi bi-laptop display-5"></div>
+                       
+                        <h5 class="card-title fw-bold mt-3">Web Development</h5>
+                       
+                        <p class="card-text">
+                            Our team focuses on building user-friendly and visually appealing websites. Whether it’s creating event pages, interactive platforms, or managing the club's online presence, we ensure every project is responsive and functional.
+                            </p>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 py-2">
+                <!-- <div class="card card-service bg-dark text-white py-4">
+                        
+                    <div class="card-body">
+                            
+                        <div class="bi bi-phone display-5"></div>
+                            
+                        <h5 class="card-title fw-bold mt-3">App Development</h5>
+                            
+                        <p class="card-text">
+                            The Mobile Development team specializes in designing intuitive mobile applications for Android and iOS. We develop apps to enhance user engagement, support club activities, and showcase the potential of mobile technology.
+                        </p>
+
+                    </div>
+                    
+                </div> -->
+            </div>
+
+            <div class="col-lg-4 col-sm-6 py-2">
+                <div class="card card-service bg-dark text-white py-4">
+        
+                    <div class="card-body">
+                            
+                        <div class="bi bi-database display-5"></div>
+                        
+                        <h5 class="card-title fw-bold mt-3">Deployment</h5>
+                    
+                        <p class="card-text">
+                            Our Deployment team ensures smooth transitions from development to live environments. By managing server setups, security protocols, and performance optimization, we ensure that all our digital projects are accessible and reliable.
+                        </p>
+                        
+                    </div>
+                
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- Service ENDS -->
+
+
+
+
+
+<!-- Tech stack Section -->
+<div class="container my-5">
+    
+    <h2 class="text-center mb-5" style="margin-top: 100px;">
+            Tech Stack We Use
+    </h2>
+    
+    <div class="row g-4">
+            
+        <!-- Laravel Card -->
+        <div class="col-md-3">
+            <div class="card platform-card">
+            
+                <img src="media/logo-laravel.png" height="250px" class="card-img-top platform-img" alt="Laravel">
+                
+                <div class="card-body">
+                    <h5 class="platform-title">Laravel (PHP)</h5>
+                    <p class="platform-description">
+                        Laravel is a powerful PHP framework that simplifies the backend development of robust web applications.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+            
+        <!-- MERN Stack Card -->
+        <div class="col-md-3">
+            <div class="card platform-card">
+    
+                <img src="media/logo-mern.png" height="245px" class="" alt="MERN Stack" style="object-fit: contain;">
+    
+                <div class="card-body">
+                    <h5 class="platform-title">MERN Stack</h5>
+                    <p class="platform-description">
+                        The MERN stack is a JavaScript-based stack used to build web apps with MongoDB, Express.js, React.js, and Node.js.
+                    </p>
+                </div>
+        
+            </div>
+        </div>
+
+        <!-- Flask/Django Card -->
+        <div class="col-md-3">
+            <div class="card platform-card h-100">
+                
+                <img src="media/logo-Flask-Django.png" class="card-img-top platform-img" alt="Flask and Django" style="height: 240px; object-fit: contain;">
+            
+                <div class="card-body">
+                    <h5 class="platform-title">Flask & Django (Python)</h5>
+                    <p class="platform-description">
+                        Flask and Django are Python frameworks that enable rapid development of APIs and full-stack web applications.
+                    </p>
+                </div>
+            
+            </div>
+        </div>
+        
+        <!-- Flutter Card -->
+        <!-- <div class="col-md-3">
+            <div class="card platform-card h-100">
+
+                <img src="media/logo-flutter.png" class="card-img-top platform-img" alt="Flutter" height="240px" style="object-fit: contain;">
+
+                <div class="card-body">
+                    <h5 class="platform-title">Flutter (Dart)</h5>
+                    <p class="platform-description">
+                        Flutter is a modern framework for building beautiful, fast, and cross-platform mobile applications using a single codebase.
+                    </p>
+                </div>
+            
+            </div>
+        </div> -->
+    
+    </div>
+</div>
+<!-- Tech Stack ENDS -->    
+
+
+
+
+
+<!-- Portfolio Section -->
+<section id="Portfolio" class="py-5">
+    
+    <div class="container">
+                
+        <h2 class="title text-center">Latest Projects</h2>
+
+        <div class="row text-center p-3">
+            
+            <div class="col-lg-4 col-sm-6 my-2">
+    
+                <div class="card portfolio-card">
+                    
+                    <img class="img-fluid portfolio-img fixed-img-size" src="media/project1.jpeg" alt="">
+                    
+                    <div class="portfolo_decription">
+                        <h5>
+                            Premier University Computer Club 
+                            <br>
+                            Management System
+                        </h5>
+                        
+                        <p>
+                            A web-based solution for managing the activities, events, and member data of the Premier University Computer Club effectively.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-sm-6 my-2">
+                <div class="card portfolio-card">
+                            
+                    <img class="img-fluid portfolio-img fixed-img-size" src="media/project2.jpeg" alt="">
+            
+                    <div class="portfolo_decription">
+                        
+                        <h5>
+                            Competitive Programming Division
+                            <br>
+                            Management System
+                        </h5>
+
+                        <p>
+                            A platform to manage contests, track member performance, and facilitate training for the Competitive Programming Division.
+                        </p>
+                    </div>
+            
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-sm-6 my-2">
+                <div class="card portfolio-card">
+                    
+                    <img class="img-fluid portfolio-img fixed-img-size" src="media/project5.jpeg" alt="">
+                    
+                    <div class="portfolo_decription">
+                        
+                        <h5>
+                            Premier University Debating Society
+                            <br>
+                            Management System
+                        </h5>
+                
+                        <p>
+                            A system to organize debates, manage participants, and keep records of events and achievements for the society.
+                        </p>
+                            
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+        
+        <div class="row text-center p-3">
+
+            <div class="col-lg-4 col-sm-6 my-2">
+                <div class="card portfolio-card">
+            
+                    <img class="img-fluid portfolio-img fixed-img-size" src="media/project2.jpeg" alt="">
+            
+                    <div class="portfolo_decription">
+            
+                        <h5>
+                            Premier University Blood Donation Group
+                            <br>
+                            Management System
+                        </h5>
+
+                        <p>
+                            A digital platform for coordinating blood donation events, maintaining donor lists, and facilitating emergency donations.
+                        </p>
+                        
+                    </div>
+                
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-sm-6 my-2">
+                <div class="card portfolio-card">
+                        
+                    <img class="img-fluid portfolio-img fixed-img-size" src="media/project5.jpeg" alt="">
+                    
+                    <div class="portfolo_decription">
+                        
+                        <h5>
+                            IEEE Student Branch 
+                            <br>
+                            Management System
+                        </h5>
+                        
+                        <p>
+                            A management tool to streamline operations, events, and member engagement for the IEEE Student Branch.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-sm-6 my-2">
+                <div class="card portfolio-card">
+                    
+                    <img class="img-fluid portfolio-img fixed-img-size" src="media/project1.jpeg" alt="">
+                    
+                    <div class="portfolo_decription">
+                            
+                        <h5>
+                            Premier University Cultural Club 
+                            <br>
+                            Management System
+                        </h5>
+                            
+                        <p>
+                            A centralized system to manage cultural events, member participation, and overall club operations efficiently.
+                        </p>
+
+                    </div>
+                
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Portfolio ENDS -->
+
+
+
+
+
+<!-- Division Lead -->
+<section class="testimonials-section py-5 bg-light">
+    <div class="container">
+        
+        <h2 class="text-center mt-5 mb-5">Meet the Lead</h2>
+        
+        <!-- Row 1 -->
+        <div class="row">
+
+            <!-- Laravel Based Developemnt Lead -->
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                <div class="card testimonial-card w-100">
+                    <div class="card-body text-center">
+                        
+                        <div class="testimonial-icon mb-3">
+                            <img src="media/Shajibul.png" class="rounded-circle" height="250px"> 
+                        </div>
+                        
+                        <h4 class="testimonial-name">Shajibul Hasan Soaib</h4>
+                        
+                        <h6 class="testimonial-name"> Laravel Based Development Lead</h6>
+                        
+                        <p class="testimonial-quote">
+                            contract@mail.com <br>
+                            Department of CSE <br>
+                            Premier University Chittagong
+                        </p>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <!-- Division Lead -->
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                <!-- <div class="card testimonial-card w-100 bg-dark text-light">
+                    <div class="card-body text-center">
+                        
+                        <div class="testimonial-icon mb-3">
+                            <img src="media/user.png" class="rounded-circle" height="250px"> 
+                        </div>
+
+                        <h2 class="testimonial-name"> </h2>
+                        <h5 class="testimonial-name"> Division Lead</h5>
+                            
+                        <p class="testimonial-quote">
+                            contract@mail.com <br>
+                            Department of CSE <br>
+                            Premier University Chittagong
+                        </p>
+    
+                    </div>
+    
+                </div> -->
+    
+            </div>
+
+                
+            <!-- MERN Based Developement Lead -->
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                <div class="card testimonial-card w-100">
+                    <div class="card-body text-center">
+
+                        <div class="testimonial-icon mb-3">
+                            <img src="media/abdullah.png" class="rounded-circle" height="250px"> 
+                        </div>
+
+                        <h4 class="testimonial-name">Md Abdullah</h4>
+                        
+                        <h6 class="testimonial-name"> MERN Based Development Lead</h6>
+                        
+                        <p class="testimonial-quote">
+                            abdullahakib313@mail.com <br>
+                            Department of CSE <br>
+                            Premier University Chittagong
+                        </p>
+        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- Row 2 -->
+        <div class="row">
+
+            <!-- Django Based Developement Lead -->
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                <div class="card testimonial-card w-100">
+                    <div class="card-body text-center">
+                        
+                        <div class="testimonial-icon mb-3">
+                            <img src="media/rafi.png" class="rounded-circle" height="250px"> 
+                        </div>
+                        
+                        <h4 class="testimonial-name">Muhammad Rafi</h4>
+                        
+                        <h6 class="testimonial-name"> Django Based Development Lead</h6>
+                        
+                        <p class="testimonial-quote">
+                            contract@mail.com <br>
+                            Department of CSE <br>
+                            Premier University Chittagong
+                        </p>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flutter Based Developement Lead -->
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                <!-- <div class="card testimonial-card w-100"> -->
+                    <!-- <div class="card-body text-center">
+                        
+                        <div class="testimonial-icon mb-3">
+                            <img src="media/user.png" class="rounded-circle" height="250px"> 
+                        </div>
+
+                        <h2 class="testimonial-name"> John Doe</h2>
+                        <h5 class="testimonial-name"> Flutter Based Development Lead</h5>
+                            
+                        <p class="testimonial-quote">
+                            contract@mail.com <br>
+                            Department of CSE <br>
+                            Premier University Chittagong
+                        </p>
+    
+                    </div> -->
+    
+                <!-- </div> -->
+    
+            </div>
+
+                
+            <!-- Flask Based Developement Lead -->
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                <div class="card testimonial-card w-100">
+                    <div class="card-body text-center">
+
+                        <div class="testimonial-icon mb-3">
+                            <img src="media/Rayanul.png" class="rounded-circle" height="250px"> 
+                        </div>
+
+                        <h4 class="testimonial-name">Rayanul Kader Chowdhury</h4>
+                        
+                        <h6 class="testimonial-name"> Flask Based Development Lead</h6>
+                        
+                        <p class="testimonial-quote">
+                            contract@mail.com <br>
+                            Department of CSE <br>
+                            Premier University Chittagong
+                        </p>
+        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- Division ENDS -->
+
+
+
+
+
+<!-- About Section Starts -->
+<section id="about">
+    <div class="container">
+        <div class="row align-item-cente">
+                
+            <div class="col-md-6">
+                <img class="img-fluid" src="media/about.jpeg" alt="about-image">
+            </div>
+                
+            <div class="col-md-6 about-text">
+                <h2>
+                    We are a team
+                </h2>
+                
+                <p>
+                    of passionate developers dedicated to crafting innovative web and mobile solutions. With a love for technology and a commitment to excellence, we specialize in building user-friendly, scalable, and high-performance applications. Whether it's designing seamless websites, creating powerful backend systems, or developing cross-platform mobile apps, we aim to bring ideas to life with creativity and precision. Together, we strive to make a meaningful impact through our work in the ever-evolving world of technology.
+                </p>
+
+                <div class="row text-center my-3">
+                
+                    <div class="col-sm-4 my-2">            
+                        <div class="card bg-dark py-4 fw-bold text-white">
+                            <h1>50+</h1>
+                            <p>Members</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4 my-2">
+                        <div class="card bg-dark py-4 fw-bold text-white">
+                            <h1>13+</h1>
+                            <p>Trainer</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4 my-2">
+                        <div class="card bg-dark py-4 fw-bold text-white">
+                            <h1>100 +</h1>
+                            <p>Alumnies</p>
+                        </div>
+                    </div>
+    
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- About ENDS -->
+
+
+
+
+
+<!-- Jumbotron Section -->
+<div class="p-5 rounded-3" 
+    style="
+        background-color: black;
+        background-image: url('media/jumbotron-img.jpg');
+        height: 400px;
+        background-size:cover;
+        background-position: center center; 
+    ">
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="d-flex p-5 h-100">
+            
+            <div class="text-white">
+                
+                <h1 class="mb-3">
+                    Ready to create impactful web and mobile applications?
+                </h1>
+                
+                <h5 class="mb-3">
+                    Join our community of developers and start building today!
+                </h5>
+                
+                <a data-mdb-ripple-init class="btn btn-light btn-lg" href="/Additional_pages/join_us_web_and_mobile_developement.html" role="button">
+                    Join Our Team
+                </a>
+            
+            </div>
+        
+        </div>
+    </div>
+</div>
+<!-- Jumbotron ENDS -->
+
+
+
+
+
+<!-- Footer Section -->
+<footer class="footer p-3 bg-dark text-light text-center">
+    <div class="row">
+                
+        <!-- Social Media -->     
+            <div class="social-icons">
+            
+                <a href="https://www.facebook.com/profile.php?id=100064087983552"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/groups/premier.university.computer.club"><i class="fab fa-facebook-f">  Group</i></a>
+                <a href="https://x.com/pucc_official"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/puc-cse-club"><i class="fab fa-linkedin-in"></i></a>
+                
+                <span style="font-size: 25px;">/</span>
+                
+                <a href="https://chat.whatsapp.com/JG8K32l5fiPCfpXBxZaQQ5"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://t.me/+564bGSrAnQU2Y2Nl"><i class="fab fa-telegram-plane"></i></a>
+                <a href="https://discord.com/channels/1311981092026318858/1311981093272158269"><i class="fab fa-discord"></i></a>
+                
+                <span style="font-size: 25px;">/</span>
+
+                <a href="https://www.youtube.com/channel/UC3bqOx1p94VLE18LmjYzOwA"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/dev-pucc"><i class="fab fa-github"></i></a>
+                <a href="https://www.kaggle.com/puccofficial"><i class="fab fa-kaggle"></i></a>
+                <a href="https://codeforces.com/ratings/organization/10519"><i class="fas fa-code"></i></a>               
+                
+            </div>
+
+
+        <div class="row">
+            <p class="copyright">&copy; 2024 Premier University Computer Club. All Rights Reserved. (Developed by our members with &#9829)</p>
+        </div>
+        
+    </div>
+</footer>
+<!-- Footer Ends -->
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>

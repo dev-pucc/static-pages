@@ -1,0 +1,159 @@
+/* Responsive Section*/
+@media (min-width: 992px) {
+    .custom-container {
+        max-width: 85%;
+        margin: 0 auto;
+    }
+}
+/* Responsive ENDS */
+
+
+
+
+
+/* Hero Section */
+.hero-section {
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.hero-text {
+    margin: 0;
+    padding: 15px;
+}
+/* Hero ENDS */
+
+
+
+
+
+/* Carousel Section */
+.carousel-image {
+    width: 100%; 
+    height: 700px; /* Fixed height */
+    object-fit: cover;
+}
+/* Carousel ENDS */
+
+
+/* Member Number */
+.testimonials-section {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.testimonial-card {
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.testimonial-icon {
+    color: #333; /* Icon color */
+}
+
+.testimonial-quote {
+    font-style: italic;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.testimonial-name {
+    margin-top: auto; /* Push the name to the bottom */
+    font-weight: bold;
+    color: #333;
+}
+/* Member Number ENDS */
+
+
+
+
+
+/*Location Section */
+.location-section {
+    background-color: #f8f9fa; /* Light grey background */
+}
+
+.location-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.location-icon {
+    color: #333; /* Icon color */
+}
+
+.location-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.location-address {
+    font-size: 16px;
+    color: #555;
+}
+/* Location ENDS */
+
+
+
+
+
+/* Footer */
+.social-links a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #007bff;
+    transition: color 0.3s;
+  }
+  .social-links a:hover {
+    color: #0056b3;
+  }
+
+  .footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 40px 0;
+  }
+  .footer a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .footer a:hover {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  .social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: color 0.3s;
+  }
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  .footer .copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  /* Footer ENDS */
