@@ -164,6 +164,38 @@ body {
   border-color: #4f4f4f;
 }
 
+/* jumbotron section */
+.vscode-jumbotron {
+  background: linear-gradient(
+    135deg,
+    rgba(30, 30, 46, 0.8) 0%,
+    rgba(30, 30, 46, 0.9) 100%
+  );
+  border: 1px solid #2c2c3c;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+} 
+
+.vscode-jumbotron:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.vscode-btn {
+  background-color: #0e639c;
+  color: #ffffff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.vscode-btn:hover {
+  background-color: #1f6fd0;
+}
+.vscode-text-accent {
+  color: #9cdcfe;
+}
+.vscode-code-font {
+  font-family: "Cascadia Code", "Fira Code", monospace;
+}
+
 /* Footer */
 .vscode-footer {
   background-color: var(--panel-dark);
