@@ -1,0 +1,89 @@
+.header-title{
+    font-size: 45px;
+    font-weight: bold;
+}
+.card{
+    border: none;
+}
+.card:hover{
+    transform: scale(1.06);
+    transition: all 0.3s ease-in-out;
+}
+.card-service{
+    background:black;
+    color:#fff;
+    cursor:pointer
+}
+
+.card-service:hover{
+    background-color: #dc3545 !important ; 
+}
+.about-text{
+    margin-top: 60px;
+}
+.portfolio-card{
+    position:relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.portfolio-img{
+    /*  */
+    filter:brightness(0.9);
+}
+.portfolo_decription{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 3%;
+    text-align: center;
+}
+.fixed-img-size {
+    width: 100%; /* Makes the image responsive */
+    height: 340px;
+    object-fit: cover; 
+}
+
+
+
+/* Footer */
+.social-links a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #007bff;
+    transition: color 0.3s;
+  }
+  .social-links a:hover {
+    color: #0056b3;
+  }
+
+  .footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 40px 0;
+  }
+  .footer a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .footer a:hover {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  .social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: color 0.3s;
+  }
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  .footer .copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  /* Footer ENDS */

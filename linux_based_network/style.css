@@ -1,0 +1,15 @@
+.custom-bg-card {
+    background-image: url('images/network.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 350px;
+    margin-top: 20px;
+}
+
+.card-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
