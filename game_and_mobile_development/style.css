@@ -518,6 +518,20 @@ body {
     }
 
 }
+@media (max-width: 375px) {
+    .text-area-hero{
+        height: 90vh;
+    }
+    .button-area{
+        margin-top: -3rem;
+        
+    }
+    .paragraph-area{
+        margin-top:-2rem
+    }
+
+
+}
 
 
 
