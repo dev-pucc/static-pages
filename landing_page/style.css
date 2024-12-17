@@ -52,6 +52,17 @@ body {
   position: relative;
   z-index: 9999; /* Ensure the button is always above other elements */
 }
+/* This will apply the hover effect for the dropdown */
+.group:hover #dropdown-menu {
+  display: block;
+  transform: translateY(8%); /* Reset translation to show it */
+}
+
+.group:hover #arrow-icon {
+  transform: rotate(180deg); /* Rotate the arrow on hover */
+}
+
+
 
 /* Ensure smooth transitions */
 .carousel-item {
