@@ -1,518 +1,863 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/landing_page/media/logo/logo_main.png" type="image/x-icon">
 
     <title>Premier University Computer Club</title>
-    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <link rel="stylesheet" href="landing_page/Components/Cards/c_r.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="landing_page/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/daisyui@2.51.1/dist/full.js"></script>    
-
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
 <body>
 
-
-
- <header class="globalheader nav-down mx-auto">
-  <div class="navigation items-center">
-    <div class="nav-wrapper flex justify-between">
-      <!-- Logo -->
-      <div class="logo mx-auto">
-        <a href="#" class="main-txt text-3xl  drop-shadow-[0_0_px_rgba(0,255,255,0.8)] font-bold">
-          PUC Computer Club
-        </a>
-      </div>
-
-      <!-- Navigation Menu -->
-      <div class="menu-container rounded-2xl hidden md:flex">
-        <nav class="menu-items">
-          <ul class="flex space-x-6">
-            <li><a href="/" class="menu-item">Home</a></li>
-
-            <!-- Dropdown for Divisions -->
-            <li class="relative group">
-                <a href="#approach" class="menu-item flex items-center justify-between">
-                  Divisions
-                  <svg class="w-4 h-4 ml-2 transform inline-block transition-transform duration-300 group-hover:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                  </svg>
-                </a>
-                <ul class="dropdown-menu absolute left-0 hidden mt-2 space-y-2  shadow-lg rounded-2xl p-2 group-hover:block">
-                  <li><a class="dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-100" href="competitive_programming/index.html">Competitive Programming</a></li>
-                  <li><a class="dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-100" href="web_devs/index.html">Web Devs</a></li>
-                  <li><a class="dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-100" href="devops/index.html">DevOps</a></li>
-                  <li><a class="dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-100" href="linux_based_network/index.html">Linux Based Networking</a></li>
-                  <li><a class="dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-100" href="game_and_mobile_development/index.html">Game and Mobile Development</a></li>
-                  <li><a class="dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-100" href="deep_neural_research/index.html">Deep Neural Research</a></li>
-                  <li><a class="dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-100" href="iot_and_embedded_system_innovators/index.html">IoT and Embedded Systems Innovators</a></li>
-                </ul>
-              </li>
-              
-
-            <li><a href="#faq" class="menu-item">Learn More</a></li>
-            <li><a href="#faq" class="menu-item">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="w-3/12 flex ml-auto hidden md:flex gap-2">
-        <div class=" w-6/12">
-          <a href="#" class="cta-header">Become a member</a>
-        </div>
-        <div class=" w-5/12 ">
-          <a href="#" class="cta-header">Login</a>
-        </div>
-      </div>
-
-      <!-- Mobile Menu Toggle (Hamburger) -->
-      <div class="mobile-nav md:hidden">
-        <button id="menu-toggle" class="menu-toggle">
-          <div class="menu-bar bg-black h-1 w-6 mb-1"></div>
-          <div class="menu-bar bg-black h-1 w-6 mb-1"></div>
-          <div class="menu-bar bg-black h-1 w-6 mb-1"></div>
-        </button>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- Mobile Menu (Hidden by default) -->
-<div id="mobile-menu" class=" md:hidden hidden bg-[#ac23c7e3] text-white absolute left-1/2 transform -translate-x-1/2 rounded-2xl top-16 w-10/12  z-50 p-4">
-  <ul class="space-y-4 text-center">
-    <li><a href="/" class="text-white">Home</a></li>
-    <li class="relative group">
-        <a href="#approach" class="menu-item">Divisions</a>
-        <ul class="dropdown-menu absolute  hidden mt-2 space-y-2 bg-white shadow-lg  mx-2 p-2 group-hover:block">
-          <li><a class="dropdown-item block px-4 py-2 text-white font-bold " href="competitive_programming/index.html">Competitive Programming</a></li>
-          <li><a class="dropdown-item block px-4 py-2 text-white font-bold " href="web_devs/index.html">Web Devs</a></li>
-          <li><a class="dropdown-item block px-4 py-2 text-white font-bold " href="devops/index.html">DevOps</a></li>
-          <li><a class="dropdown-item block px-4 py-2 text-white font-bold " href="linux_based_network/index.html">Linux Based Networking</a></li>
-          <li><a class="dropdown-item block px-4 py-2 text-white font-bold " href="game_and_mobile_development/index.html">Game and Mobile Development</a></li>
-          <li><a class="dropdown-item block px-4 py-2 text-white font-bold " href="deep_neural_research/index.html">Deep Neural Research</a></li>
-          <li><a class="dropdown-item block px-4 py-2 text-white font-bold " href="iot_and_embedded_system_innovators/index.html">IoT and Embedded Systems Innovators</a></li>
-        </ul>
-      </li>    <li><a href="#faq" class="text-white">Learn More</a></li>
-    <li><a href="#faq" class="text-white">Contact</a></li>
-
-    <!-- Mobile Buttons -->
-    <li>
-      <a href="#" class="btn btn-primary w-5/12 text-center">Become a member</a>
-    </li>
-    <li>
-      <a href="#" class="btn btn-secondary w-5/12 text-center">Login</a>
-    </li>
-  </ul>
-</div>
-
-
-      
-
-
-
-
-
-<!-- Hero Section -->
-<section class=" mb-4 justify-content-center">
-    
-    <div class="hero-section bg-dark">
-    
-        <!-- Image Content -->
-        <div class="col-md-4 text-center">
-            <img src="landing_page/media/boy.png" alt="Kid with a Laptop" class="hero-img">
-        </div>
-    
-        <!-- Text Content -->
-        <div class="hero-text col-md-6">
-    
-            <h1>Welcome to 
-                <br>
-                Premier University 
-                <br>
-                Computer Club
-            </h1>
-    
-            <p>Join us to collaborate on tech projects, enhance your coding skills, 
-                and explore the latest in technology 
-                <br>
-                with like-minded peers!</p>
-    
-                <a href="additional_info_page/join_us.html">
-                    <button class="btn btn-light mt-3">Learn More</button>
-                </a>
-    
-            </div>
-    
-        </div>
-
-</section>
-
-
-
-
-
-<!-- About Us Section -->
-<section class="container text-center" style="margin-top: 110px; margin-bottom: 100px;">
-
-    <div class="row text-center">
-
-        <!-- Who are we? -->
-        <div class="col-md-4 mb-4">
-            <div class="card h-100 shadow-lg">
-                <div class="card-body">
-                    <h5 class="card-title">Who are we?</h5>
-                    <p class="card-text">We are a passionate community of tech enthusiasts, and innovathors. Our club brings together students, professionals, and hobbyists from all walks of tech. </p>
+    <!-- Nav section -->
+    <div>
+        <div class="border-b-2 border-gray position-fixed text-center z-10 white">
+            <nav
+                class="navbar px-4 items-center sm:px-6 pt-2 lg:px-8 w-full sm:w-10/12 mx-auto">
+                <div class="navbar-start w-6/12 sm:w-2/12 items-center flex">
+                    <!-- Logo -->
+                    <a href="/">
+                        <img src="/landing_page/media/logo/logo_main.png"
+                            class="w-full sm:w-9/12 max-w-full border-none active" alt="Logo">
+                    </a>
                 </div>
-            </div>
+
+                <!-- Navbar Center (Links) -->
+                <div class="w-6/12 mx-auto justify-center hidden sm:flex">
+                    <ul class="menu menu-horizontal w-10/12 flex justify-around">
+                        <li><a href="/" class="font-medium text-[20px] text-black">Home</a></li>
+                        <li><a href="#about_us" class="font-medium text-[20px] text-black">About</a></li>
+                        <li><a href="#events" class="font-medium text-[20px] text-black">Events</a></li>
+
+                        <!-- Dropdown Menu for Large Screens -->
+                        <li class="group relative">
+                            <a href="#" id="divisions-toggle"
+                                class="font-medium active:bg-[none] text-[20px] text-black flex items-center">
+                                Divisions
+                                <svg class="w-4 h-4 ml-2 transform inline-block transition-transform duration-300"
+                                    id="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+                            <ul id="dropdown-menu"
+                                class="absolute left-0 hidden z-10 bg-white w-[20rem] duration-300 translate-y-10 text-xl p-2 shadow-xl rounded-lg mt-2">
+                                <li><a href="/competitive-programming" class="block p-2 text-black">Competitive
+                                        Programming</a></li>
+                                <li><a href="/web-devs" class="block p-2 text-black">Web Development</a></li>
+                                <li><a href="/devops" class="block p-2 text-black">DevOps</a></li>
+                                <li><a href="/linux-networking" class="block p-2 text-black">Linux Networking</a></li>
+                                <li><a href="/game-dev" class="block p-2 text-black">Game Development</a></li>
+                                <li><a href="/deep-neural-research" class="block p-2 text-black">Deep Neural
+                                        Research</a></li>
+                                <li><a href="/iot-embedded" class="block p-2 text-black">IoT and Embedded Systems</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="/contact" class="font-medium text-[20px] text-black">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Hamburger Icon for Mobile -->
+                <div class="navbar-toggle lg:hidden z-100">
+                    <button class="px-3 py-1 rounded-lg bg-[#00BDC5] border-none" id="mobile-menu-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="h-8 w-8 text-black">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Navbar End (Buttons or other elements) -->
+                <div class="w-4/12 hidden lg:block gap-2 flex ">
+                    <div
+                        class="btn border-[#00BDC5] hover:border-[black] text-[#00BDC5] border-1 px-3 text-lg font-bold">
+                        Become a member</div>
+                    <div
+                        class="btn border-[#00BDC5] hover:border-[black] text-[#00BDC5] border-1 px-4 text-lg font-bold">
+                        Login</div>
+                </div>
+            </nav>
         </div>
 
-
-        <!-- Our Mission -->
-        <div class="col-md-4 mb-4">
-            <div class="card h-100 shadow-lg">
-                <div class="card-body">
-                    <h5 class="card-title">Our Mission</h5>
-                    <p class="card-text">Our mission is to foster collaboration, encourage hands-on learning, and inspire the next generation of leaders in technology..</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Our Values -->
-        <div class="col-md-4 mb-4">
-            <div class="card h-100 shadow-lg">
-                <div class="card-body">
-                    <h5 class="card-title">Our Values</h5>
-                    <p class="card-text">Integrity, excellence, and dedication to lifelong learning are the core values that drive our mission and vision.</p>
-                </div>
-            </div>
-        </div>
-    
-    </div>
-
-</section>
-<!-- About Us Ends -->
-
-
-
-
-
-<!-- Message Sections -->
-<div class="container text-center mb-5">
-
-    <h3>Ready to take your tech skills to the next level?</h3>
-   
-    <p>
-        Join us today and become part of our growing community. Let’s build something amazing together!
-    </p>
-
-    <a href="Additional_pages/join_us.html">
-        <button class="btn btn-dark" >Get Involved</button>
-    </a>
-
-</div>
-<!-- Message Ends -->
-
-
-
-
-
-<!-- Divisions Sections -->
-<div class="container mt-5">
-    <div class="row text-center" style="margin-top: 150px;">
-        <h2>Our Divisions</h2>
-    </div>
-
-    <!-- First Row: 3 Centered Cards -->
-    <div class="row justify-content-center text-center align-items-stretch">
-        <!-- Course 1: Competitive Programming -->
-        <div class="col-md-3 d-flex mb-4">
-            <div class="card flex-fill mx-3 my-3" style="border: none;">
-                <img src="landing_page/media/cp.jpg" class="rounded-circle" alt="Competitive Programming">
-                <div class="card-body">
-                    <h5 class="card-title">Competitive Programming</h5>
-                    <p class="card-text">Enhance problem-solving skills with advanced algorithm challenges.</p>
-                    <a href="competitive_programming/index.html" class="btn btn-dark">Learn More</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Course 2: Web and Mobile Development -->
-        <div class="col-md-3 d-flex mb-4">
-            <div class="card flex-fill mx-3 my-3" style="border: none;">
-                <img src="landing_page/media/web.jpg" class="rounded-circle" alt="Web and Mobile Development">
-                <div class="card-body">
-                    <h5 class="card-title">Web Devs</h5>
-                    <p class="card-text">Build modern web and mobile applications using the latest technologies.</p>
-                    <a href="web_devs/index.html" class="btn btn-dark">Learn More</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Course 3: DevOps -->
-        <div class="col-md-3 d-flex mb-4">
-            <div class="card flex-fill mx-3 my-3" style="border: none;">
-                <img src="landing_page/media/devup.jpg" class="rounded-circle" alt="DevOps">
-                <div class="card-body">
-                    <h5 class="card-title">DevOps</h5>
-                    <p class="card-text">Master continuous integration and deployment for efficient software delivery.</p>
-                    <a href="devops/index.html" class="btn btn-dark">Learn More</a>
-                </div>
-            </div>
+        <!-- Mobile Dropdown Menu (Positioned Absolute to overlay) -->
+        <div class="lg:hidden fixed top-16 left-0 w-full bg-white z-20" id="mobile-menu" style="display: none;">
+            <ul class="menu menu-compact w-full p-4 space-y-4">
+                <li><a href="/" class="font-medium text-lg text-black">Home</a></li>
+                <li><a href="/about" class="font-medium text-lg text-black">About</a></li>
+                <li><a href="/services" class="font-medium text-lg text-black">Services</a></li>
+                <!-- Mobile Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="font-medium text-lg text-black">Divisions
+                        <svg class="w-4 h-4 ml-2 transform inline-block transition-transform duration-300 group-hover:rotate-180"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </a>
+                    <ul class="dropdown-content bg-white p-2 translate-x-20 shadow-xl z-10 rounded-lg mt-2">
+                        <li><a href="/competitive-programming" class="block p-2 text-black">Competitive Programming</a>
+                        </li>
+                        <li><a href="/web-devs" class="block p-2 text-black">Web Development</a></li>
+                        <li><a href="/devops" class="block p-2 text-black">DevOps</a></li>
+                        <li><a href="/linux-networking" class="block p-2 text-black">Linux Networking</a></li>
+                        <li><a href="/game-dev" class="block p-2 text-black">Game Development</a></li>
+                        <li><a href="/deep-neural-research" class="block p-2 text-black">Deep Neural Research</a></li>
+                        <li><a href="/iot-embedded" class="block p-2 text-black">IoT and Embedded Systems</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contact" class="font-medium text-lg text-black">Contact</a></li>
+                <li><a href="/login" class="font-medium text-lg text-black">Login</a></li>
+            </ul>
         </div>
     </div>
 
-    <!-- Second Row: 4 Cards -->
-    <div class="row text-center align-items-stretch">
-        <!-- Course 4: Linux Based Network -->
-        <div class="col-md-3 d-flex mb-4">
-            <div class="card flex-fill mx-3 my-3" style="border: none;">
-                <img src="landing_page/media/network.jpg" class="rounded-circle" alt="Linux Based Network">
-                <div class="card-body">
-                    <h5 class="card-title">Linux Based Network</h5>
-                    <p class="card-text">Learn to manage and secure Linux systems for networking solutions.</p>
-                    <a href="linux_based_network/index.html" class="btn btn-dark">Learn More</a>
+
+    <!-- hero carousel starts here -->
+
+
+    <div class="carousel-container w-[full] relative text-center pt-20">
+        <!-- Carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide m-4 w-[98%] mx-auto" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            </ol>
+
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active rounded-2xl" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.562)), 
+                        url('/landing_page/media/sliders/img_1.jpg'); 
+                        background-size: cover; 
+                        background-position: center; 
+                        background-repeat: no-repeat; 
+                        height: 800px;">
+                </div>
+                <div class="carousel-item rounded-2xl" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.562)), 
+                        url('/landing_page/media/sliders/img_2.jpg'); 
+                        background-size: cover; 
+                        background-position: center; 
+                        background-repeat: no-repeat; 
+                        height: 800px;">
+                </div>
+                <div class="carousel-item rounded-2xl" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.562)), 
+                        url('/landing_page/media/sliders/img_3.jpg'); 
+                        background-size: cover; 
+                        background-position: center; 
+                        background-repeat: no-repeat; 
+                        height: 800px;">
                 </div>
             </div>
+
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
         </div>
 
-        <!-- Course 5: Game Development -->
-        <div class="col-md-3 d-flex mb-4">
-            <div class="card flex-fill mx-3 my-3" style="border: none;">
-                <img src="landing_page/media/game.jpg" class="rounded-circle" alt="Game Development">
-                <div class="card-body">
-                    <h5 class="card-title">Game and Mobile Development</h5>
-                    <p class="card-text">Create immersive gaming experiences using Unity and Unreal Engine.</p>
-                    <a href="game_and_mobile_development/index.html" class="btn btn-dark">Learn More</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Course 6: Deep Learning Research -->
-        <div class="col-md-3 d-flex mb-4">
-            <div class="card flex-fill mx-3 my-3" style="border: none;">
-                <img src="landing_page/media/deep.jpg" class="rounded-circle" alt="Deep Learning Research">
-                <div class="card-body">
-                    <h5 class="card-title">Deep Neural Research</h5>
-                    <p class="card-text">Explore AI models and neural networks to drive research advancements.</p>
-                    <a href="deep_neural_research/index.html" class="btn btn-dark">Learn More</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Course 7: IoT and Embedded System Innovators -->
-        <div class="col-md-3 d-flex mb-4">
-            <div class="card flex-fill mx-3 my-3" style="border: none;">
-                <img src="landing_page/media/IoT.jpeg" class="rounded-circle" width="auto" height="280" alt="IoT and Embedded System Innovators">
-                <div class="card-body">
-                    <h5 class="card-title">IoT and Embedded System Innovators</h5>
-                    <p class="card-text">Dive into the world of IoT devices and innovate in embedded systems.</p>
-                    <a href="iot_and_embedded_systems/index.html" class="btn btn-dark">Learn More</a>
-                </div>
-            </div>
+        <!-- Centered Text Content (Overlay) -->
+        <div
+            class="carousel-overlay text-center text-white px-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <h1 class="text-6xl font-bold carousel-txt leading-snug my-5 ">Welcome to <br>Premier University Computer
+                Club</h1>
+            <button
+                class="btn btn-outline hover:text-[#00BDC5] bg-transparent font-bold animate__animated animate__zoomIn border-[#00BDC5] hover:border-[white] text-3xl w-3/12 text-[white]">Join
+                Us</button>
         </div>
     </div>
-</div>
-<!-- Divisions Ends -->
 
 
 
 
 
 
+    <!-- Message Sections -->
+    <div class="container text-center my-5">
 
-<!-- Carousel Section -->
-<div class="container my-5 text-center">
-    <h2>Upcoming Events and Workshops</h2>
+        <h3 class="text-4xl font-bold">Ready to take your tech skills to the next level?</h3>
 
-    <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
+        <p class="text-lg my-4 text-gray-600">
+            Join us today and become part of our growing community. Let’s build something amazing together!
+        </p>
 
-        <div class="carousel-inner">
+        <span
+                            class="btn mx-auto border-[#00BDC5] hover:border-[black] text-[#00BDC5] border-1  text-xl font-bold">
+                            <a href="#wings"> Let's Explore</a></span>
 
-            <!-- First Slide -->
-            <div class="carousel-item active">
-                <img src="landing_page/carousel_landing_page/caro_1.jpg" class="d-block w-100 img-fluid" alt="DevUp Event">
-            </div>
-            
-            <!-- Second Slide -->
-            <div class="carousel-item">
-                <img src="landing_page/carousel_landing_page/caro_2.jpg" class="d-block w-100 img-fluid" alt="Web Workshop">
-            </div>
-            
-            <!-- Third Slide -->
-            <div class="carousel-item">
-                <img src="landing_page/carousel_landing_page/caro_3.jpg" class="d-block w-100 img-fluid" alt="Networking Event">
-            </div>
-            
-        </div>
-
-        <!-- Previous Button -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <!-- Next Button -->
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
-</div>
+    <!-- Message Ends -->
 
 
 
 
-<!-- Member Number Section -->
-<section class="testimonials-section py-5 bg-light" style="margin-top: 100px;">
 
-    <div class="container" >
+    <!-- About Us Section -->
+    <div class="container text-center" id="about_us" style="margin-top: 110px; margin-bottom: 100px;">
+        <h1 class="text-5xl font-bold mt-28 mb-4">About Us</h1>
+        <hr class="mx-auto mb-12  h-1 w-24 border-0 bg-gradient-to-r from-[orange] to-[#0ef3ff]">
 
-        <h2 class="text-center mb-5">We are,</h2>
+        <div class="row text-center justify-center">
 
-        <div class="row">
-
-            <!-- Members Number -->
-            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
-                <div class="card testimonial-card w-100">
-                    <div class="card-body text-center">
-                        <div class="testimonial-icon mb-3">
-                            <i class="fas fa-user-circle fa-3x"></i>
+            <!-- Who are we? -->
+            <div class="col-md-4 col-sm-2 mb-4" data-aos="fade-right">
+                <div class="card min-h-[19rem] mx-auto w-10/12 shadow-lg border-none rounded-2xl">
+                    <div class="card-body">
+                        <h1 class="pt-3 pb-3 text-3xl font-bold">Who are we?</h1>
+                        <p class="card-text px-2">We are a passionate community of tech enthusiasts, and innovators. Our
+                            club brings together students, professionals, and hobbyists from all walks of tech.</p>
+                            <span
+                            class="btn mx-auto border-[#00BDC5] hover:border-[black] text-[#00BDC5] border-1  text-xl font-bold">
+                            Learn More</span>
                         </div>
-                        <h4 class="testimonial-name">120+ Members strong</h4>
-                        <p class="testimonial-quote">"Our club is home to over 120 enthusiastic members, ranging from beginners to experts, all united by a passion for technology and innovation."</p>
+                </div>
+            </div>
+        
+            <!-- Our Mission -->
+            <div class="col-md-4 col-sm-2 mb-4" data-aos="fade-up">
+                <div class="card min-h-[19rem] w-10/12 mx-auto shadow-lg border-none rounded-2xl">
+                    <div class="card-body">
+                        <h5 class="pt-3 pb-3 text-3xl font-bold">Our Mission</h5>
+                        <p class="card-text px-2">Our mission is to create a vibrant community where students collaborate, share knowledge,
+                             and work together on innovative technology projects.</p>
+                            <span
+                            class="btn  mx-auto border-[#00BDC5] hover:border-[black] text-[#00BDC5] border-1  text-xl font-bold">
+                            Learn More</span>
                     </div>
                 </div>
             </div>
+        
+            <!-- Our Values -->
+            <div class="col-md-4 col-sm-2 mb-4" data-aos="fade-left">
+                <div class="card min-h-[19srem] w-10/12 mx-auto shadow-lg border-none rounded-2xl">
+                    <div class="card-body">
+                        <h5 class="pt-3 pb-3 text-3xl font-bold">Our Values</h5>
+                        <p class="card-text px-2">Integrity, excellence, and dedication to lifelong learning are the core
+                            values that drive our mission and vision. Encouraging our members to embrace continuous growth and stay curious, adaptive, and forward-thinking in the ever-evolving world of technology.
 
-            <!-- Trainer Number -->
-            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
-                <div class="card testimonial-card w-100">
-                    <div class="card-body text-center">
-                        <div class="testimonial-icon mb-3">
-                            <i class="fas fa-user-circle fa-3x"></i>
-                        </div>
-                        <h4 class="testimonial-name">20 + Trainers</h4>
-                        <p class="testimonial-quote">"Our club is guided by dedicated trainers with expertise across domains, from competitive programming to deep learning. Their mentorship transforms beginners into skilled professionals, fostering innovation and practical knowledge."</p>
+
+
+                        </p>
+                            <span
+                            class="btn  mx-auto border-[#00BDC5] hover:border-[black] text-[#00BDC5] border-1  text-xl font-bold">
+                            Learn More</span>
                     </div>
                 </div>
             </div>
+        
+        </div>
+        
 
-            <!-- Alumni Number -->
-            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
-                <div class="card testimonial-card w-100">
-                    <div class="card-body text-center">
-                        <div class="testimonial-icon mb-3">
-                            <i class="fas fa-user-circle fa-3x"></i>
+    </div>
+    <!-- About Us Ends -->
+
+
+
+
+
+
+
+
+
+
+    <!-- Wings Section -->
+    
+    <!-- <div class="py-4 text-center my-5 swiper-container">
+        <h1 class="text-5xl font-bold mt-28 mb-4">Our Wings</h1>
+        <hr class="mx-auto mb-12  h-1 w-24 border-0 bg-gradient-to-r from-[orange] to-[#0ef3ff]">
+        <div class="swiper mySwiper rounded-3xl w-full ">
+            <div class="swiper-wrapper ">
+                <div class="swiper-slide">
+                    <div class="w-8/12 flex  h-full mx-auto my-auto items-center">
+                        <div class="card flex-row mx-3 my-3 rounded-tl-2xl rounded-bl-2xl rounded-tr-full rounded-br-full"
+                            style="border: none;">
+                            <div class="card-body my-auto ">
+                                <h5 class="text-4xl font-bold">Competitive Programming</h5>
+                                <p class="card-text my-2 p-4">Sharpen your problem-solving skills.
+                                    Master algorithms and data structures.
+                                    Join the challenge and become a coding champion!</p>
+                                <button
+                                    class="btn btn-outline hover:border-[#00BDC5] hover:text-[#00BDC5] btn-secondary bg-transparent font-medium border-[#FF9072]  text-3xl w-6/12 text-[#FF9072]"><a href="/web_devs/index.html">Learn More</a></button>
+                            </div>
+                            <img src="landing_page/media/cp.jpg" class="rounded-circle w-6/12 -mr-20"
+                                alt="Competitive Programming">
+
                         </div>
-                        <h4 class="testimonial-name">300 + Alumni</h4>
-                        <p class="testimonial-quote">"Our alumni have excelled in diverse fields, contributing to top companies as well as driving innovation in startups and research. They embody the success and impact of our club's vision."</p>
                     </div>
                 </div>
-            </div>
+                <div class="swiper-slide">
+                    <div class="w-8/12 flex  h-full mx-auto my-auto items-center">
+                        <div class="card flex-row mx-3 my-3 rounded-tl-2xl rounded-bl-2xl rounded-tr-full rounded-br-full"
+                            style="border: none;">
+                            <div class="card-body my-auto ">
+                                <h5 class="text-4xl font-bold">Web Development</h5>
+                                <p class="card-text my-2 p-4">Build dynamic, responsive websites.
+                                    Master front-end and back-end technologies.
+                                    Turn your ideas into interactive web experiences!</p>
+                                <button
+                                    class="btn btn-outline hover:border-[#00BDC5] hover:text-[#00BDC5] btn-secondary bg-transparent font-medium border-[#FF9072]  text-3xl w-6/12 text-[#FF9072]"><a href="/web_devs/index.html">Learn More</a></button>
+                            </div>
+                            <img src="landing_page/media/web.jpg" class="rounded-circle w-6/12 -mr-20"
+                                alt="Competitive Programming">
 
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
-
-<!-- Location Section -->
-<section class="location-section my-5">
-    <div class="container">
-        <h2 class="text-center mb-5">Our Location</h2>
-        <div class="row justify-content-center">
-
-            <!-- Location Address Information -->
-            <div class="col-lg-5 col-md-6 col-12 mb-4">
-                <div class="location-card text-center p-4 shadow-sm">
-                    <i class="fas fa-map-marker-alt fa-3x mb-3 location-icon"></i>
-                    <h5 class="location-title">Building no 5, Academic</h5>
-                    <p class="location-address">44, Hazari Ln, Chattogram 4000</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="swiper-slide">
+                    <div class="w-8/12 flex  h-full mx-auto my-auto items-center">
+                        <div class="card flex-row mx-3 my-3 rounded-tl-2xl rounded-bl-2xl rounded-tr-full rounded-br-full"
+                            style="border: none;">
+                            <div class="card-body my-auto ">
+                                <h5 class="text-4xl font-bold">DevOps</h5>
+                                <p class="card-text my-2 p-4">Streamline development and operations.
+                                    Automate workflows for faster delivery.
+                                    Empower teams to innovate with efficiency and scalability!!</p>
+                                <button
+                                    class="btn btn-outline hover:border-[#00BDC5] hover:text-[#00BDC5] btn-secondary bg-transparent font-medium border-[#FF9072]  text-3xl w-6/12 text-[#FF9072]"><a href="/devops/index.html">Learn More</a></button>
+                            </div>
+                            <img src="landing_page/media/devup.jpg" class="rounded-circle w-6/12 -mr-20"
+                                alt="Competitive Programming">
 
-            <!-- Embedded Google Map -->
-            <div class="col-lg-5 col-md-6 col-12">
-                <div style="position: relative; overflow: hidden; padding-top: 56.25%; height: 0;">
-                    <iframe 
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
-                        frameborder="0" 
-                        allowfullscreen
-                        src="https://www.google.com/maps/embed/v1/place?q=Building+no+5,+Academic,+44,+Hazari+Ln,+Chattogram+4000&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-                    </iframe>
+                        </div>
+                    </div>
                 </div>
+                <div class="swiper-slide">
+                    <div class="w-8/12 flex  h-full mx-auto my-auto items-center">
+                        <div class="card flex-row mx-3 my-3 rounded-tl-2xl rounded-bl-2xl rounded-tr-full rounded-br-full"
+                            style="border: none;">
+                            <div class="card-body my-auto ">
+                                <h5 class="text-4xl font-bold">Linux Based Networking</h5>
+                                <p class="card-text my-2 p-4">Master the power of Linux for networking solutions.
+                                    Manage and secure networks with open-source tools.
+                                    Build scalable, efficient infrastructures for modern businesses!</p>
+                                <button
+                                    class="btn btn-outline hover:border-[#00BDC5] hover:text-[#00BDC5] btn-secondary bg-transparent font-medium border-[#FF9072]  text-3xl w-6/12 text-[#FF9072]"><a href="/linux_based_network/index.html">Learn More</a></button>
+                            </div>
+                            <img src="landing_page/media/network.jpg" class="rounded-circle w-6/12 -mr-20"
+                                alt="Competitive Programming">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="w-8/12 flex  h-full mx-auto my-auto items-center">
+                        <div class="card flex-row mx-3 my-3 rounded-tl-2xl rounded-bl-2xl rounded-tr-full rounded-br-full"
+                            style="border: none;">
+                            <div class="card-body my-auto ">
+                                <h5 class="text-4xl font-bold">Game and Mobile Development</h5>
+                                <p class="card-text my-2 p-4">Create immersive games and apps with cutting-edge technologies.
+                                    Design engaging experiences for mobile and gaming platforms.
+                                    Unleash your creativity and bring your ideas to life with code!</p>
+                                <button
+                                    class="btn btn-outline hover:border-[#00BDC5] hover:text-[#00BDC5] btn-secondary bg-transparent font-medium border-[#FF9072]  text-3xl w-6/12 text-[#FF9072]"><a href="/game_and_mobile_development/index.html">Learn More</a></button>
+                            </div>
+                            <img src="landing_page/media/game.jpg" class="rounded-circle w-6/12 -mr-20"
+                                alt="Competitive Programming">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="w-8/12 flex  h-full mx-auto my-auto items-center">
+                        <div class="card flex-row mx-3 my-3 rounded-tl-2xl rounded-bl-2xl rounded-tr-full rounded-br-full"
+                            style="border: none;">
+                            <div class="card-body my-auto ">
+                                <h5 class="text-4xl font-bold">Deep Neural Research</h5>
+                                <p class="card-text my-2 p-4">Sharpen your problem-solving skills.
+                                    Explore the future of AI with advanced deep learning techniques.
+Unlock the potential of neural networks to solve complex problems.
+Push the boundaries of technology and innovation through research!</p>
+                                <button
+                                    class="btn btn-outline hover:border-[#00BDC5] hover:text-[#00BDC5] btn-secondary bg-transparent font-medium border-[#FF9072]  text-3xl w-6/12 text-[#FF9072]"><a href="/deep_neural_research/index.html">Learn More</a></button>
+                            </div>
+                            <img src="landing_page/media/deep.jpg" class="rounded-circle w-6/12 -mr-20"
+                                alt="Competitive Programming">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="w-8/12 flex  h-full mx-auto my-auto items-center">
+                        <div class="card flex-row mx-3 my-3 rounded-tl-2xl rounded-bl-2xl rounded-tr-full rounded-br-full"
+                            style="border: none;">
+                            <div class="card-body my-auto ">
+                                <h5 class="text-4xl font-bold">IOT and Embedded System Innovators</h5>
+                                <p class="card-text my-2 p-4">Transform the world with cutting-edge IoT and embedded systems.
+                                    Create smart, interconnected devices that enhance everyday life.
+                                    Innovate at the intersection of hardware and software for limitless possibilities!</p>
+                                <button
+                                    class="btn btn-outline hover:border-[#00BDC5] hover:text-[#00BDC5] btn-secondary bg-transparent font-medium border-[#FF9072]  text-3xl w-8/12 text-[#FF9072]"><a href="/iot_and_embedded_system_innovators/index.html">Learn More</a></button>
+                            </div>
+                            <img src="landing_page/media/IoT.jpeg" class="rounded-circle w-6/12 -mr-20"
+                                alt="Competitive Programming">
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
-
+            <div class="swiper-pagination"></div>
         </div>
-    </div>
-</section>
-
-
-
-
-
-<!-- Footer Section -->
-<footer class="footer p-3 bg-dark text-light text-center">
-    <div class="row">
+    </div> -->
+    <div id="wings" class="py-4 text-center my-5 swiper-container" >
+        <h1 class="text-5xl font-bold mt-28 mb-4">Our Wings</h1>
+        <hr class="mx-auto mb-12 h-1 w-24 border-0 bg-gradient-to-r from-[orange] to-[#0ef3ff]">
+    
+        <div class="swiper mySwiper mx-auto w-10/12 gap-2">
+            <div class="swiper-wrapper mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
                 
-        <!-- Social Media -->     
+                <!-- Swiper Slide 1 -->
+                <!-- <div class="swiper-slide">
+                    <div class=" w-9/12 flex h-full mx-auto my-auto items-center">
+                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3 " style="border: none;">
+                            <div class="card-body my-auto">
+                                <h5 class="text-2xl mt-4 font-bold">Competitive Programming</h5>
+                                <p class="card-text text-start leading-snug text-lg my-2 p-2">Sharpen your problem-solving skills. Master algorithms and data structures. Join the challenge and become a coding champion!</p>
+                                <button class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black]  bg-transparent font-medium hover:border-[black] text-lg w-5/12 ">
+                                    <a href="/web_devs/index.html">Learn More</a>
+                                </button>
+                            </div>
+                            <img src="landing_page/media/cp.jpg" class="rounded-circle w-6/12 my-auto -mr-20" alt="Competitive Programming">
+                        </div>
+                    </div>
+                </div> -->
+                <div class="swiper-slide" data-aos="zoom-in-up" >
+                    <div class=" w-9/12 flex h-full mx-auto my-auto items-center">
+                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3 " style="border: none;">
+                            <div class="card-body my-auto">
+                                <h5 class="text-2xl mt- font-bold">Competitive Programming</h5>
+                                <p class="card-text text-start leading-snug text-lg pt-2">Sharpen your problem-solving skills. Master algorithms and data structures. Join the challenge and become a coding champion!</p>
+                                <button class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-md w-/12">
+                                    <a href="/web_devs/index.html">Learn More</a>
+                                </button>
+                            </div>
+                            <img src="landing_page/media/cp.jpg" class="rounded-circle w-6/12 my-auto -mr-20" alt="Competitive Programming">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Swiper Slide 2 -->
+<!-- Swiper Slide 2 -->
+<div class="swiper-slide" data-aos="zoom-in-up">
+    <div class=" w-9/12 flex h-full mx-auto my-auto items-center">
+        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3 " style="border: none;">
+            <div class="card-body my-auto">
+                <h5 class="text-2xl mt- font-bold">Web Development</h5>
+                <p class="card-text text-start leading-snug text-lg  pt-2">Build dynamic, responsive websites. Master front-end and back-end technologies. Turn your ideas into interactive web experiences!</p>
+                <button class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-md w-/12">
+                    <a href="/web_devs/index.html">Learn More</a>
+                </button>
+            </div>
+            <img src="landing_page/media/web.jpg" class="rounded-circle w-6/12 my-auto -mr-20 relative" alt="Web Development">
+        </div>
+    </div>
+</div>
+
+    
+                <!-- Swiper Slide 3 -->
+                <!-- <div class="swiper-slide">
+                    <div class="w-full flex h-full mx-auto my-auto items-center">
+                        <div class="card flex-row mx-3 my-3 rounded-tl-2xl rounded-bl-2xl rounded-tr-full rounded-br-full" style="border: none;">
+                            <div class="card-body my-auto">
+                                <h5 class="text-4xl font-bold">DevOps</h5>
+                                <p class="card-text my-2 p-4">Streamline development and operations. Automate workflows for faster delivery. Empower teams to innovate with efficiency and scalability!</p>
+                                <button class="btn btn-outline hover:border-[#00BDC5] hover:text-[#00BDC5] btn-secondary bg-transparent font-medium border-[#FF9072] text-3xl w-6/12 text-[#FF9072]">
+                                    <a href="/devops/index.html">Learn More</a>
+                                </button>
+                            </div>
+                            <img src="landing_page/media/devup.jpg" class="rounded-circle w-6/12 -mr-20" alt="DevOps">
+                        </div>
+                    </div>
+                </div> -->
+                <div class="swiper-slide" data-aos="zoom-in-up">
+                    <div class="w-9/12 flex h-full mx-auto my-auto items-center">
+                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3" style="border: none;">
+                            <div class="card-body my-auto">
+                                <h5 class="text-2xl mt-2 font-bold">DevOps</h5>
+                                <p class="card-text text-start leading-snug text-lg pt-1">Streamline development and operations. Automate workflows for faster delivery. Empower teams to innovate with efficiency and scalability!</p>
+                                <button class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-md w-/12">
+                                    <a href="/devops/index.html">Learn More</a>
+                                </button>
+                            </div>
+                            <img src="landing_page/media/devup.jpg" class="rounded-circle w-6/12 my-auto -mr-20" alt="DevOps">
+                        </div>
+                    </div>
+                </div>
+                
+    
+                <!-- Swiper Slide 4 -->
+                <!-- <div class="swiper-slide">
+                    <div class="w-full flex h-full mx-auto my-auto items-center">
+                        <div class="card flex-row mx-3 my-3 rounded-tl-2xl rounded-bl-2xl rounded-tr-full rounded-br-full" style="border: none;">
+                            <div class="card-body my-auto">
+                                <h5 class="text-4xl font-bold">Linux Based Networking</h5>
+                                <p class="card-text my-2 p-4">Master the power of Linux for networking solutions. Manage and secure networks with open-source tools. Build scalable, efficient infrastructures for modern businesses!</p>
+                                <button class="btn btn-outline hover:border-[#00BDC5] hover:text-[#00BDC5] btn-secondary bg-transparent font-medium border-[#FF9072] text-3xl w-6/12 text-[#FF9072]">
+                                    <a href="/linux_based_network/index.html">Learn More</a>
+                                </button>
+                            </div>
+                            <img src="landing_page/media/network.jpg" class="rounded-circle w-6/12 -mr-20" alt="Linux Based Networking">
+                        </div>
+                    </div>
+                </div> -->
+                <div class="swiper-slide" data-aos="zoom-in-up">
+                    <div class="w-9/12 flex h-full mx-auto my-auto items-center">
+                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3" style="border: none;">
+                            <div class="card-body my-auto">
+                                <h5 class="text-2xl mt-2 font-bold">Linux Based Networking</h5>
+                                <p class="card-text text-start leading-snug text-lg  pt-1">Master the power of Linux for networking solutions. Manage and secure networks with open-source tools. Build scalable, efficient infrastructures for modern businesses!</p>
+                                <button class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-md w-/12">
+                                    <a href="/linux_based_network/index.html">Learn More</a>
+                                </button>
+                            </div>
+                            <img src="landing_page/media/network.jpg" class="rounded-circle w-6/12 my-auto -mr-20" alt="Linux Based Networking">
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- Swiper Slide 5 -->
+                <!-- <div class="swiper-slide">
+                    <div class="w-full flex h-full mx-auto my-auto items-center">
+                        <div class="card flex-row mx-3 my-3 rounded-tl-2xl rounded-bl-2xl rounded-tr-full rounded-br-full" style="border: none;">
+                            <div class="card-body my-auto">
+                                <h5 class="text-4xl font-bold">Game and Mobile Development</h5>
+                                <p class="card-text my-2 p-4">Create immersive games and apps with cutting-edge technologies. Design engaging experiences for mobile and gaming platforms. Unleash your creativity and bring your ideas to life with code!</p>
+                                <button class="btn btn-outline hover:border-[#00BDC5] hover:text-[#00BDC5] btn-secondary bg-transparent font-medium border-[#FF9072] text-3xl w-6/12 text-[#FF9072]">
+                                    <a href="/game_and_mobile_development/index.html">Learn More</a>
+                                </button>
+                            </div>
+                            <img src="landing_page/media/game.jpg" class="rounded-circle w-6/12 -mr-20" alt="Game and Mobile Development">
+                        </div>
+                    </div>
+                </div> -->
+                <div class="swiper-slide" data-aos="zoom-in-up">
+                    <div class="w-9/12 flex h-full mx-auto my-auto items-center">
+                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3" style="border: none;">
+                            <div class="card-body my-auto">
+                                <h5 class="text-2xl mt-1 font-bold">Game and Mobile Development</h5>
+                                <p class="card-text text-start leading-snug text-lg pt-1">Create immersive games and apps with cutting-edge technologies. Design engaging experiences and nleash your creativity and bring your ideas to life with code!</p>
+                                <button class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-md w-/12">
+                                    <a href="/game_and_mobile_development/index.html">Learn More</a>
+                                </button>
+                            </div>
+                            <img src="landing_page/media/game.jpg" class="rounded-circle w-6/12 my-auto -mr-20" alt="Game and Mobile Development">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Swiper Slide 6 -->
+                <!-- <div class="swiper-slide">
+                    <div class="w-full flex h-full mx-auto my-auto items-center">
+                        <div class="card flex-row mx-3 my-3 rounded-tl-2xl rounded-bl-2xl rounded-tr-full rounded-br-full" style="border: none;">
+                            <div class="card-body my-auto">
+                                <h5 class="text-4xl font-bold">Deep Neural Research</h5>
+                                <p class="card-text my-2 p-4">Sharpen your problem-solving skills. Explore the future of AI with advanced deep learning techniques. Unlock the potential of neural networks to solve complex problems. Push the boundaries of technology and innovation through research!</p>
+                                <button class="btn btn-outline hover:border-[#00BDC5] hover:text-[#00BDC5] btn-secondary bg-transparent font-medium border-[#FF9072] text-3xl w-6/12 text-[#FF9072]">
+                                    <a href="/deep_neural_research/index.html">Learn More</a>
+                                </button>
+                            </div>
+                            <img src="landing_page/media/deep.jpg" class="rounded-circle w-6/12 -mr-20" alt="Deep Neural Research">
+                        </div>
+                    </div>
+                </div> -->
+                <div class="swiper-slide" data-aos="zoom-in-up">
+                    <div class="w-9/12 flex h-full mx-auto my-auto items-center">
+                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3" style="border: none;">
+                            <div class="card-body my-auto">
+                                <h5 class="text-2xl mt-1 font-bold">Deep Neural Research</h5>
+                                <p class="card-text text-start leading-snug text-lg  pt-2">Sharpen your problem-solving skills. Explore the future of AI with advanced deep learning techniques. Unlock the potential of neural networks to solve complex problems.</p>
+                                <button class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-md w-/12">
+                                    <a href="/deep_neural_research/index.html">Learn More</a>
+                                </button>
+                            </div>
+                            <img src="landing_page/media/deep.jpg" class="rounded-circle w-6/12 my-auto -mr-20" alt="Deep Neural Research">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Swiper Slide 7 -->
+                <!-- <div class="swiper-slide">
+                    <div class="w-full flex h-full mx-auto my-auto items-center">
+                        <div class="card flex-row mx-3 my-3 rounded-tl-2xl rounded-bl-2xl rounded-tr-full rounded-br-full" style="border: none;">
+                            <div class="card-body my-auto">
+                                <h5 class="text-4xl font-bold">IOT and Embedded System Innovators</h5>
+                                <p class="card-text my-2 p-4">Transform the world with cutting-edge IoT and embedded systems. Create smart, interconnected devices that enhance everyday life. Innovate at the intersection of hardware and software for limitless possibilities!</p>
+                                <button class="btn btn-outline hover:border-[#00BDC5] hover:text-[#00BDC5] btn-secondary bg-transparent font-medium border-[#FF9072] text-3xl w-8/12 text-[#FF9072]">
+                                    <a href="/iot_and_embedded_system_innovators/index.html">Learn More</a>
+                                </button>
+                            </div>
+                            <img src="landing_page/media/IoT.jpeg" class="rounded-circle w-6/12 -mr-20" alt="IOT and Embedded System Innovators">
+                        </div>
+                    </div>
+                </div> -->
+                <div class="swiper-slide col-span-2" data-aos="zoom-in-up">
+                    <div class="w-5/12 flex h-full mx-auto my-auto items-center">
+                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3" style="border: none;">
+                            <div class="card-body my-auto">
+                                <h5 class="text-2xl mt-1 font-bold">IOT and Embedded System Innovators</h5>
+                                <p class="card-text text-start leading-snug text-lg pt-1">Transform the world with cutting-edge IoT and embedded systems. Create smart, interconnected devices that enhance everyday life.</p>
+                                <button class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-md w-/12">
+                                    <a href="/iot_and_embedded_system_innovators/index.html">Learn More</a>
+                                </button>
+                            </div>
+                            <img src="landing_page/media/IoT.jpeg" class="rounded-circle w-6/12 my-auto -mr-20" alt="IOT and Embedded System Innovators">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    
+
+
+
+
+    <!-- Event Carousel -->
+    <div id="events" class="container">
+        <div>
+            <h1 class="text-5xl font-bold mt-28 mb-4 text-center">Upcoming Events and Workshops</h1>
+            <hr class="mx-auto mb-12  h-1 w-32 border-0 bg-gradient-to-r from-[orange] to-[#0ef3ff]">
+
+            <div class="custom-slider-wrapper ">
+                <ul class="custom-slides">
+                    <li>
+                        <img src="landing_page/carousel_landing_page/caro_1.jpg" alt="First slide"
+                            class="full-width-img" s>
+                    </li>
+                    <li>
+                        <img src="landing_page/carousel_landing_page/caro_2.jpg" alt="First slide"
+                            class="full-width-img" s>
+
+                    </li>
+                    <li>
+                        <img src="landing_page/carousel_landing_page/caro_3.jpg" alt="First slide"
+                            class="full-width-img" s>
+
+                    </li>
+                    <li>
+                        <img src="landing_page/carousel_landing_page/caro_1.jpg" alt="First slide"
+                            class="full-width-img" s>
+
+                    </li>
+                    <li>
+                        <img src="landing_page/carousel_landing_page/caro_2.jpg" alt="First slide"
+                            class="full-width-img" s>
+
+                    </li>
+                    <li>
+                        <img src="landing_page/carousel_landing_page/caro_3.jpg" alt="First slide"
+                            class="full-width-img" s>
+                    </li>
+                </ul>
+                <div class="absolute top-1/2 left-0 transform -translate-y-1/2 px-4 cursor-pointer z-10">
+                    <span id="custom-prev" class="text-4xl hover:text-[#00DFEE] text-orange-400">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                </div>
+                <div class="absolute top-1/2 right-0  transform -translate-y-1/2 px-4 cursor-pointer z-10">
+                    <span id="custom-next" class="text-4xl hover:text-[#00DFEE] text-orange-400">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <!-- Member Number Section -->
+    <section class="testimonials-section py-5 bg-light" style="margin-top: 100px;">
+
+        <div class="container">
+
+            <h1 class="text-5xl font-bold mt-18 mb-4 text-center">We Are Of,</h1>
+            <hr class="mx-auto mb-12  h-1 w-28 border-0 bg-gradient-to-r from-[orange] to-[#0ef3ff]">
+            <div class="row">
+
+                <!-- Members Number -->
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4" data-aos="zoom-in-up">
+                    <div class="card testimonial-card w-100">
+                        <div class="card-body text-center">
+                            <div class="testimonial-icon mb-3">
+                                <i class="fas fa-user-circle fa-3x"></i>
+                            </div>
+                            <h4 class="testimonial-name text-xl "><span class="text-[#00BDC5] text-3xl" id="nbr1">0</span> + Active Members</h4>
+                            <p class="testimonial-quote">"Our club is home to over 120 enthusiastic members, ranging
+                                from beginners to experts, all united by a passion for technology and innovation."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trainer Number -->
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4" data-aos="zoom-in-up">
+                    <div class="card testimonial-card w-100">
+                        <div class="card-body text-center">
+                            <div class="testimonial-icon mb-3">
+                                <i class="fas fa-user-circle fa-3x"></i>
+                            </div>
+                            <h4 class="testimonial-name text-xl"> <span class="text-[#00BDC5] text-3xl" id="nbr2">0</span> + Skilled Trainers</h4>
+                            <p class="testimonial-quote">"Our club is guided by dedicated trainers with expertise across
+                                domains, from competitive programming to deep learning. Their mentorship transforms
+                                beginners into skilled professionals, fostering innovation and practical knowledge."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alumni Number -->
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4" data-aos="zoom-in-up">
+                    <div class="card testimonial-card w-100">
+                        <div class="card-body text-center">
+                            <div class="testimonial-icon mb-3">
+                                <i class="fas fa-user-circle fa-3x"></i>
+                            </div>
+                            <h4 class="testimonial-name text-xl"> <span class="text-[#00BDC5] text-3xl" id="nbr3">0</span> + Established Alumni</h4>
+                            <p class="testimonial-quote">"Our alumni have excelled in diverse fields, contributing to
+                                top companies as well as driving innovation in startups and research. They embody the
+                                success and impact of our club's vision."</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- Location Section -->
+    <div class="pb-16">
+        <div class="container">
+            <h1 class="text-5xl font-bold mt-28 mb-4 text-center">Our Location</h1>
+            <hr class="mx-auto mb-12  h-1 w-28 border-0 bg-gradient-to-r from-[orange] to-[#0ef3ff]">
+            <div class="row">  <div class="row justify-content-center items-center">
+
+                <!-- Location Address Information -->
+                <div class="col-lg-5 col-md-6 col-12 mb-4">
+                    <div class="location-card text-center p-4 shadow-lg border-1">
+                        <i class="fas fa-map-marker-alt fa-3x mb-3 location-icon text-[#00BDC5]"></i>
+                        <h5 class="location-title text-2xl">Building no 5, Academic</h5>
+                        <p class="location-address text-lg">44, Hazari Ln, Chattogram 4000</p>
+                    </div>
+                </div>
+
+                <!-- Embedded Google Map -->
+                <div class="col-lg-5 col-md-6 col-12 mb-4 rounded-2xl">
+                    <div class="rounded-2xl" style="position: relative; overflow: hidden; padding-top: 56.25%; height: 0;">
+                        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+                            frameborder="0" allowfullscreen
+                            src="https://www.google.com/maps/embed/v1/place?q=Building+no+5,+Academic,+44,+Hazari+Ln,+Chattogram+4000&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <!-- Footer Section -->
+    <div class="footer p-3  text-light text-center ">
+        <div class="row text-center mx-auto">
+
+            <!-- Social Media -->
             <div class="social-icons">
-            
-                <a href="https://www.facebook.com/profile.php?id=100064087983552"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.facebook.com/groups/premier.university.computer.club"><i class="fab fa-facebook-f">  Group</i></a>
+
+                <a href="https://www.facebook.com/profile.php?id=100064087983552"><i class="fab fa-facebook-f "></i></a>
+                <a href="https://www.facebook.com/groups/premier.university.computer.club"><i class="fab fa-facebook-f">
+                        Group</i></a>
                 <a href="https://x.com/pucc_official"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/company/puc-cse-club"><i class="fab fa-linkedin-in"></i></a>
-                
+
                 <span style="font-size: 25px;">/</span>
-                
+
                 <a href="https://chat.whatsapp.com/JG8K32l5fiPCfpXBxZaQQ5"><i class="fab fa-whatsapp"></i></a>
                 <a href="https://t.me/+564bGSrAnQU2Y2Nl"><i class="fab fa-telegram-plane"></i></a>
-                <a href="https://discord.com/channels/1311981092026318858/1311981093272158269"><i class="fab fa-discord"></i></a>
-                
+                <a href="https://discord.com/channels/1311981092026318858/1311981093272158269"><i
+                        class="fab fa-discord"></i></a>
+
                 <span style="font-size: 25px;">/</span>
 
                 <a href="https://www.youtube.com/channel/UC3bqOx1p94VLE18LmjYzOwA"><i class="fab fa-youtube"></i></a>
                 <a href="https://github.com/dev-pucc"><i class="fab fa-github"></i></a>
                 <a href="https://www.kaggle.com/puccofficial"><i class="fab fa-kaggle"></i></a>
-                <a href="https://codeforces.com/ratings/organization/10519"><i class="fas fa-code"></i></a>               
-                
+                <a href="https://codeforces.com/ratings/organization/10519"><i class="fas fa-code"></i></a>
+
             </div>
 
 
-        <div class="row">
-            <p class="copyright">&copy; 2024 Premier University Computer Club. All Rights Reserved. (Developed by our members with &#9829)</p>
+            <div class="row">
+                <p class="copyright">&copy; 2024 Premier University Computer Club. All Rights Reserved. (Developed by
+                    our members with &#9829)</p>
+            </div>
+
         </div>
-        
     </div>
-</footer>
 
-<!-- Footer Ends -->
-
+    <!-- Footer Ends -->
 
 
 
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="landing_page/main.js"></script>
+    <script src="landing_page/Components/Cards/c_r.js"></script>
+
+    <script>
+        // Toggle mobile menu
+        const menuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.style.display = mobileMenu.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-<script src="landing_page/main.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
+
 
 </html>
