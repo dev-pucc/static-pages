@@ -10,7 +10,7 @@
   --accent-purple: #c678dd;
   --code-font: "Cascadia Code", "Fira Code", monospace;
 
-  --vscode-bg-dark: #1e2428;
+  --vscode-bg-dark: #090f11;
   --vscode-text-light: #d4d4d4;
   --vscode-accent-blue: #9cdcfe;
   --vscode-button-bg: #0e639c;
@@ -67,7 +67,7 @@ body {
 }
 
 .dropdown-item:hover {
-  background-color: #2c3239;
+  background-color: #090f11;
   color: var(--vscode-accent-blue) !important;
 }
 
@@ -90,7 +90,27 @@ body {
 .navbar-toggler-icon {
   filter: invert(0.7) sepia(0.5) saturate(5) hue-rotate(170deg);
 }
-
+.b-btn {
+  background-color: #0e639c;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+  margin-right: 6px;
+}
+.l-btn {
+  background-color: #0e639c;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+}
+.l-btn:hover {
+  background-color: #1f6fd0;
+}
+.b-btn:hover {
+  background-color: #1f6fd0;
+}
 /* Responsive Breakpoints */
 @media (max-width: 991px) {
   .navbar-collapse {
@@ -118,6 +138,32 @@ body {
     width: 100%;
   }
 
+  .b-btn {
+    background-color: #0e639c;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 4px;
+    margin-bottom: 6px;
+  }
+  .l-btn {
+    background-color: #0e639c;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 4px;
+    margin-bottom: 6px;
+  }
+  .l-btn:hover {
+    background-color: #1f6fd0;
+  }
+  .b-btn:hover {
+    background-color: #1f6fd0;
+  }
+
+  b-btn:hover {
+    background-color: #1f6fd0;
+  }
   .btn {
     width: 80%;
     max-width: 300px;
@@ -324,7 +370,7 @@ body {
   border-color: #4f4f4f;
 }
 
-/* jumbotron section */
+/* jumbotroon section */
 .vscode-jumbotron {
   background: linear-gradient(
     135deg,
@@ -340,23 +386,81 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
-.vscode-jumbotron-header:hover {
-  transform: translateY(0px);
-}
+
 .vscode-btn {
   background-color: #0e639c;
   color: #ffffff;
   border: none;
   transition: background-color 0.3s ease;
 }
+
 .vscode-btn:hover {
+  color: #ffffff;
   background-color: #1f6fd0;
 }
+
 .vscode-text-accent {
   color: #9cdcfe;
 }
+
 .vscode-code-font {
   font-family: "Cascadia Code", "Fira Code", monospace;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .display-6 {
+    font-size: 1.5rem;
+  }
+
+  .fs-5 {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .display-6 {
+    font-size: 1.25rem;
+  }
+
+  .fs-5 {
+    font-size: 0.9rem !important;
+  }
+
+  .vscode-jumbotron {
+    padding: 2rem 1rem !important;
+  }
+
+  .col-md-8 {
+    width: 100% !important;
+    padding: 0 15px;
+  }
+}
+
+/* Ensure background image is responsive */
+.vscode-jumbotron {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Flexible sizing for different devices */
+.responsive-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Adjust overlay for better responsiveness */
+.overlay-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 2rem;
 }
 
 /* Footer */
