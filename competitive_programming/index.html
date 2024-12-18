@@ -16,28 +16,124 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg vscode-navbar">
+    <nav class="navbar navbar-expand-lg vscode-navbar navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#" style="color: var(--accent-green)">
-          <i class="fas fa-code glow-icon"></i> PUCC Competitive Programming
-        </a>
+        <!-- Club Name on the Left -->
+        <a class="navbar-brand navbar-brand-full" href="/"
+          >Premier University Computer Club</a
+        >
+        <a
+          class="navbar-brand navbar-brand-short"
+          href="/"
+          style="display: none"
+          >PU Computer Club</a
+        >
+
+        <!-- Toggler for Mobile View -->
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Centered Links & Right Aligned Buttons -->
         <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Centered Links -->
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link active" href="/">Home</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Levels</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Platforms</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link fw-bold dropdown-toggle text-light"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Divisions
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item fw-bold" href="index.html"
+                    >Competitive Programming</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../web_devs/index.html"
+                    >Web Devs</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../devops/index.html"
+                    >DevOps</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../linux_based_network/index.html"
+                    >Linux Based Networking</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../game_and_mobile_development/index.html"
+                    >Game and Mobile Development</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../deep_neural_research/index.html"
+                    >Deep Neural Research</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../iot_and_embedded_system_innovators/index.html"
+                    >IoT and Embedded Systems Innovators</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="../additional_info_page/join_us.html"
+                >Learn More</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="../additional_info_page/contact.html"
+                >Contact</a
+              >
+            </li>
           </ul>
+
+          <!-- Login & Register Buttons -->
+          <div class="d-flex">
+            <a href="../additional_info_page/join_us.html" class="w-100">
+              <button type="button" class="btn btn-light w-100">
+                Become a Member
+              </button>
+            </a>
+            <button type="button" class="btn btn-light w-100">Login</button>
+          </div>
         </div>
       </div>
     </nav>
@@ -63,10 +159,12 @@
               <span style="color: #ce9178">&lt;</span>Think. Solve.
               Compete.<span style="color: #ce9178">/&gt;</span>
             </h1>
-            
-            <button class="btn vscode-btn btn-md mt-3" type="button">
-              Join Our Team
-            </button>
+
+            <a href="../additional_info_page/join_competitive_programming.html">
+              <button class="btn vscode-btn btn-md mt-3" type="button">
+                Join Our Team
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -440,10 +538,54 @@
     <footer class="vscode-footer text-center">
       <div class="container">
         <div class="social-icons mb-3">
-          <a href="#"><i class="fab fa-facebook-f glow-icon"></i></a>
-          <a href="#"><i class="fab fa-twitter glow-icon"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in glow-icon"></i></a>
-          <a href="#"><i class="fab fa-github glow-icon"></i></a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/profile.php?id=100064087983552"
+            ><i class="fab fa-facebook-f glow-icon"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/groups/premier.university.computer.club"
+          >
+            <i class="fab fa-facebook-f glow-icon">group</i>
+          </a>
+          <a target="_blank" href="https://x.com/pucc_official"
+            ><i class="fab fa-twitter glow-icon"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/company/puc-cse-club"
+            ><i class="fab fa-linkedin-in glow-icon"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://chat.whatsapp.com/JG8K32l5fiPCfpXBxZaQQ5"
+            ><i class="fab fa-whatsapp glow-icon"></i
+          ></a>
+          <a target="_blank" href="https://github.com/dev-pucc"
+            ><i class="fab fa-github glow-icon"></i
+          ></a>
+          <a target="_blank" href="https://t.me/+564bGSrAnQU2Y2Nl"
+            ><i class="fab fa-brands fa-telegram glow-icon"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://discord.com/channels/1311981092026318858/1311981093272158269"
+            ><i class="fab fa-brands fa-discord glow-icon"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UC3bqOx1p94VLE18LmjYzOwA"
+            ><i class="fab fa-brands fa-youtube glow-icon"></i
+          ></a>
+          <a target="_blank" href="https://www.kaggle.com/puccofficial"
+            ><i class="fab fa-brands fa-kaggle glow-icon"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://codeforces.com/ratings/organization/10519"
+            ><i class="fab fas fa-code glow-icon"></i
+          ></a>
         </div>
         <p>
           &copy; 2024 Premier University Computer Club. Developed with

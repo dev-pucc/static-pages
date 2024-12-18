@@ -9,6 +9,12 @@
   --accent-green: #4ec9b0;
   --accent-purple: #c678dd;
   --code-font: "Cascadia Code", "Fira Code", monospace;
+
+  --vscode-bg-dark: #1e2428;
+  --vscode-text-light: #d4d4d4;
+  --vscode-accent-blue: #9cdcfe;
+  --vscode-button-bg: #0e639c;
+  --vscode-hover-blue: #1f6fd0;
 }
 
 body {
@@ -20,21 +26,120 @@ body {
 
 /* VS Code Navbar */
 .vscode-navbar {
-  background-color: var(--panel-dark);
-  border-bottom: 2px solid #333;
-  padding: 10px 20px;
+  background-color: var(--vscode-bg-dark) !important;
+  border-bottom: 1px solid #2c3239;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.vscode-navbar .nav-link {
-  color: var(--text-light);
-  opacity: 0.7;
-  transition: opacity 0.3s;
+.navbar-brand {
+  color: var(--vscode-accent-blue) !important;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.vscode-navbar .nav-link:hover,
-.vscode-navbar .nav-link.active {
-  opacity: 1;
-  color: var(--accent-blue);
+.navbar-brand:hover {
+  color: var(--vscode-hover-blue) !important;
+}
+
+.nav-link {
+  color: var(--vscode-text-light) !important;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--vscode-accent-blue) !important;
+}
+
+.dropdown-menu {
+  background-color: var(--vscode-bg-dark);
+  border: 1px solid #2c3239;
+}
+
+.dropdown-item {
+  color: var(--vscode-text-light) !important;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.dropdown-item:hover {
+  background-color: #2c3239;
+  color: var(--vscode-accent-blue) !important;
+}
+
+.btn-light {
+  background-color: var(--vscode-button-bg);
+  color: #ffffff;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin: 5px 0;
+}
+
+.btn-light:hover {
+  background-color: var(--vscode-hover-blue);
+}
+
+.navbar-toggler {
+  border-color: #4c5054;
+}
+
+.navbar-toggler-icon {
+  filter: invert(0.7) sepia(0.5) saturate(5) hue-rotate(170deg);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .navbar-nav {
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    border: none;
+    background-color: transparent;
+  }
+
+  .d-flex {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .btn {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 471px) {
+  .navbar-brand-full {
+    display: none;
+  }
+  .navbar-brand-short {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 472px) {
+  .navbar-brand-full {
+    display: inline-block;
+  }
+  .navbar-brand-short {
+    display: none !important;
+  }
 }
 
 /* Hero Section */
@@ -87,7 +192,7 @@ body {
 }
 
 /* division lead */
-.division{
+.division {
   margin-bottom: 20px;
 }
 .card {
@@ -174,7 +279,7 @@ body {
 .carousel-caption {
   background: rgba(30, 30, 46, 0.7);
   border-radius: 5px;
-  
+
   padding: 10px;
 }
 
@@ -235,7 +340,7 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
-.vscode-jumbotron-header:hover{
+.vscode-jumbotron-header:hover {
   transform: translateY(0px);
 }
 .vscode-btn {
