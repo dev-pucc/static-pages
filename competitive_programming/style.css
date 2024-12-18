@@ -2,8 +2,8 @@
 
 /*  */
 :root {
-  --bg-dark: #1e1e1e;
-  --panel-dark: #252526;
+  --bg-dark: #090f11;
+  --panel-dark: #090f11;
   --text-light: #d4d4d4;
   --accent-blue: #6bdfff;
   --accent-green: #4ec9b0;
@@ -87,6 +87,9 @@ body {
 }
 
 /* division lead */
+.division{
+  margin-bottom: 20px;
+}
 .card {
   background-color: #1c1e24;
   border-color: #3a3f4b;
@@ -123,6 +126,58 @@ body {
   border: 4px solid #3a3f4b;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* carousel */
+.vscode-section-title {
+  color: #9cdcfe;
+  text-shadow: 0 0 10px rgba(156, 220, 254, 0.3);
+}
+.vscode-carousel {
+  border: 2px solid #2c2c3c;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.vscode-carousel:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #0e639c;
+  opacity: 0.5;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.carousel-indicators .active {
+  background-color: #1f6fd0;
+  opacity: 1;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  background: rgba(30, 30, 46, 0.5);
+  transition: background 0.3s ease;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background: rgba(30, 30, 46, 0.7);
+}
+.carousel-item img {
+  filter: brightness(0.8) contrast(1.1);
+  transition: transform 0.3s ease;
+}
+.carousel-item:hover img {
+  transform: scale(1.05);
+}
+.carousel-caption {
+  background: rgba(30, 30, 46, 0.7);
+  border-radius: 5px;
+  
+  padding: 10px;
+}
+
 /* problems section */
 .platform-card {
   background-color: #2b2b2b;
@@ -174,11 +229,14 @@ body {
   border: 1px solid #2c2c3c;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-} 
+}
 
 .vscode-jumbotron:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.vscode-jumbotron-header:hover{
+  transform: translateY(0px);
 }
 .vscode-btn {
   background-color: #0e639c;
