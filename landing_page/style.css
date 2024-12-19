@@ -50,54 +50,76 @@ body {
 }
 .navbar-toggle {
   position: relative;
-  z-index: 9999; /* Ensure the button is always above other elements */
-}
-/* This will apply the hover effect for the dropdown */
+  z-index: 9999; }
 .group:hover #dropdown-menu {
   display: block;
-  transform: translateY(8%); /* Reset translation to show it */
+  transform: translateY(8%); 
 }
 
 .group:hover #arrow-icon {
-  transform: rotate(180deg); /* Rotate the arrow on hover */
+  transform: rotate(180deg); 
 }
 
-
-
-/* Ensure smooth transitions */
 .carousel-item {
-    transition: transform 0.5s ease-in-out;
+    transition: none; 
 }
 
-/* Add sliding effect */
+
+
 .carousel-item-next, .carousel-item-prev, .carousel-item.active {
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item-next, .carousel-item-prev {
     position: absolute;
     top: 0;
     width: 100%;
-}
+    transition: none; }
 
-/* Slide in from the left */
 .carousel-item-next {
-    transform: translateX(100%);
-}
-.carousel-txt{
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
+    transform: translateX(100%); }
 
-}
-/* Slide in from the right */
 .carousel-item-prev {
-    transform: translateX(-100%);
+    transform: translateX(-100%); 
 }
 
-/* Make the active item visible */
 .carousel-item.active {
-    transform: translateX(0);
+    transform: translateX(0); 
 }
+
+.carousel-inner {
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+}
+@media (max-width: 767px) {
+  .carousel-inner {
+      height: 218px; 
+  }
+.wings_lg{
+  display: none;
+}
+
+}
+.carousel-overlay {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.carousel-txt {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.carousel-overlay button {
+    font-weight: bold;
+    border-color: #00BDC5;
+    color: white;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.carousel-overlay button:hover {
+    color: #00BDC5;
+    border-color: white;
+}
+
 
 /* Hero Section */
 .hero-section {

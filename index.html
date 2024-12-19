@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/landing_page/media/logo/logo_main.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/landing_page/media/logo/favico_16.png" type="image/x-icon">
 
     <title>Premier University Computer Club</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -25,8 +25,7 @@
     <!-- Nav section -->
     <div>
         <div class="border-b-2 border-gray-100 position-fixed text-center z-10 white">
-            <nav
-                class="navbar px-4 items-center sm:px-6 pt-2 lg:px-8 w-full sm:w-10/12 mx-auto">
+            <nav class="navbar px-4 items-center sm:px-6 pt-2 lg:px-8 w-full sm:w-8/12 mx-auto">
                 <div class="navbar-start w-6/12 sm:w-2/12 items-center flex">
                     <!-- Logo -->
                     <a href="/">
@@ -36,16 +35,16 @@
                 </div>
 
                 <!-- Navbar Center (Links) -->
-                <div class="w-6/12 mx-auto justify-center hidden sm:flex">
+                <div class="w-7/12 mx-auto justify-center hidden sm:flex">
                     <ul class="menu menu-horizontal w-10/12 flex justify-around">
-                        <li><a href="/" class="font-medium text-[18px] text-black">Home</a></li>
-                        <li><a href="#about_us" class="font-medium text-[18px] text-black">About</a></li>
-                        <li><a href="#events" class="font-medium text-[18px] text-black">Events</a></li>
+                        <li><a href="/" class="font-medium text-[14px] font-medium text-black">Home</a></li>
+                        <li><a href="#about_us" class="font-medium text-[14px] font-medium text-black">About</a></li>
+                        <li><a href="#events" class="font-medium text-[14px] font-medium text-black">Events</a></li>
 
                         <!-- Dropdown Menu for Large Screens -->
                         <li class="group relative">
                             <a href="#" id="divisions-toggle"
-                                class="font-medium active:bg-[none] text-[18px] text-black flex items-center">
+                                class="font-medium active:bg-[none] text-[14px] font-medium text-black flex items-center">
                                 Divisions
                                 <svg class="w-4 h-4 ml-2 transform inline-block transition-transform duration-300"
                                     id="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -56,19 +55,28 @@
                             </a>
                             <ul id="dropdown-menu"
                                 class="absolute left-0 hidden z-10 bg-white w-[20rem] duration-300 translate-y-10 text-xl p-2 shadow-xl rounded-lg mt-2">
-                                <li><a href="/competitive_programming/index.html" class="block p-2 text-black">Competitive
+                                <li><a href="/competitive_programming/index.html"
+                                        class="block p-2 text-[15px] text-black">Competitive
                                         Programming</a></li>
-                                <li><a href="/web_devs/index.html" class="block p-2 text-black">Web Development</a></li>
-                                <li><a href="/devops/index.html" class="block p-2 text-black">DevOps</a></li>
-                                <li><a href="/linux_based_network/index.html" class="block p-2 text-black">Linux Networking</a></li>
-                                <li><a href="/game_and_mobile_development/index.html" class="block p-2 text-black">Game Development</a></li>
-                                <li><a href="/deep_neural_research/" class="block p-2 text-black">Deep Neural
+                                <li><a href="/web_devs/index.html" class="block p-2 text-[15px] text-black">Web
+                                        Development</a></li>
+                                <li><a href="/devops/index.html" class="block p-2 text-[15px] text-black">DevOps</a>
+                                </li>
+                                <li><a href="/linux_based_network/index.html"
+                                        class="block p-2 text-[15px] text-black">Linux Networking</a></li>
+                                <li><a href="/game_and_mobile_development/index.html"
+                                        class="block p-2 text-[15px] text-black">Game Development</a></li>
+                                <li><a href="/deep_neural_research/" class="block p-2 text-[15px] text-black">Deep
+                                        Neural
                                         Research</a></li>
-                                <li><a href="/iot_and_embedded_system_innovators/index.html" class="block p-2 text-black">IoT and Embedded Systems</a>
+                                <li><a href="/iot_and_embedded_system_innovators/index.html"
+                                        class="block p-2 text-[15px] text-black">IoT and Embedded Systems</a>
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="/contact" class="font-medium text-[18px] text-black">Contact Us</a></li>
+
+                        <li><a href="/contact" class="font-medium text-[14px] font-medium text-black">Contact Us</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -83,16 +91,16 @@
                     </button>
                 </div>
                 <!-- Navbar End (Buttons or other elements) -->
-                <div class=" w-4/12 hidden lg:block gap-4 flex ">
-                    <div class="flex gap-2">
+                <div class=" w-2/12 hidden lg:flex gap-4 ">
+                    <div class="flex text-center gap-2">
                         <button
-                        class="btn btn-outline hover:text-[Black] bg-transparent font-bold border-[#00BDC5] hover:border-[black] text-md w-5/12 text-[#00BDC5]">
-                        Become a member</button>
+                            class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-bold transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-gray-200 text-secondary-foreground shadow-sm hover:bg-[#FFA28D] h-9 px-4 py-2 text-md"><a
+                                href="/login">Login</a></button>
                         <button
-                class="btn btn-outline hover:text-[Black] bg-transparent font-bold border-[#00BDC5] hover:border-[black] text-md w-3/12 text-[#00BDC5]">
-                Login</button>
+                            class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50  shadow h-9 px-4 py-2 text-md bg-[#00BDC5] text-white hover:bg-[#FFA28D] "><a
+                                href="/registration">Register</a></button>
                     </div>
-                    
+
             </nav>
         </div>
 
@@ -112,14 +120,19 @@
                         </svg>
                     </a>
                     <ul class="dropdown-content bg-white p-2 translate-x-20 shadow-xl z-10 rounded-lg mt-2">
-                        <li><a href="/competitive-programming" class="block p-2 text-black">Competitive Programming</a>
+                        <li><a href="/competitive_programming/index.html" class="block p-2 text-black">Competitive
+                                Programming</a>
                         </li>
-                        <li><a href="/web-devs" class="block p-2 text-black">Web Development</a></li>
-                        <li><a href="/devops" class="block p-2 text-black">DevOps</a></li>
-                        <li><a href="/linux-networking" class="block p-2 text-black">Linux Networking</a></li>
-                        <li><a href="/game-dev" class="block p-2 text-black">Game Development</a></li>
-                        <li><a href="/deep-neural-research" class="block p-2 text-black">Deep Neural Research</a></li>
-                        <li><a href="/iot-embedded" class="block p-2 text-black">IoT and Embedded Systems</a></li>
+                        <li><a href="/web_devs/index.html" class="block p-2 text-black">Web Development</a></li>
+                        <li><a href="/devops/index.html" class="block p-2 text-black">DevOps</a></li>
+                        <li><a href="/linux_based_network/index.html" class="block p-2 text-black">Linux Networking</a>
+                        </li>
+                        <li><a href="/game_and_mobile_development/index.html" class="block p-2 text-black">Game
+                                Development</a></li>
+                        <li><a href="/deep_neural_research/index.html" class="block p-2 text-black">Deep Neural
+                                Research</a></li>
+                        <li><a href="/iot_and_embedded_system_innovators/index.html" class="block p-2 text-black">IoT
+                                and Embedded Systems</a></li>
                     </ul>
                 </li>
                 <li><a href="/contact" class="font-medium text-lg text-black">Contact</a></li>
@@ -132,7 +145,7 @@
     <!-- hero carousel starts here -->
 
 
-    <div class="carousel-container w-[full] relative text-center pt-20">
+    <div class="carousel-container w-[full] relative text-center pt-16">
         <!-- Carousel -->
         <div id="carouselExampleIndicators" class="carousel slide m-4 w-[98%] mx-auto" data-bs-ride="carousel">
             <!-- Indicators -->
@@ -144,7 +157,7 @@
 
             <!-- Carousel Items -->
             <div class="carousel-inner">
-                <div class="carousel-item active rounded-2xl" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.562)), 
+                <div class="carousel-item active rounded-2xl inner-div" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.562)), 
                         url('/landing_page/media/sliders/img_1.jpg'); 
                         background-size: cover; 
                         background-position: center; 
@@ -168,11 +181,14 @@
             </div>
 
             <!-- Controls -->
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+            <div>
+
+            </div>
+            <a class="carousel-control-prev  " href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon " aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+            <a class="carousel-control-next " href="#carouselExampleIndicators" role="button" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </a>
@@ -180,12 +196,14 @@
 
         <!-- Centered Text Content (Overlay) -->
         <div
-            class="carousel-overlay text-center text-white px-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <h1 class=" text-2xl sm:text-6xl font-bold carousel-txt leading-snug my-5 ">Welcome to <br>Premier University Computer
-                Club</h1>
+            class="carousel-overlay text-center text-white sm:text-gray-600 sm:text-white px-0 sm:px-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <h1 class="text-lg sm:text-6xl font-bold carousel-txt leading-snug mt-16 sm:mt-1 ">
+                Welcome to <br>Premier University Computer Club
+            </h1>
             <button
-                class="btn btn-outline hover:text-[#00BDC5] bg-transparent font-bold animate__animated animate__zoomIn border-[#00BDC5] hover:border-[white] text-3xl w-3/12 text-[white]">Join
-                Us</button>
+                class="btn hover:text-[#00BDC5] bg-transparent  mt-6 animate__animated animate__zoomIn border-[#00BDC5] hover:border-[white] text-[16px] sm:text-3xl w-6/12 sm:w-3/12 text-[white]">
+                Join Us
+            </button>
         </div>
     </div>
 
@@ -197,15 +215,14 @@
     <!-- Message Sections -->
     <div class="container text-center my-5">
 
-        <h3 class="text-4xl font-bold">Ready to take your tech skills to the next level?</h3>
+        <h3 class="text-xl sm:text-4xl font-bold">Ready to take your tech skills to the next level?</h3>
 
-        <p class="text-lg my-4 text-gray-600">
+        <p class="text-sm sm:text-lg my-4 text-gray-600">
             Join us today and become part of our growing community. Let’s build something amazing together!
         </p>
 
-        <span
-                            class="btn mx-auto border-[#00BDC5] hover:border-[black] text-[#00BDC5] border-1  text-xl font-bold">
-                            <a href="#wings"> Let's Explore</a></span>
+        <button class="btn mx-auto border-[#00BDC5] hover:border-[black] text-[#00BDC5] text-sm sm:text-xl font-bold">
+            <a href="#wings" class=""> Let's Explore</a></button>
 
     </div>
     <!-- Message Ends -->
@@ -216,59 +233,66 @@
 
     <!-- About Us Section -->
     <div class="container text-center" id="about_us" style="margin-top: 110px; margin-bottom: 100px;">
-        <h1 class="text-5xl font-bold mt-28 mb-4">About Us</h1>
-        <hr class="mx-auto mb-12  h-1 w-24 border-0 bg-[#00f2ff]">
+        <h1 class=" text-4xl sm:text-5xl font-bold mt-28 mb-4">About Us</h1>
+        <hr class="mx-auto mb-6 sm:mb-12  h-1 w-24 border-0 bg-[black]">
 
         <div class="row text-center justify-center">
 
             <!-- Who are we? -->
-            <div class="col-md-4 col-sm-2 mb-4" data-aos="fade-right">
+            <div class="col-md-4 col-sm-2 mb-4" data-aos="zoom-in-up">
                 <div class="card min-h-[19rem] mx-auto w-10/12 shadow-lg border-none rounded-2xl">
                     <div class="card-body">
-                        <h1 class="pt-3 pb-3 text-3xl font-bold">Who are we?</h1>
-                        <p class="card-text px-2">We are a passionate community of tech enthusiasts, and innovators. Our
-                            club brings together students, professionals, and hobbyists from all walks of tech.</p>
-                            <span
-                            class="btn mx-auto border-[#00BDC5] hover:border-[black] text-[#00BDC5] border-1  text-xl font-bold">
-                            Learn More</span>
-                        </div>
-                </div>
-            </div>
-        
-            <!-- Our Mission -->
-            <div class="col-md-4 col-sm-2 mb-4" data-aos="fade-up">
-                <div class="card min-h-[19rem] w-10/12 mx-auto shadow-lg border-none rounded-2xl">
-                    <div class="card-body">
-                        <h5 class="pt-3 pb-3 text-3xl font-bold">Our Mission</h5>
-                        <p class="card-text px-2">Our mission is to create a vibrant community where students collaborate, share knowledge,
-                             and work together on innovative technology projects.</p>
-                            <span
-                            class="btn  mx-auto border-[#00BDC5] hover:border-[black] text-[#00BDC5] border-1  text-xl font-bold">
-                            Learn More</span>
+                        <h1 class="pt-3 pb-3 text-2xl sm:text-3xl font-bold">Who Are We?</h1>
+                        <p class="card-text text-justify px-2">We are a vibrant community of tech enthusiasts and
+                            innovators. Our club unites students, professionals, and hobbyists, creating a hub for
+                            collaboration and creativity in technology.</p>
+                        <button
+                            class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-sm sm:text-md w-6/12 sm:w-5/12">
+                            <a href="/web_devs/index.html">Learn More</a>
+                        </button>
                     </div>
                 </div>
             </div>
-        
-            <!-- Our Values -->
-            <div class="col-md-4 col-sm-2 mb-4" data-aos="fade-left">
-                <div class="card min-h-[19srem] w-10/12 mx-auto shadow-lg border-none rounded-2xl">
+
+            <!-- Our Mission -->
+            <div class="col-md-4 col-sm-2 mb-4" data-aos="zoom-in-up">
+                <div class="card min-h-[19rem] w-10/12 mx-auto shadow-lg border-none rounded-2xl">
                     <div class="card-body">
-                        <h5 class="pt-3 pb-3 text-3xl font-bold">Our Values</h5>
-                        <p class="card-text px-2">Integrity, excellence, and dedication to lifelong learning are the core
-                            values that drive our mission and vision. Encouraging our members to embrace continuous growth and stay curious, adaptive, and forward-thinking in the ever-evolving world of technology.
+                        <h5 class="pt-3 pb-3 text-2xl sm:text-3xl font-bold">Our Mission</h5>
+                        <p class="card-text px-2 text-justify">Our mission is to foster a collaborative environment
+                            where members share knowledge, develop skills, and work on groundbreaking projects that push
+                            the boundaries of innovation.
+                        </p>
+                        <button
+                            class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-sm sm:text-md w-6/12 sm:w-5/12">
+                            <a href="/web_devs/index.html">Learn More</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Values -->
+            <div class="col-md-4 col-sm-2 mb-4" data-aos="zoom-in-up">
+                <div class="card min-h-[19rem] w-10/12 mx-auto shadow-lg border-none rounded-2xl">
+                    <div class="card-body">
+                        <h5 class="pt-3 pb-3 text-2xl sm:text-3xl font-bold">Our Values</h5>
+                        <p class="card-text px-2 text-justify">Integrity, excellence, and lifelong learning form the
+                            core of our values. We inspire members to grow continuously, stay curious, and embrace
+                            change in the dynamic world of technology.
 
 
 
                         </p>
-                            <span
-                            class="btn  mx-auto border-[#00BDC5] hover:border-[black] text-[#00BDC5] border-1  text-xl font-bold">
-                            Learn More</span>
+                        <button
+                            class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-sm sm:text-md w-6/12 sm:w-5/12">
+                            <a href="/web_devs/index.html">Learn More</a>
+                        </button>
                     </div>
                 </div>
             </div>
-        
+
         </div>
-        
+
 
     </div>
     <!-- About Us Ends -->
@@ -283,7 +307,7 @@
 
 
     <!-- Wings Section -->
-    
+
     <!-- <div class="py-4 text-center my-5 swiper-container">
         <h1 class="text-5xl font-bold mt-28 mb-4">Our Wings</h1>
         <hr class="mx-auto mb-12  h-1 w-24 border-0 bg-gradient-to-r from-[orange] to-[#0ef3ff]">
@@ -421,13 +445,13 @@ Push the boundaries of technology and innovation through research!</p>
             <div class="swiper-pagination"></div>
         </div>
     </div> -->
-    <div id="wings" class="py-4 text-center my-5 swiper-container" >
+    <div id="wings" class=" py-2 sm:py-4 text-center my-0 sm:my-5 swiper-container wings_lg">
         <h1 class="text-5xl font-bold mt-28 mb-4">Our Wings</h1>
-        <hr class="mx-auto mb-12 h-1 w-24 border-0 bg-[#00f2ff]">
-    
+        <hr class="mx-auto mb-12 h-1 w-24 border-0 bg-[black]">
+
         <div class="swiper mySwiper mx-auto w-10/12 gap-2">
             <div class="swiper-wrapper mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-                
+
                 <!-- Swiper Slide 1 -->
                 <!-- <div class="swiper-slide">
                     <div class=" w-9/12 flex h-full mx-auto my-auto items-center">
@@ -443,39 +467,49 @@ Push the boundaries of technology and innovation through research!</p>
                         </div>
                     </div>
                 </div> -->
-                <div class="swiper-slide" data-aos="zoom-in-up" >
+                <div class="swiper-slide" data-aos="zoom-in-up">
                     <div class=" w-9/12 flex h-full mx-auto my-auto items-center">
-                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3 " style="border: none;">
+                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3 "
+                            style="border: none;">
                             <div class="card-body my-auto">
                                 <h5 class="text-2xl mt- font-bold">Competitive Programming</h5>
-                                <p class="card-text text-start leading-snug text-lg pt-2">Sharpen your problem-solving skills. Master algorithms and data structures. Join the challenge and become a coding champion!</p>
-                                <button class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-md w-/12">
-                                    <a href="/web_devs/index.html">Learn More</a>
+                                <p class="card-text text-start leading-snug text-lg pt-2">Sharpen your problem-solving
+                                    skills. Master algorithms and data structures. Join the challenge and become a
+                                    coding champion!</p>
+                                <button
+                                    class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-md w-/12">
+                                    <a href="/competitive_programming/index.html">Learn More</a>
                                 </button>
                             </div>
-                            <img src="landing_page/media/cp.jpg" class="rounded-circle w-6/12 my-auto -mr-20" alt="Competitive Programming">
+                            <img src="landing_page/media/cp.jpg" class="rounded-circle w-6/12 my-auto -mr-20"
+                                alt="Competitive Programming">
                         </div>
                     </div>
                 </div>
-                
-                <!-- Swiper Slide 2 -->
-<!-- Swiper Slide 2 -->
-<div class="swiper-slide" data-aos="zoom-in-up">
-    <div class=" w-9/12 flex h-full mx-auto my-auto items-center">
-        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3 " style="border: none;">
-            <div class="card-body my-auto">
-                <h5 class="text-2xl mt- font-bold">Web Development</h5>
-                <p class="card-text text-start leading-snug text-lg  pt-2">Build dynamic, responsive websites. Master front-end and back-end technologies. Turn your ideas into interactive web experiences!</p>
-                <button class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-md w-/12">
-                    <a href="/web_devs/index.html">Learn More</a>
-                </button>
-            </div>
-            <img src="landing_page/media/web.jpg" class="rounded-circle w-6/12 my-auto -mr-20 relative" alt="Web Development">
-        </div>
-    </div>
-</div>
 
-    
+                <!-- Swiper Slide 2 -->
+                <!-- Swiper Slide 2 -->
+                <div class="swiper-slide" data-aos="zoom-in-up">
+                    <div class=" w-9/12 flex h-full mx-auto my-auto items-center">
+                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3 "
+                            style="border: none;">
+                            <div class="card-body my-auto">
+                                <h5 class="text-2xl mt- font-bold">Web Development</h5>
+                                <p class="card-text text-start leading-snug text-lg  pt-2">Build dynamic, responsive
+                                    websites. Master front-end and back-end technologies. Turn your ideas into
+                                    interactive web experiences!</p>
+                                <button
+                                    class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-md w-/12">
+                                    <a href="/web_devs/index.html">Learn More</a>
+                                </button>
+                            </div>
+                            <img src="landing_page/media/web.jpg" class="rounded-circle w-6/12 my-auto -mr-20 relative"
+                                alt="Web Development">
+                        </div>
+                    </div>
+                </div>
+
+
                 <!-- Swiper Slide 3 -->
                 <!-- <div class="swiper-slide">
                     <div class="w-full flex h-full mx-auto my-auto items-center">
@@ -493,20 +527,25 @@ Push the boundaries of technology and innovation through research!</p>
                 </div> -->
                 <div class="swiper-slide" data-aos="zoom-in-up">
                     <div class="w-9/12 flex h-full mx-auto my-auto items-center">
-                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3" style="border: none;">
+                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3"
+                            style="border: none;">
                             <div class="card-body my-auto">
                                 <h5 class="text-2xl mt-2 font-bold">DevOps</h5>
-                                <p class="card-text text-start leading-snug text-lg pt-1">Streamline development and operations. Automate workflows for faster delivery. Empower teams to innovate with efficiency and scalability!</p>
-                                <button class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-md w-/12">
+                                <p class="card-text text-start leading-snug text-lg pt-1">Streamline development and
+                                    operations. Automate workflows for faster delivery. Empower teams to innovate with
+                                    efficiency and scalability!</p>
+                                <button
+                                    class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-md w-/12">
                                     <a href="/devops/index.html">Learn More</a>
                                 </button>
                             </div>
-                            <img src="landing_page/media/devup.jpg" class="rounded-circle w-6/12 my-auto -mr-20" alt="DevOps">
+                            <img src="landing_page/media/devup.jpg" class="rounded-circle w-6/12 my-auto -mr-20"
+                                alt="DevOps">
                         </div>
                     </div>
                 </div>
-                
-    
+
+
                 <!-- Swiper Slide 4 -->
                 <!-- <div class="swiper-slide">
                     <div class="w-full flex h-full mx-auto my-auto items-center">
@@ -524,20 +563,25 @@ Push the boundaries of technology and innovation through research!</p>
                 </div> -->
                 <div class="swiper-slide" data-aos="zoom-in-up">
                     <div class="w-9/12 flex h-full mx-auto my-auto items-center">
-                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3" style="border: none;">
+                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3"
+                            style="border: none;">
                             <div class="card-body my-auto">
                                 <h5 class="text-2xl mt-2 font-bold">Linux Based Networking</h5>
-                                <p class="card-text text-start leading-snug text-lg  pt-1">Master the power of Linux for networking solutions. Manage and secure networks with open-source tools. Build scalable, efficient infrastructures for modern businesses!</p>
-                                <button class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-md w-/12">
+                                <p class="card-text text-start leading-snug text-lg  pt-1">Master the power of Linux for
+                                    networking solutions. Manage and secure networks with open-source tools. Build
+                                    scalable, efficient infrastructures for modern businesses!</p>
+                                <button
+                                    class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-md w-/12">
                                     <a href="/linux_based_network/index.html">Learn More</a>
                                 </button>
                             </div>
-                            <img src="landing_page/media/network.jpg" class="rounded-circle w-6/12 my-auto -mr-20" alt="Linux Based Networking">
+                            <img src="landing_page/media/network.jpg" class="rounded-circle w-6/12 my-auto -mr-20"
+                                alt="Linux Based Networking">
                         </div>
                     </div>
                 </div>
 
-                
+
                 <!-- Swiper Slide 5 -->
                 <!-- <div class="swiper-slide">
                     <div class="w-full flex h-full mx-auto my-auto items-center">
@@ -555,19 +599,24 @@ Push the boundaries of technology and innovation through research!</p>
                 </div> -->
                 <div class="swiper-slide" data-aos="zoom-in-up">
                     <div class="w-9/12 flex h-full mx-auto my-auto items-center">
-                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3" style="border: none;">
+                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3"
+                            style="border: none;">
                             <div class="card-body my-auto">
                                 <h5 class="text-2xl mt-1 font-bold">Game and Mobile Development</h5>
-                                <p class="card-text text-start leading-snug text-lg pt-1">Create immersive games and apps with cutting-edge technologies. Design engaging experiences and nleash your creativity and bring your ideas to life with code!</p>
-                                <button class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-md w-/12">
+                                <p class="card-text text-start leading-snug text-lg pt-1">Create immersive games and
+                                    apps with cutting-edge technologies. Design engaging experiences and nleash your
+                                    creativity and bring your ideas to life with code!</p>
+                                <button
+                                    class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-md w-/12">
                                     <a href="/game_and_mobile_development/index.html">Learn More</a>
                                 </button>
                             </div>
-                            <img src="landing_page/media/game.jpg" class="rounded-circle w-6/12 my-auto -mr-20" alt="Game and Mobile Development">
+                            <img src="landing_page/media/game.jpg" class="rounded-circle w-6/12 my-auto -mr-20"
+                                alt="Game and Mobile Development">
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Swiper Slide 6 -->
                 <!-- <div class="swiper-slide">
                     <div class="w-full flex h-full mx-auto my-auto items-center">
@@ -585,19 +634,24 @@ Push the boundaries of technology and innovation through research!</p>
                 </div> -->
                 <div class="swiper-slide" data-aos="zoom-in-up">
                     <div class="w-9/12 flex h-full mx-auto my-auto items-center">
-                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3" style="border: none;">
+                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3"
+                            style="border: none;">
                             <div class="card-body my-auto">
                                 <h5 class="text-2xl mt-1 font-bold">Deep Neural Research</h5>
-                                <p class="card-text text-start leading-snug text-lg  pt-2">Sharpen your problem-solving skills. Explore the future of AI with advanced deep learning techniques. Unlock the potential of neural networks to solve complex problems.</p>
-                                <button class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-md w-/12">
+                                <p class="card-text text-start leading-snug text-lg  pt-2">Sharpen your problem-solving
+                                    skills. Explore the future of AI with advanced deep learning techniques. Unlock the
+                                    potential of neural networks to solve complex problems.</p>
+                                <button
+                                    class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-md w-/12">
                                     <a href="/deep_neural_research/index.html">Learn More</a>
                                 </button>
                             </div>
-                            <img src="landing_page/media/deep.jpg" class="rounded-circle w-6/12 my-auto -mr-20" alt="Deep Neural Research">
+                            <img src="landing_page/media/deep.jpg" class="rounded-circle w-6/12 my-auto -mr-20"
+                                alt="Deep Neural Research">
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Swiper Slide 7 -->
                 <!-- <div class="swiper-slide">
                     <div class="w-full flex h-full mx-auto my-auto items-center">
@@ -615,33 +669,219 @@ Push the boundaries of technology and innovation through research!</p>
                 </div> -->
                 <div class="swiper-slide col-span-2" data-aos="zoom-in-up">
                     <div class="w-5/12 flex h-full mx-auto my-auto items-center">
-                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3" style="border: none;">
+                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3"
+                            style="border: none;">
                             <div class="card-body my-auto">
                                 <h5 class="text-2xl mt-1 font-bold">IOT and Embedded System Innovators</h5>
-                                <p class="card-text text-start leading-snug text-lg pt-1">Transform the world with cutting-edge IoT and embedded systems. Create smart, interconnected devices that enhance everyday life.</p>
-                                <button class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-md w-/12">
+                                <p class="card-text text-start leading-snug text-lg pt-1">Transform the world with
+                                    cutting-edge IoT and embedded systems. Create smart, interconnected devices that
+                                    enhance everyday life.</p>
+                                <button
+                                    class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-md w-/12">
                                     <a href="/iot_and_embedded_system_innovators/index.html">Learn More</a>
                                 </button>
                             </div>
-                            <img src="landing_page/media/IoT.jpeg" class="rounded-circle w-6/12 my-auto -mr-20" alt="IOT and Embedded System Innovators">
+                            <img src="landing_page/media/IoT.jpeg" class="rounded-circle w-6/12 my-auto -mr-20"
+                                alt="IOT and Embedded System Innovators">
                         </div>
                     </div>
                 </div>
-                
+
             </div>
             <div class="swiper-pagination"></div>
         </div>
     </div>
-    
 
 
+
+
+    <!-- Wings for smaller devices -->
+    <div id="wings" class="py-2 sm:py-4 text-center my-0 sm:my-5 swiper-container sm:hidden">
+        <h1 class="text-4xl sm:text-5xl font-bold mt-10 sm:mt-28 mb-4">Our Wings</h1>
+        <hr class="mx-auto mb-12 h-1 w-24 border-0 bg-[black]">
+
+        <div class="swiper mySwiper mx-auto w-full gap-2 mt-20">
+            <div class="swiper-wrapper mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+
+                <!-- Swiper Slide 1 -->
+                <div class="swiper-slide" data-aos="zoom-in-up">
+                    <div class="w-full flex h-full mx-auto my-auto items-center">
+                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3 relative"
+                            style="border: none;">
+                            <!-- Image positioned outside 50% -->
+                            <img src="landing_page/media/cp.jpg"
+                                class="rounded-full border-8  w-6/12 h-auto absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                                alt="Competitive Programming">
+
+                            <div class="card-body my-auto pt-16  ">
+                                <h5 class=" text-xl sm:text-2xl mt-10 font-bold">Competitive Programming</h5>
+                                <p class="card-text text-start px-2 leading-snug text-sm sm:text-lg pt-2
+                                 text-justify">Sharpen your problem-solving skills. Master algorithms and data
+                                    structures. Join the challenge and become a coding champion!</p>
+                                <button
+                                    class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-sm sm:text-md w-6/12 sm:w-3/12">
+                                    <a href="/web_devs/index.html">Learn More</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swiper Slide 2 -->
+                <div class="swiper-slide" data-aos="zoom-in-up">
+                    <div class="w-full flex h-full mx-auto my-auto items-center">
+                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3 relative"
+                            style="border: none;">
+                            <!-- Image positioned outside 50% -->
+                            <img src="landing_page/media/web.jpg"
+                                class="rounded-full border-8 w-6/12 h-auto absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                                alt="Web Development">
+
+                            <div class="card-body my-auto pt-16">
+                                <h5 class="text-xl sm:text-2xl mt-10 font-bold">Web Development</h5>
+                                <p class="card-text text-start px-2 leading-snug text-sm text-center sm:text-lg pt-2">
+                                    Build dynamic, responsive websites. Master front-end and back-end technologies. Turn
+                                    your ideas into interactive web experiences!</p>
+                                <button
+                                    class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-sm sm:text-md w-6/12 sm:w-3/12">
+                                    <a href="/web_devs/index.html">Learn More</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swiper Slide 3 -->
+                <div class="swiper-slide" data-aos="zoom-in-up">
+                    <div class="w-full flex h-full mx-auto my-auto items-center">
+                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3 relative"
+                            style="border: none;">
+                            <!-- Image positioned outside 50% -->
+                            <img src="landing_page/media/devup.jpg"
+                                class="rounded-full border-8 w-6/12 h-auto absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                                alt="DevOps">
+
+                            <div class="card-body my-auto pt-16">
+                                <h5 class="text-xl sm:text-2xl mt-10 font-bold">DevOps</h5>
+                                <p class="card-text text-start px-2 leading-snug text-sm sm:text-lg text-center pt-2">
+                                    Streamline development and operations. Automate workflows for faster delivery.
+                                    Empower teams to innovate with efficiency and scalability!</p>
+                                <button
+                                    class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-sm sm:text-md w-6/12 sm:w-3/12">
+                                    <a href="/devops/index.html">Learn More</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper Slide 4 -->
+                <div class="swiper-slide" data-aos="zoom-in-up">
+                    <div class="w-full flex h-full mx-auto my-auto items-center">
+                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3 relative"
+                            style="border: none;">
+                            <!-- Image positioned outside 50% -->
+                            <img src="landing_page/media/network.jpg"
+                                class="rounded-full border-8 w-6/12 h-auto absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                                alt="Linux Based Networking">
+
+                            <div class="card-body my-auto pt-16">
+                                <h5 class="text-xl sm:text-2xl mt-10 font-bold">Linux Based Networking</h5>
+                                <p class="card-text text-start px-2 leading-snug text-sm sm:text-lg text-center pt-2">
+                                    Master the power of Linux for networking solutions. Manage and secure networks with
+                                    open-source tools. Build scalable, efficient infrastructures for modern businesses!
+                                </p>
+                                <button
+                                    class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-sm sm:text-md w-6/12 sm:w-3/12">
+                                    <a href="/linux_based_network/index.html">Learn More</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swiper Slide 5 -->
+                <div class="swiper-slide" data-aos="zoom-in-up">
+                    <div class="w-full flex h-full mx-auto my-auto items-center">
+                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3 relative"
+                            style="border: none;">
+                            <!-- Image positioned outside 50% -->
+                            <img src="landing_page/media/game.jpg"
+                                class="rounded-full border-8 w-6/12 h-auto absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                                alt="Game and Mobile Development">
+
+                            <div class="card-body my-auto pt-16">
+                                <h5 class="text-xl sm:text-2xl mt-10 font-bold">Game and Mobile Development</h5>
+                                <p class="card-text text-start px-2 leading-snug text-sm sm:text-lg text-center pt-2">
+                                    Create immersive games and apps with cutting-edge technologies. Design engaging
+                                    experiences and unleash your creativity with code!</p>
+                                <button
+                                    class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-sm sm:text-md w-6/12 sm:w-3/12">
+                                    <a href="/game_and_mobile_development/index.html">Learn More</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swiper Slide 6 -->
+                <div class="swiper-slide" data-aos="zoom-in-up">
+                    <div class="w-full flex h-full mx-auto my-auto items-center">
+                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3 relative"
+                            style="border: none;">
+                            <!-- Image positioned outside 50% -->
+                            <img src="landing_page/media/deep.jpg"
+                                class="rounded-full border-8 w-6/12 h-auto absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                                alt="Deep Neural Research">
+
+                            <div class="card-body my-auto pt-16">
+                                <h5 class="text-xl sm:text-2xl mt-10 font-bold">Deep Neural Research</h5>
+                                <p class="card-text text-start px-2 leading-snug text-sm text-center sm:text-lg pt-2">
+                                    Sharpen your problem-solving skills. Explore the future of AI with advanced deep
+                                    learning techniques. Unlock the potential of neural networks to solve complex
+                                    problems.</p>
+                                <button
+                                    class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-sm sm:text-md w-6/12 sm:w-3/12">
+                                    <a href="/deep_neural_research/index.html">Learn More</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swiper Slide 7 -->
+                <div class="swiper-slide" data-aos="zoom-in-up">
+                    <div class="w-full flex h-full mx-auto my-auto items-center">
+                        <div class="card rounded-2xl shadow-xl sm:rounded-tr-[15%] sm:rounded-br-[15%] flex-row mx-3 my-3 relative"
+                            style="border: none;">
+                            <!-- Image positioned outside 50% -->
+                            <img src="landing_page/media/IoT.jpeg"
+                                class="rounded-full border-8 w-6/12 h-auto absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                                alt="IOT and Embedded System Innovators">
+
+                            <div class="card-body my-auto pt-16">
+                                <h5 class="text-xl sm:text-2xl mt-10 font-bold">IOT and Embedded System Innovators</h5>
+                                <p class="card-text text-start px-2 leading-snug text-sm sm:text-lg text-center  pt-2">
+                                    Transform the world with cutting-edge IoT and embedded systems. Create smart,
+                                    interconnected devices that enhance everyday life.</p>
+                                <button
+                                    class="btn btn-outline mx-auto border-[#00BDC5] text-[#00BDC5] hover:text-[black] bg-transparent font-medium hover:border-[black] text-sm sm:text-md w-6/12 sm:w-3/12">
+                                    <a href="/iot_and_embedded_system_innovators/index.html">Learn More</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
 
 
     <!-- Event Carousel -->
-    <div id="events" class="container">
+    <div id="events" class="container event-lg">
         <div>
-            <h1 class="text-5xl font-bold mt-28 mb-4 text-center">Upcoming Events and Workshops</h1>
-            <hr class="mx-auto mb-12  h-1 w-32 border-0 bg-[#00f2ff]">
+            <h1 class="text-2xl sm:text-5xl font-bold mt-28 sm:mb-4 text-center">Upcoming Events and Workshops</h1>
+            <hr class="mx-auto mb-12  h-1 w-32 border-0 bg-[black]">
 
             <div class="custom-slider-wrapper ">
                 <ul class="custom-slides">
@@ -674,12 +914,12 @@ Push the boundaries of technology and innovation through research!</p>
                             class="full-width-img" s>
                     </li>
                 </ul>
-                <div class="absolute top-1/2 left-0 transform -translate-y-1/2 px-4 cursor-pointer z-10">
+                <div class="absolute top-1/2 left-0 transform -translate-y-1/2 px-4 cursor-pointer z-1">
                     <span id="custom-prev" class="text-4xl hover:text-[#00DFEE] text-orange-400">
                         <i class="fas fa-chevron-left"></i>
                     </span>
                 </div>
-                <div class="absolute top-1/2 right-0  transform -translate-y-1/2 px-4 cursor-pointer z-10">
+                <div class="absolute top-1/2 right-0  transform -translate-y-1/2 px-4 cursor-pointer z-1">
                     <span id="custom-next" class="text-4xl hover:text-[#00DFEE] text-orange-400">
                         <i class="fas fa-chevron-right"></i>
                     </span>
@@ -692,18 +932,20 @@ Push the boundaries of technology and innovation through research!</p>
 
 
     </div>
+    <!-- Event Carousel Phone Only-->
+
 
 
 
 
 
     <!-- Member Number Section -->
-    <section class="testimonials-section py-5 bg-light" style="margin-top: 100px;">
+    <section class="testimonials-section py-5 bg-light" style="padding-top: 100px;">
 
         <div class="container">
 
-            <h1 class="text-5xl font-bold mt-18 mb-4 text-center">We Are Of,</h1>
-            <hr class="mx-auto mb-12  h-1 w-28 border-0 bg-[#00f2ff]">
+            <h1 class="text-4xl sm:text-5xl font-bold mt-18 mb-4 text-center">We Are Of,</h1>
+            <hr class="mx-auto mb-12  h-1 w-28 border-0 bg-[black]">
             <div class="row">
 
                 <!-- Members Number -->
@@ -713,7 +955,8 @@ Push the boundaries of technology and innovation through research!</p>
                             <div class="testimonial-icon mb-3">
                                 <i class="fas fa-user-circle fa-3x"></i>
                             </div>
-                            <h4 class="testimonial-name text-xl "><span class="text-[#00BDC5] text-3xl" id="nbr1">0</span> + Active Members</h4>
+                            <h4 class="testimonial-name text-xl "><span class="text-[#00BDC5] text-3xl"
+                                    id="nbr1">0</span> + Active Members</h4>
                             <p class="testimonial-quote">"Our club is home to over 120 enthusiastic members, ranging
                                 from beginners to experts, all united by a passion for technology and innovation."</p>
                         </div>
@@ -727,8 +970,10 @@ Push the boundaries of technology and innovation through research!</p>
                             <div class="testimonial-icon mb-3">
                                 <i class="fas fa-user-circle fa-3x"></i>
                             </div>
-                            <h4 class="testimonial-name text-xl"> <span class="text-[#00BDC5] text-3xl" id="nbr2">0</span> + Skilled Trainers</h4>
-                            <p class="testimonial-quote">"Our club is guided by dedicated trainers with expertise across
+                            <h4 class="testimonial-name text-xl"> <span class="text-[#00BDC5] text-3xl"
+                                    id="nbr2">0</span> + Skilled Trainers</h4>
+                            <p class="testimonial-quote text-justify">"Our club is guided by dedicated trainers with
+                                expertise across
                                 domains, from competitive programming to deep learning. Their mentorship transforms
                                 beginners into skilled professionals, fostering innovation and practical knowledge."</p>
                         </div>
@@ -742,8 +987,10 @@ Push the boundaries of technology and innovation through research!</p>
                             <div class="testimonial-icon mb-3">
                                 <i class="fas fa-user-circle fa-3x"></i>
                             </div>
-                            <h4 class="testimonial-name text-xl"> <span class="text-[#00BDC5] text-3xl" id="nbr3">0</span> + Established Alumni</h4>
-                            <p class="testimonial-quote">"Our alumni have excelled in diverse fields, contributing to
+                            <h4 class="testimonial-name text-xl"> <span class="text-[#00BDC5] text-3xl"
+                                    id="nbr3">0</span> + Established Alumni</h4>
+                            <p class="testimonial-quote text-justify">"Our alumni have excelled in diverse fields,
+                                contributing to
                                 top companies as well as driving innovation in startups and research. They embody the
                                 success and impact of our club's vision."</p>
                         </div>
@@ -763,32 +1010,34 @@ Push the boundaries of technology and innovation through research!</p>
     <!-- Location Section -->
     <div class="pb-16">
         <div class="container">
-            <h1 class="text-5xl font-bold mt-28 mb-4 text-center">Our Location</h1>
-            <hr class="mx-auto mb-12  h-1 w-28 border-0 bg-[#00f2ff]">
-            <div class="row">  <div class="row justify-content-center items-center">
+            <h1 class="text-4xl sm:text-5xl font-bold mt-12 sm:mt-28 mb-4 text-center">Our Location</h1>
+            <hr class="mx-auto mb-12  h-1 w-28 border-0 bg-[black]">
+            <div class="row mx-auto">
+                <div class="row justify-content-center mx-auto items-center">
 
-                <!-- Location Address Information -->
-                <div class="col-lg-5 col-md-6 col-12 mb-4">
-                    <div class="location-card text-center p-4 shadow-lg border-1">
-                        <i class="fas fa-map-marker-alt fa-3x mb-3 location-icon text-[#00BDC5]"></i>
-                        <h5 class="location-title text-2xl">Building no 5, Academic</h5>
-                        <p class="location-address text-lg">44, Hazari Ln, Chattogram 4000</p>
+                    <!-- Location Address Information -->
+                    <div class="col-lg-5 col-md-6 col-12 mb-4">
+                        <div class="location-card text-center p-4 shadow-lg border-1">
+                            <i class="fas fa-map-marker-alt fa-3x mb-3 location-icon text-[#00BDC5]"></i>
+                            <h5 class="location-title text-xl sm:text-2xl">Building no 5, Academic</h5>
+                            <p class="location-address text-sm sm:text-lg">44, Hazari Ln, Chattogram 4000</p>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Embedded Google Map -->
-                <div class="col-lg-5 col-md-6 col-12 mb-4 rounded-2xl">
-                    <div class="rounded-2xl" style="position: relative; overflow: hidden; padding-top: 56.25%; height: 0;">
-                        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-                            frameborder="0" allowfullscreen
-                            src="https://www.google.com/maps/embed/v1/place?q=Building+no+5,+Academic,+44,+Hazari+Ln,+Chattogram+4000&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-                        </iframe>
+                    <!-- Embedded Google Map -->
+                    <div class="col-lg-5 col-md-6 col-12 mb-4 rounded-2xl">
+                        <div class="rounded-2xl"
+                            style="position: relative; overflow: hidden; padding-top: 56.25%; height: 0;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+                                frameborder="0" allowfullscreen
+                                src="https://www.google.com/maps/embed/v1/place?q=Building+no+5,+Academic,+44,+Hazari+Ln,+Chattogram+4000&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                            </iframe>
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
 
@@ -839,9 +1088,10 @@ Push the boundaries of technology and innovation through research!</p>
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="landing_page/main.js"></script>
-    <script src="landing_page/Components/Cards/c_r.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
     <script>
         // Toggle mobile menu
@@ -853,12 +1103,84 @@ Push the boundaries of technology and innovation through research!</p>
         });
     </script>
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>function increaseNumberAnimation(elementId, endNumber, speed = 10) {
+            const element = document.getElementById(elementId);
+
+            if (!element) return;
+
+            const animationRunning = JSON.parse(element.dataset.animationRunning ?? "false");
+
+            if (animationRunning) return;
+
+            element.dataset.animationRunning = true;
+
+            incNbrRec(0, endNumber, element, speed);
+        }
+
+        function incNbrRec(currentNumber, endNumber, element, speed) {
+            if (currentNumber <= endNumber) {
+                element.innerHTML = currentNumber.toLocaleString();
+
+                setTimeout(function () {
+                    incNbrRec(currentNumber + 1, endNumber, element, speed);
+                }, speed);
+            } else {
+                element.dataset.animationRunning = false;
+            }
+        }
+
+        function triggerOnScroll(elementId, endNumber, speed = 10) {
+            const targetElement = document.getElementById(elementId);
+
+            if (!targetElement) return;
+
+            const observerOptions = {
+                root: null,
+                threshold: 0.5
+            };
+
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        increaseNumberAnimation(elementId, endNumber, speed); e
+                    } else {
+                        const element = entry.target;
+                        element.dataset.animationRunning = false;
+                        element.innerHTML = '0';
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+            observer.observe(targetElement);
+        }
+
+        function applyNumberAnimations(elementsConfig) {
+            elementsConfig.forEach(config => {
+                triggerOnScroll(config.id, config.endNumber, config.speed);
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const elementsConfig = [
+                { id: "nbr1", endNumber: 120, speed: 35 },
+                { id: "nbr2", endNumber: 30, speed: 80 },
+                { id: "nbr3", endNumber: 300, speed: 10 },
+                { id: "nbr4", endNumber: 300, speed: 20 }
+            ];
+
+            applyNumberAnimations(elementsConfig);
+        });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="landing_page/main.js"></script>
+    <script src="landing_page/Components/Cards/c_r.js"></script>
 </body>
 
 
