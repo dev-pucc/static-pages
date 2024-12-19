@@ -1,16 +1,55 @@
-/* Custom styles for the navbar */
-.navbar {
-    background-color: transparent;
+@font-face {
+    font-family: 'sdglitchdemo'; /* Name for your font */
+    src: url('./fonts/sdglitchdemo/sdglitchdemo.regular.ttf') format('truetype'); /* Path to the .ttf file */
 }
+
+/* Css for noise effect */
+.noise::before{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    /* you can control opacity of noise  */
+    opacity: .05;  
+    z-index: 1000;
+    pointer-events: none;
+    background: url(./media/noise.gif) ;
+}
+/* css for dotted black background */
+.dot-background{
+    background-color: #121212;
+    background-image: repeating-radial-gradient(circle, rgba(255,255,255,0.05) 0, rgba(255,255,255,0.05) 2px, transparent 2px, transparent 4px);
+    background-size: 4px 4px; /* Adjust size for intensity */
+}
+body {
+  font-family: 'sdglitchdemo';
+}
+
+
+
+
+
+/* css of navbar */
 
 .navbar-nav a {
     font-size: 1.1rem;
 }
 
-.login-btn {
-    border: 2px solid #007bff;
-    color: #007bff;
+.dropdown-menu .dropdown-item {
+    color: white; 
+    background-color: transparent; 
 }
+
+.dropdown-menu .dropdown-item:hover {
+    color: black; 
+    background-color: white; /* Optional: Add a hover background */
+}
+
+
+
+
 
 /* Custom CSS for Hero Section */
 .hero-section {
@@ -41,3 +80,463 @@
     margin: 0 auto;
     object-fit: contain;
 }
+
+
+
+
+
+
+
+/* text animation for landing page text effects */
+   /* Base styles */
+.animated-text {
+    font-family: 'sdglitchdemo', sans-serif; /* Use your chosen font */
+    color: #fff;
+    text-shadow: 
+        0 0 3px #8a2be2, 
+        0 0 5px #8a2be2, 
+        0 0 8px #00d4ff, 
+        0 0 12px #00d4ff; /* Neon blue and purple shades */
+    animation: retro-glow 2s infinite alternate;
+    text-align: center;
+}
+
+/* Keyframes for retro glowing effect */
+@keyframes retro-glow {
+    0% {
+        text-shadow: 
+            0 0 3px #ff007f, 
+            0 0 5px #ff007f, 
+            0 0 10px #ff007f, 
+            0 0 15px #00ffe1;
+    }
+    50% {
+        text-shadow: 
+            0 0 2px #e100ff, 
+            0 0 4px #e100ff, 
+            0 0 7px #e100ff, 
+            0 0 12px #00ffee;
+    }
+    100% {
+        text-shadow: 
+            0 0 3px #00ffee, 
+            0 0 5px #00ffee, 
+            0 0 10px #ff007f, 
+            0 0 15px #8a2be2;
+    }
+}
+
+  
+
+
+
+  
+  /* animation of buttons effect */
+  .cybr-btn {
+    --primary: hsla(0, 0%, 0%, 0.685); /* Black */
+--shadow-primary: hsl(0, 0%, 30%); /* Dark grey for shadow */
+--primary-hue: 0;
+--primary-lightness: 0; /* Black */
+--color: hsl(0, 0%, 100%); /* White */
+    --font-size: 26px;
+    --shadow-primary-hue: 180;
+    --label-size: 9px;
+    --shadow-secondary-hue: 60;
+    --shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
+    --clip: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
+    --border: 4px;
+    --shimmy-distance: 5;
+    --clip-one: polygon(0 2%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 90%, 85% 95%, 8% 95%, 0 70%);
+    --clip-two: polygon(0 78%, 100% 78%, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 78%);
+    --clip-three: polygon(0 44%, 100% 44%, 100% 54%, 95% 54%, 95% 54%, 85% 54%, 85% 54%, 8% 54%, 0 54%);
+    --clip-four: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+    --clip-five: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+    --clip-six: polygon(0 40%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 8% 85%, 0 70%);
+    --clip-seven: polygon(0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 8% 80%, 0 70%);
+    color: var(--color);
+    cursor: pointer;
+    background: transparent;
+    text-transform: uppercase;
+    outline: transparent;
+    position: relative;
+    border: 0;
+    transition: background 0.2s;
+    z-index: 1;
+  }
+  .cybr-btn:hover {
+    --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.8%));
+  }
+  .cybr-btn:active {
+    --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.6%));
+  }
+  
+  .cybr-btn:after,
+  .cybr-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    clip-path: var(--clip);
+    z-index: -1;
+  }
+  
+  .cybr-btn:before {
+    background: var(--shadow-primary);
+    transform: translate(var(--border), 0);
+  }
+  
+  .cybr-btn:after {
+    background: var(--primary);
+  }
+  
+  .cybr-btn__tag {
+    position: absolute;
+    padding: 1px 4px;
+    letter-spacing: 1px;
+    line-height: 1;
+    bottom: -5%;
+    right: 5%;
+    font-weight: normal;
+    color: hsl(0, 0%, 0%);
+    font-size: var(--label-size);
+  }
+  
+  .cybr-btn__glitch {
+    position: absolute;
+    top: calc(var(--border) * -1);
+    left: calc(var(--border) * -1);
+    right: calc(var(--border) * -1);
+    bottom: calc(var(--border) * -1);
+    background: var(--shadow-primary);
+    text-shadow: 2px 2px var(--shadow-primary), -2px -2px var(--shadow-secondary);
+    clip-path: var(--clip);
+    animation: glitch 2s infinite;
+    display: none;
+  }
+  
+  .cybr-btn:hover .cybr-btn__glitch {
+    display: block;
+  }
+  
+  .cybr-btn__glitch:before {
+    content: '';
+    position: absolute;
+    top: calc(var(--border) * 1);
+    right: calc(var(--border) * 1);
+    bottom: calc(var(--border) * 1);
+    left: calc(var(--border) * 1);
+    clip-path: var(--clip);
+    background: var(--primary);
+    z-index: -1;
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip-path: var(--clip-one);
+    }
+    2%, 8% {
+      clip-path: var(--clip-two);
+      transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+    }
+    6% {
+      clip-path: var(--clip-two);
+      transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+    }
+    9% {
+      clip-path: var(--clip-two);
+      transform: translate(0, 0);
+    }
+    10% {
+      clip-path: var(--clip-three);
+      transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+    }
+    13% {
+      clip-path: var(--clip-three);
+      transform: translate(0, 0);
+    }
+    14%, 21% {
+      clip-path: var(--clip-four);
+      transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+    }
+    25% {
+      clip-path: var(--clip-five);
+      transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+    }
+    30% {
+      clip-path: var(--clip-five);
+      transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+    }
+    35%, 45% {
+      clip-path: var(--clip-six);
+      transform: translate(calc(var(--shimmy-distance) * -1%));
+    }
+    40% {
+      clip-path: var(--clip-six);
+      transform: translate(calc(var(--shimmy-distance) * 1%));
+    }
+    50% {
+      clip-path: var(--clip-six);
+      transform: translate(0, 0);
+    }
+    55% {
+      clip-path: var(--clip-seven);
+      transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+    }
+    60% {
+      clip-path: var(--clip-seven);
+      transform: translate(0, 0);
+    }
+    31%, 61%, 100% {
+      clip-path: var(--clip-four);
+    }
+  }
+  
+  .cybr-btn:nth-of-type(2) {
+    --primary-hue: 260;
+  }
+ 
+
+
+
+
+  /* text glitch effect of paragraphs   */
+
+  .text-glitch{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+  }
+  .text-glitch::before,
+  .text-glitch::after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .text-glitch::before{
+    color:#ff00ffc8;
+    animation: text-glitch 3s infinite;
+  }
+  .text-glitch::after{
+    color: #00ffff;
+    animation: text-glitch 2s infinite;
+  }
+  @keyframes text-glitch {
+    0% {
+        left: -2px;
+    }
+    25% {
+        left: 2px;
+    }
+    50% {
+        left: -2px;
+    }
+    75% {
+        left: -2px;
+    }
+    100% {
+        left: -2px;
+    }
+  }
+  
+
+
+
+
+
+
+  /*tools and techonology Card design and animation */
+
+  .cyberpunk-card {
+    font-size: 1.1rem;
+    height: 16rem;
+    background: #2e2e2e; /* Dark gray background for the card */
+    color: #fff; /* White text for a cyberpunk feel */
+    border: 3px solid transparent;
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 1;
+    animation: glow1 3s infinite;
+}
+
+.cyberpunk-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(45deg, #100108ef, #1e4245, #45162d);
+    background-size: 400%;
+    clip-path: inherit;
+    filter: blur(10px);
+    animation: glowing-bg 6s linear infinite;
+}
+
+.cyberpunk-card:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 3px solid white;
+    clip-path: inherit;
+    z-index: -2;
+    animation: border-animation 4s linear infinite;
+}
+
+@keyframes glowing-bg {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes border-animation {
+    0%, 100% {
+        border-color: rgba(255, 0, 123, 0.302); /* Toned down pink */
+    }
+    50% {
+        border-color: rgba(0, 234, 255, 0.5); /* Toned down cyan */
+    }
+}
+
+
+@keyframes glow1 {
+    0%, 100% {
+        box-shadow: 0 0 5px #ff007bd5, 0 0 10px #00eaff, 0 0 15px #ff007bd5; /* Reduced glow intensity */
+    }
+    50% {
+        box-shadow: 0 0 7px #00eaff, 0 0 12px #ff007b, 0 0 18px #00eaff; /* Reduced glow intensity */
+    }
+}
+
+
+
+
+
+
+
+/* Event section card css */
+
+.cyberpunk-card1 {
+
+    background: #2e2e2e; /* Dark gray background for the card */
+    color: #fff; /* White text for a cyberpunk feel */
+    border: 3px solid transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+   
+}
+
+.cyberpunk-card1:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(45deg, #100108ef, #1e4245, #45162d);
+    background-size: 400%;
+    clip-path: inherit;
+    filter: blur(10px);
+    animation: glowing-bg1 6s linear infinite;
+}
+
+.cyberpunk-card1:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 3px solid white;
+    clip-path: inherit;
+    z-index: -2;
+    animation: border-animation1 4s linear infinite;
+}
+
+@keyframes glowing-bg1 {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes border-animation1 {
+    0%, 100% {
+        border-color: rgba(255, 0, 123, 0.302); /* Toned down pink */
+    }
+    50% {
+        border-color: rgba(0, 234, 255, 0.5); /* Toned down cyan */
+    }
+}
+
+
+
+
+
+
+
+/* Hero section text responsive css */
+@media (min-width: 992px) {
+    .button-area{
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+  }
+  
+@media (max-width: 768px) {
+    .text-area-hero{
+        height: 80vh;
+    }
+    .button-area{
+        margin-top: -2rem;
+    }
+
+}
+@media (max-width: 375px) {
+    .text-area-hero{
+        height: 90vh;
+    }
+    .button-area{
+        margin-top: -3rem;
+        
+    }
+    .paragraph-area{
+        margin-top:-2rem
+    }
+
+
+}
+
+
+
+
+  
+  
+  
+  
