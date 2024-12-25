@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IoT and Embedded Systems Innovators</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #ffffff;
+        color: #333333;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar {
+        background-color: rgba(255, 255, 255, 0.65); /* 80% opacity */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar.scrolled {
+        background-color: rgba(255, 255, 255, 0.8); /* 80% opacity */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar-brand img {
+        height: 40px;
+      }
+
+      .nav-link {
+        color: #555555 !important;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      .nav-link:hover {
+        color: #007bff !important;
+      }
+
+      .hero-section {
+        background: linear-gradient(
+            to top,
+            rgba(255, 255, 255, 0.7),
+            /* #ffffff with transparency */ rgba(240, 248, 255, 0.6)
+              /* #f0f8ff with transparency */
+          ),
+          url("media/iot_hero3.jpg") no-repeat center center;
+        background-size: cover;
+        height: 75vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 50px;
+      }
+
+      .hero-section h1 {
+        font-size: 2.5rem;
+        color: #333333;
+        font-weight: bold;
+      }
+
+      .hero-section span {
+        color: #ff6600;
+      }
+
+      .hero-section p {
+        font-size: 1.1rem;
+        color: #555555;
+        margin-top: 20px;
+      }
+
+      .btn-smart {
+        background-color: #ff6600;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 30px;
+        font-size: 1rem;
+        font-weight: bold;
+        box-shadow: 0 4px 6px rgba(255, 102, 0, 0.3);
+        transition: all 0.3s ease;
+        margin-top: 20px;
+      }
+
+      .btn-smart:hover {
+        background-color: #e65c00;
+        transform: scale(1.1);
+      }
+
+      .card {
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+      }
+
+      .card img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      footer {
+        color: #555555;
+        padding: 1rem;
+        text-align: center;
+        border-top: 1px solid #dddddd;
+        background-image: url(media/footer.jpg);
+      }
+
+      .social-icons a {
+        color: #555555;
+        margin: 0 10px;
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+      }
+
+      .social-icons a:hover {
+        color: #007bff;
+      }
+
+      .trainers-section {
+        text-align: center;
+        padding: 50px 20px;
+        background: url("./media/testi.jpg") no-repeat center center/cover;
+        color: white;
+      }
+
+      .trainers-section h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+
+      .trainers-section .trainer-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .trainer-card {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 20px;
+        max-width: 300px;
+        color: #333;
+      }
+
+      .trainer-card .quote {
+        font-size: 18px;
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .trainer-card .quote-icon {
+        color: #ff6600;
+        font-size: 24px;
+      }
+
+      .trainer-profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .trainer-profile img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .trainer-info {
+        text-align: left;
+      }
+
+      .trainer-name {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      .trainer-role {
+        font-size: 14px;
+        color: #ff6600;
+      }
+
+      .latest-projects-section {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #f8f9fa;
+      }
+
+      .latest-projects-section h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+
+      .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .project-card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        max-width: 300px;
+        text-align: left;
+      }
+
+      .project-card img {
+        width: 100%;
+        height: auto;
+      }
+
+      .project-info {
+        padding: 20px;
+      }
+
+      .project-info .category {
+        font-size: 14px;
+        color: #ff6600;
+        margin-bottom: 5px;
+      }
+
+      .project-info .title {
+        font-size: 18px;
+        color: #ff6600;
+        font-weight: bold;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-sm fixed-top">
+      <div class="container-fluid py-2">
+        <a class="navbar-brand" href="/">
+          <img src="media/puc_computer_club_logo_color.png" alt="Brand Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Divisions
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../competitive_programming/index.html"
+                    >Competitive Programming</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../web_devs/index.html"
+                    >Web Devs</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../devops/index.html"
+                    >DevOps</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../linux_based_network/index.html"
+                    >Linux Based Networking</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../game_and_mobile_development/index.html"
+                    >Game And Mobile Development</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../iot_and_embedded_system_innovators/index.html"
+                    >IoT and Embedded Systems Innovators</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../deep_neural_research/"
+                    >Deep Neural Research</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../additional_info_page/learn_more.html"
+                >Learn More</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Additional_pages/contact_us.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a href="Additional_pages/join_us.html">
+              <button type="button" class="btn btn-outline-primary me-2">
+                Become a Member
+              </button>
+            </a>
+            <button type="button" class="btn btn-primary">Login</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div>
+        <h1>Explore the World of <span>IoT and Embedded Systems</span></h1>
+
+        <button class="btn-smart">Contact Us</button>
+      </div>
+    </section>
+
+    <!-- Remaining Sections -->
+    <section id="what-we-do" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 style="color: #007bff">What We Do</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                height="300"
+                src="./media/iot_workshop.png"
+                class="card-img-top"
+                alt="IoT Workshop"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  We organize workshops and projects focused on IoT
+                  applications, enabling hands-on experience with cutting-edge
+                  technologies.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                height="300"
+                src="./media/IOT_solutions.jpg"
+                class="card-img-top"
+                alt="Smart Home Solutions"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Our members design smart solutions, from home automation to
+                  sensor networks, to solve real-world problems creatively.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                height="300"
+                src="./media/embeddedSystem.jpg"
+                class="card-img-top"
+                alt="Embedded Systems Certification"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Gain knowledge and prepare for certifications in embedded
+                  systems, empowering you for a career in IoT development.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest-projects-section">
+      <h2 style="color: #e65c00">Latest Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <img style="height:200px;" src="media/home.png"Project 1" />
+          <div class="project-info">
+            <p class="title">Smart Home Automation</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img style="height: 200px" src="media/health.png" alt="Project 2" />
+          <div class="project-info">
+            <p class="title">Connected Healthcare System</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            style="height: 200px"
+            src="media/industrial.png"
+            alt="Project 3"
+          />
+          <div class="project-info">
+            <p class="title">Industrial IoT Solutions</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            style="height: 200px"
+            src="media/agriculture.png"
+            alt="Project 4"
+          />
+          <div class="project-info">
+            <p class="title">Smart Agriculture Monitoring</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trainers-section">
+      <h2 style="color: black">Meet the Trainers</h2>
+      <div class="trainer-container">
+        <div class="trainer-card">
+          <p class="quote">
+            <span class="quote-icon">&#8220;</span>
+            Capitalize on low hanging fruit to identify a ballpark value added
+            activity to beta test. Override the digital divide with additional
+            clickthroughs from DevOps. Nanotechnology immersion along the
+            information highway.
+          </p>
+          <div class="trainer-profile">
+            <img src="./media/download.jpeg" alt="Mehedi Hassan" />
+            <div class="trainer-info">
+              <p class="trainer-name">Mehedi Hassan</p>
+              <p class="trainer-role">Robotic Engineer</p>
+            </div>
+          </div>
+        </div>
+        <div class="trainer-card">
+          <p class="quote">
+            <span class="quote-icon">&#8220;</span>
+            Capitalize on low hanging fruit to identify a ballpark value added
+            activity to beta test. Override the digital divide with additional
+            clickthroughs from DevOps. Nanotechnology immersion along the
+            information highway.
+          </p>
+          <div class="trainer-profile">
+            <img src="./media/download.jpeg" alt="Ellen Eyre" />
+            <div class="trainer-info">
+              <p class="trainer-name">Ellen Eyre</p>
+              <p class="trainer-role">Manager Of TM</p>
+            </div>
+          </div>
+        </div>
+        <div class="trainer-card">
+          <p class="quote">
+            <span class="quote-icon">&#8220;</span>
+            Capitalize on low hanging fruit to identify a ballpark value added
+            activity to beta test. Override the digital divide with additional
+            clickthroughs from DevOps. Nanotechnology immersion along the
+            information highway.
+          </p>
+          <div class="trainer-profile">
+            <img src="./media/download.jpeg" alt="Mike Jansone" />
+            <div class="trainer-info">
+              <p class="trainer-name">Mike Jansone</p>
+              <p class="trainer-role">Sr. Engineer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="social-icons mb-3">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <span style="font-size: 25px">/</span>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-telegram-plane"></i></a>
+          <a href="#"><i class="fab fa-discord"></i></a>
+          <span style="font-size: 25px">/</span>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <p>
+          &copy; 2024 Premier University Computer Club. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
+                        

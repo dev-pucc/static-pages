@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Deep Learning Research</title>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+
+    
+
+
+        
+
+<!-- Navbar Sections -->
+<nav class="navbar navbar-expand-sm bg-black navbar-dark sticky-top">
+    
+    <div class="container-fluid custom-container py-2">
+
+        <!-- Club Name on the Left -->
+        <a class="navbar-brand" href="/"><img class="main-logo" src="./media/puc_computer_club_logo_color.png" alt=""></a>
+
+        <!-- Toggler for Mobile View -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Centered Links & Right Aligned Buttons -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+
+            <!-- Centered Links -->
+            <ul class="navbar-nav mx-auto">
+    
+                <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+    
+                <li class="nav-item dropdown">
+                    <a class="nav-link fw-bold dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Divisions
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="../competitive_programming/index.html">Competitive Programming</a></li>
+                        <li><a class="dropdown-item" href="../web_devs/index.html">Web Devs</a></li>
+                        <li><a class="dropdown-item" href="../devops/index.html">DevOps</a></li>
+                        <li><a class="dropdown-item fw-bold" href="../linux_based_network/index.html">Linux Based Networking</a></li>
+                        <li><a class="dropdown-item" href="../game_and_mobile_development/index.html">Game And Mobile Development</a></li>
+                        <li><a class="dropdown-item" href="../deep_neural_research/">Deep Neural Research</a></li>
+                        <li><a class="dropdown-item" href="iot_and_embedded_system_innovators/">IoT and Embedded Systems Innovators</a></li>
+                      </ul>
+                    </li>
+      
+                  <li class="nav-item"><a class="nav-link active" href="/additional_info_page/learn_more.html">Learn More</a></li>
+      
+                  <li class="nav-item"><a class="nav-link active" href="/additional_info_page/contact.html">Contact</a></li>
+                
+              </ul>
+
+            <!-- Login & Register on the Right -->
+            <div class="d-flex">
+                <a href="Additional_pages/join_us.html">
+                    <button type="button" class="btn me-2 btn-light rounded-pill">Become a Member</button>
+                </a>
+                <button type="button" class="btn btn-light rounded-pill">Login</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+<!-- Navbar ENDS -->
+
+
+
+
+
+
+    <!-- Hero Section -->
+    <section class="deep-hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 py-5">
+                    <h1 class="wow-heading">Master Deep Learning for <br> Cutting-Edge AI Innovations</h1>
+                    <p class="wow-paragraph">Join our comprehensive course to learn the fundamentals, advanced concepts, and practical applications of deep learning for AI research and development.</p>
+                    <a href="../additional_info_page/join_deep_neural_research.html" class="btn wow-btn">Learn More</a>
+                </div>
+                <div class="col-lg-6">
+                    <canvas id=c></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- About the Course Section -->
+    <section class="about-section">
+        <div class="container">
+            <h2>What we do</h2>
+            <div class="row">
+                <!-- Deep Learning Overview -->
+                <div class="col-md-4 py-3">
+                    <div class="card about-card p-3">
+                        <i class="fa-solid fa-brain icon" style="color: black;"></i>
+                        <h5>Deep Learning Research</h5>
+                        <p>Learn the fundamentals of deep learning, a key technology driving advancements in artificial
+                            intelligence and machine learning.</p>
+                    </div>
+                </div>
+                <!-- Applications of Deep Learning -->
+                <div class="col-md-4 ">
+                    <div class="card about-card p-3">
+                        <i class="fas fa-laptop-code icon"  style="color: black;"></i>
+                        <h5>Build Systems</h5>
+                        <p>Discover how deep learning is applied in areas like computer vision, natural language
+                            processing, and autonomous systems.</p>
+                    </div>
+                </div>
+                <!-- Outcomes of the Course -->
+                <div class="col-md-4">
+                    <div class="card about-card p-3">
+                        <i class="fas fa-rocket icon"  style="color: black;"></i>
+                        <h5>Publish Research</h5>
+                        <p>By the end of the course, you'll be equipped to build and deploy deep learning models for
+                            real-world applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Hands-On Projects Section -->
+    <section class="projects-section">
+        <div class="container">
+            <h2>Hands-On Projects</h2>
+            <div class="row">
+                <!-- Project 1: Image Classification -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="media/ImageClassification.jpg" class="card-img-top" alt="Image Classification">
+                        <div class="card-body">
+                            <h5 class="card-title">Image Classification</h5>
+                            <p class="card-text">Build a model to classify images into categories using neural networks
+                                and deep learning techniques.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2: NLP Chatbots -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="media/NLPChatbots.jpg" class="card-img-top" alt="NLP Chatbots">
+                        <div class="card-body">
+                            <h5 class="card-title">NLP Chatbots</h5>
+                            <p class="card-text">Develop a chatbot capable of understanding natural language and
+                                generating human-like responses.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3: GANs for Image Synthesis -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="media/GANs-for-Image.jpg" class="card-img-top"
+                            alt="GANs for Image Synthesis">
+                        <div class="card-body">
+                            <h5 class="card-title">GANs for Image Synthesis</h5>
+                            <p class="card-text">Create realistic images from scratch using Generative Adversarial
+                                Networks (GANs).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="technologies-section">
+        <div class="container">
+            <h2>Technologies & Tools</h2>
+            
+            <div id="techCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row text-center">
+                            <!-- PyTorch -->
+                            <div class="col-6 col-md-3">
+                                <img src="media/logo-python.png" alt="PyTorch" class="tech-logo">
+                                <p>Python</p>
+                            </div>
+    
+                            <!-- Cuda -->
+                            <div class="col-6 col-md-3">
+                                <img src="media/logo-Cuda.png" alt="Cuda" class="tech-logo" width="150px">
+                                <p>Cuda</p>
+                            </div>
+    
+                            <!-- TensorFlow -->
+                            <div class="col-6 col-md-3">
+                                <img src="media/logo-tensorflow.png" alt="TensorFlow" class="tech-logo">
+                                <p>TensorFlow</p>
+                            </div>
+    
+                            <!-- Hugging Face Transformers -->
+                            <div class="col-6 col-md-3">
+                                <img src="media/logo-huggingface.png" alt="Hugging Face" class="tech-logo">
+                                <p>Hugging Face Transformers</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <div class="row text-center">
+                            <!-- PyTorch -->
+                            <div class="col-6 col-md-3">
+                                <img src="https://pytorch.org/assets/images/pytorch-logo.png" alt="PyTorch" class="tech-logo">
+                                <p>PyTorch</p>
+                            </div>
+    
+                            <!-- Keras -->
+                            <div class="col-6 col-md-3">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" alt="Keras" class="tech-logo">
+                                <p>Keras</p>
+                            </div>
+    
+                            <!-- Jupyter -->
+                            <div class="col-6 col-md-3">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" alt="Jupyter" class="tech-logo" height="100px">
+                                <p>Jupyter</p>
+                            </div>
+    
+                            <!-- Google Colab -->
+                            <div class="col-6 col-md-3">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg" alt="Google Colab" class="tech-logo" height="95px">
+                                <p>Google Colab</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <div class="row text-center">
+                            <!-- OpenCV -->
+                            <div class="col-6 col-md-3">
+                                <img src="media/logo-OpenCV.png" alt="OpenCV" class="tech-logo">
+                                <p>OpenCV</p>
+                            </div>
+    
+                            <!-- AWS -->
+                            <div class="col-6 col-md-3">
+                                <img src="media/logo-aws.png" alt="AWS" class="tech-logo" height="75px">
+                                <p>AWS</p>
+                            </div>
+    
+                            <!-- Numpy -->
+                            <div class="col-6 col-md-3">
+                                <img src="media/logo-numpy.png" alt="Numpy" class="tech-logo">
+                                <p>Numpy</p>
+                            </div>
+    
+                            <!-- Pandas -->
+                            <div class="col-6 col-md-3">
+                                <img src="media/logo-pandas.png" alt="Pandas" class="tech-logo" height="80px">
+                                <p>Pandas</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <div class="row text-center">
+                            <!-- scikit-learn -->
+                            <div class="col-6 col-md-3">
+                                <img src="media/logo-sklearn.png" alt="scikit-learn" class="tech-logo" height="100px">
+                                <p>scikit-learn</p>
+                            </div>
+    
+                            <!-- Matplotlib -->
+                            <div class="col-6 col-md-3">
+                                <img src="media/logo-matplotlib.png" alt="Matplotlib" class="tech-logo">
+                                <p>Matplotlib</p>
+                            </div>
+    
+                            <!-- Seaborn -->
+                            <div class="col-6 col-md-3">
+                                <img src="media/logo-seaborn.png" alt="Seaborn" class="tech-logo">
+                                <p>Seaborn</p>
+                            </div>
+    
+                            <!-- Kaggel -->
+                            <div class="col-6 col-md-3">
+                                <img src="media/logo-kaggel.png" alt="Kaggel" class="tech-logo">
+                                <p>Kaggel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+<!-- Division Lead -->
+<section class="testimonials-section py-5 bg-light">
+    <div class="container">
+        
+        <h2 class="text-center mt-5 mb-5">Meet the Lead</h2>
+        
+        <div class="row">
+
+            <!-- Trainer 1 -->
+            <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-4">
+                <div class="card testimonial-card w-100">
+                    <div class="card-body text-center">
+                        
+                        <div class="testimonial-icon mb-3">
+                            <img src="./media/trainer_hasib.jpg" class="rounded-circle" height="250px"> 
+                        </div>
+                        
+                        <h4 class="testimonial-name">Md Hasibul Hossain</h4>
+                        
+                        <h6 class="testimonial-name"> Trainer Beginner</h6>
+                        
+                        <p class="testimonial-quote">
+                            contract@mail.com <br>
+                            Department of CSE <br>
+                            Premier University Chittagong
+                        </p>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <!-- Division Lead -->
+            <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-4">
+                <div class="card testimonial-card w-100">
+                    <div class="card-body text-center">
+                        
+                        <div class="testimonial-icon mb-3">
+                            <img src="./media/trainer_drubo_da.jpg" class="rounded-circle" height="250px"> 
+                        </div>
+
+                        <h2 class="testimonial-name">Dhruba Dey</h2>
+                        <h5 class="testimonial-name"> Division Lead</h5>
+                            
+                        <p class="testimonial-quote">
+                            contract@mail.com <br>
+                            Department of CSE <br>
+                            Premier University Chittagong
+                        </p>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- Division ENDS -->
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer p-3 bg-black">
+            
+        <div class="row">
+                
+            <!-- Social Media -->
+            <div class="text-center">
+                    
+                <div class="social-icons">
+                
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="#" aria-label="Telegram"><i class="fab fa-reddit-alien"></i></a>
+                    <a href="#" aria-label="Telegram"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Telegram"><i class="fab fa-dev"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
+                    <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                    <a href="#" aria-label="Codeforces"><i class="fas fa-code"></i></a>
+                    <a href="#" aria-label="Codeforces"><i class="fab fa-stack-overflow"></i></a>
+                    <a href="#" aria-label="Codeforces"><i class="fab fa-dribbble"></i></a>
+                    <a href="#" aria-label="Codeforces"><i class="fab fa-itch-io"></i></a>
+                
+                </div>
+                
+            </div>
+
+
+            <div class="row">
+                <p class="copyright">&copy; 2024 Premier University Computer Club. All Rights Reserved.</p>
+            </div>
+            
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./animation.js"></script>
+    <script>
+        document.querySelectorAll('.wow-btn').forEach(button => {
+        button.addEventListener('mousemove', e => {
+            const rect = button.getBoundingClientRect();
+            const x = ((e.clientX - rect.left) / rect.width) * 100;
+            const y = ((e.clientY - rect.top) / rect.height) * 100;
+            button.style.setProperty('--mouse-x', `${x}%`);
+            button.style.setProperty('--mouse-y', `${y}%`);
+        });
+
+        button.addEventListener('mouseleave', () => {
+            button.style.setProperty('--mouse-x', `50%`);
+            button.style.setProperty('--mouse-y', `50%`);
+        });
+        });
+    </script>
+</body>
+
+</html>

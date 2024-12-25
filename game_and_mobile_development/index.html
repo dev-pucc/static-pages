@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Game Development</title>
+    <link rel="shortcut icon" href="/landing_page/media/logo/favico_16.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="../landing_page\style.css"> -->
+
+    <link rel="stylesheet" href="../game_and_mobile_development/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+
+<body class="dots-background noise">
+
+
+
+
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-sm dot-background navbar-dark " >
+        <div class="container-fluid custom-container ">
+            <a class="navbar-brand"  href="/"><img src="puc logo/puc_computer_club_logo_color.svg" width="230" height="60"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav mx-auto ">
+                    <li class="nav-item"><a style="font-size: 1.4rem;" class="nav-link active" href="/"><span class=""
+                                data-text="Home">Home</span></a></li>
+                    <li class="nav-item dropdown ">
+                        <a style="font-size: 1.4rem;" class="nav-link fw-bold dropdown-toggle text-light " href="#"
+                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Divisions
+                        </a>
+                        <ul class="dropdown-menu dot-background dropmenu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../competitive_programming/index.html">Competitive
+                                    Programming</a></li>
+
+                            <li><a class="dropdown-item" href="../web_devs/index.html">Web Devs</a></li>
+                            <li><a class="dropdown-item" href="../devops/index.html">DevOps</a></li>
+                            <li><a class="dropdown-item" href="../linux_based_network/index.html">Linux Based
+                                    Networking</a></li>
+                            <li><a class="dropdown-item fw-bold" href="../game_and_mobile_development/index.html">Game
+                                    And Mobile Development</a></li>
+                            <li><a class="dropdown-item " href="../iot_and_embedded_system_innovators/index.html">IoT
+                                    and Embedded Systems Innovators</a></li>
+                            <li><a class="dropdown-item" href="../deep_neural_research/">Deep Neural Research</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a style="font-size: 1.4rem;" class="nav-link active"
+                            href="../additional_info_page/learn_more.html">Learn
+                            More</a></li>
+                    <li class="nav-item"><a style="font-size: 1.4rem;" class="nav-link active"
+                            href="Additional_pages/contact_us.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="Additional_pages/join_us.html" class="text-decoration-none text-white ">
+                        <button style="font-size: 1.2rem;" class="cybr-btn text-white p-2 me-3">
+                            Become A member
+                            <span aria-hidden class="cybr-btn__glitch text-white">Become A member</span></button>
+
+                    </a>
+                    <button style="font-size: 1.2rem;" class="cybr-btn text-white p-2 me-3">
+                        Log In
+                        <span aria-hidden class="cybr-btn__glitch text-white">Log In</span></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white d-flex align-items-center"
+        style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('media/dark-gaming-.webp') no-repeat center center/cover; height: 100vh;">
+
+        <div class="container text-center ">
+
+            <div class="row text-area-hero">
+
+                <div class="col-lg-8  mx-auto ">
+
+
+                    <div class="heading-area">
+                        <h1 class="display-4  animated-text ">Welcome to the Ultimate Game & Mobile Development
+                            Hub</h1>
+                    </div>
+
+
+                    <div class="paragraph-area">
+                        <p style="font-size: 1.5rem;" class="lead text-glitch  mb-5  "
+                            data-text="Learn to build amazing games from scratch, level up your skills, and become a pro game developer with our expert-led courses.">
+                            Learn to build amazing games from scratch, level up your skills, and become a
+                            pro game developer with our expert-led courses.</p>
+                    </div>
+
+                    <div class="button-area">
+
+                        <a href="#courses" class=" mt-5"><button style="font-size: 1.2rem;"
+                                class="cybr-btn text-white btn-lg p-2 ps-3 pe-3 mt-5 me-3">
+                                Learn More
+                                <span aria-hidden class="cybr-btn__glitch text-white">Learn More</span></button></a>
+
+
+                        <a href="#contact-us" class=" mt-5 ms-3"><button style="font-size: 1.2rem;"
+                                class="cybr-btn text-white btn-lg p-2 ps-3 pe-3 mt-5 me-3">
+                                Contact Us
+                                <span aria-hidden class="cybr-btn__glitch text-white">Contact Us</span></button></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Technologies & Tools Section -->
+    <section id="technologies" class="technologies-section py-5 dot-background">
+        <div class="container">
+
+            <h2 class="text-center mb-4 text-white">Technologies & Tools</h2>
+
+
+            <p style="font-size: 1.5rem;" class="text-center mb-5 text-white ">These are the tools and technologies I
+                use to bring games to life. From powerful
+                game engines to design software, I ensure the highest quality in every project.</p>
+
+            <!-- Grid for Technologies -->
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+                <!-- Unity -->
+                <div class="col">
+
+                    <div class="cyberpunk-card text-center">
+
+                        <div class="card-body">
+
+                            <i class="fas fa-cogs fa-3x mb-3 text-white" style="color: #333;"></i>
+                            <!-- Icon for Unity -->
+
+                            <h5 class=" fs-2">Unity</h5>
+
+
+                            <p class="card-text">A powerful game engine used for creating both 2D and 3D games. Its
+                                flexibility and cross-platform support make it a go-to for indie and AAA game
+                                developers.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <!-- Unreal Engine -->
+                <div class="col">
+
+
+                    <div class="cyberpunk-card text-center">
+
+
+                        <div class="card-body">
+
+
+                            <i class="fab fa-unity fa-3x mb-3 text-white" style="color: #333;"></i>
+                            <!-- Icon for Unreal Engine -->
+
+
+                            <h5 class="fs-2">Unreal Engine</h5>
+
+
+                            <p class="card-text">A robust game engine known for creating high-quality 3D environments
+                                and AAA games. Unreal Engine provides advanced features for both design and development.
+
+
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+                <!-- Blender -->
+                <div class="col">
+
+                    <div class="cyberpunk-card text-center">
+
+                        <div class="card-body">
+
+
+                            <i class="fas fa-paint-brush fa-3x mb-3 text-white" style="color: #333;"></i>
+                            <!-- Icon for Blender -->
+
+
+                            <h5 class="fs-2">Blender</h5>
+
+
+                            <p class="card-text">A versatile 3D creation suite used for modeling, rigging, animation,
+                                rendering, compositing, and video editing.</p>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <!-- Photoshop -->
+                <div class="col">
+
+
+                    <div class="cyberpunk-card text-center">
+
+
+                        <div class="card-body">
+
+
+                            <i class="fas fa-image fa-3x mb-3 text-white" style="color: #333;"></i>
+                            <!-- Icon for Photoshop -->
+
+
+                            <h5 class="fs-2">Photoshop</h5>
+
+
+                            <p class="card-text">Industry-leading software for image editing and texture creation.
+                                Photoshop is essential for designing assets such as game UI, textures, and concept art.
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+                <!-- C# -->
+                <div class="col">
+
+
+                    <div class="cyberpunk-card text-center">
+
+
+                        <div class="card-body">
+
+
+                            <i class="fas fa-code fa-3x mb-3 text-white" style="color: #333;"></i> <!-- Icon for C# -->
+
+
+                            <h5 class="fs-2">C#</h5>
+
+
+                            <p class="card-text">The primary programming language used in Unity game development. C# is
+                                known for its simplicity and powerful capabilities in creating interactive gameplay
+                                experiences.</p>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <!-- Python -->
+                <div class="col">
+
+
+                    <div class="cyberpunk-card text-center">
+
+
+                        <div class="card-body">
+
+
+                            <i class="fab fa-python fa-3x mb-3 text-white" style="color: #333;"></i>
+                            <!-- Icon for Python -->
+
+
+                            <h5 class="fs-2">Python</h5>
+
+
+                            <p class="card-text">A versatile and easy-to-learn programming language used for scripting,
+                                AI, and automating game development tasks like procedural generation and backend logic.
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Events / Workshops Section -->
+    <section id="events" class="events-section py-5 dot-background ">
+
+
+        <div class="container">
+
+
+            <h2 class="text-center mb-4 text-white">Upcoming Events & Workshops</h2>
+
+
+            <div class="row">
+
+
+                <!-- Event 1 -->
+
+
+                <div class="col-md-6 mb-4">
+
+
+                    <div class="cyberpunk-card1">
+
+
+                        <img src="media/unity-workshps.png" class="card-img-top" alt="Event 1">
+
+
+
+                        <div class="card-body" style="padding: 2rem;">
+
+
+                            <h5 class="card-title  fs-2">Game Development Workshop - Unity</h5>
+
+
+                            <p class="card-text" style="font-size: 1.2rem;">Join us for a hands-on Unity workshop where
+                                you will learn how to
+                                create your first game.</p>
+
+
+                            <p class="card-text"><small class="fw-bold fs-2">Date: 20th Dec 2024</small></p>
+
+
+
+                            <a href="#" class=""><button style="font-size: 1.2rem;" class="cybr-btn text-white p-2 ">
+                                    Register
+                                    <span aria-hidden class="cybr-btn__glitch text-white">Register</span></button></a>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+                <!-- Event 2 -->
+                <div class="col-md-6 mb-4">
+
+
+                    <div class="cyberpunk-card1">
+
+
+
+                        <img src="media/game-workshops.png" class="card-img-top" alt="Event 2">
+
+
+
+                        <div class="card-body" style="padding: 2rem;">
+
+
+                            <h5 class="card-title fs-2">Game Design Webinar</h5>
+
+
+                            <p class="card-text " style="font-size: 1.2rem;">Learn game design principles and how to
+                                create engaging gameplay
+                                experiences in this webinar.</p>
+
+
+                            <p class="card-text"><small class="fw-bold fs-2">Date: 25th Dec 2024</small></p>
+
+
+
+                            <a href="#" class=""><button style="font-size: 1.2rem;" class="cybr-btn text-white p-2 ">
+                                    Register
+                                    <span aria-hidden class="cybr-btn__glitch text-white">Register</span></button></a>
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5 dot-background">
+        <div class="container">
+
+            <h2 class="text-center mt-5 mb-5 text-white">Meet the Lead</h2>
+
+            <div class="row">
+
+                <!-- Trainer 2 -->
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4 mx-auto">
+                    <div class="cyberpunk-card1 p-1 testimonial-card w-100 d-flex justify-content-between">
+                        <div class="card-body text-center">
+
+                            <div class="testimonial-icon mb-3">
+                                <img src="./media/wahid.jpg" class="rounded-circle" height="200px" width="50%">
+                            </div>
+
+                            <h4 class="" style="font-size: 2.5rem;">Wahidul Islam</h4>
+
+                            <h6 class="  " style="font-size: 1.5rem;"> Trainer Intermediate</h6>
+
+                            <p class="testimonial-quote">
+                                contract@mail.com <br>
+                                Department of CSE <br>
+                                Premier University Chittagong
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Division ENDS -->
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer p-3 dot-background text-light text-center">
+        <div class="row">
+
+            <!-- Social Media -->
+            <div class="social-icons">
+
+                <a href="https://www.facebook.com/profile.php?id=100064087983552"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/groups/premier.university.computer.club"><i class="fab fa-facebook-f">
+                        Group</i></a>
+                <a href="https://x.com/pucc_official"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/puc-cse-club"><i class="fab fa-linkedin-in"></i></a>
+
+                <span style="font-size: 25px;">/</span>
+
+                <a href="https://chat.whatsapp.com/JG8K32l5fiPCfpXBxZaQQ5"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://t.me/+564bGSrAnQU2Y2Nl"><i class="fab fa-telegram-plane"></i></a>
+                <a href="https://discord.com/channels/1311981092026318858/1311981093272158269"><i
+                        class="fab fa-discord"></i></a>
+
+                <span style="font-size: 25px;">/</span>
+
+                <a href="https://www.youtube.com/channel/UC3bqOx1p94VLE18LmjYzOwA"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/dev-pucc"><i class="fab fa-github"></i></a>
+                <a href="https://www.kaggle.com/puccofficial"><i class="fab fa-kaggle"></i></a>
+                <a href="https://codeforces.com/ratings/organization/10519"><i class="fas fa-code"></i></a>
+
+            </div>
+
+
+            <div class="row">
+                <p class="copyright">&copy; 2024 Premier University Computer Club. All Rights Reserved. (Developed by
+                    our members with &#9829)</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Footer Ends -->
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
